@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Event 1",
+    "photo": "cloudinary url of cover photo in webp format",
+    "desc": "Description of the event",
+    "gform": "gform link for registration",
+    "problem_statements": "link to the problem statements doc"
+  }
+]

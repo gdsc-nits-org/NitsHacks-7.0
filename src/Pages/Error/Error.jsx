@@ -1,3 +1,5 @@
+// Nilabh
+
 import style from "./Error.module.scss";
 
 const Error = () => {

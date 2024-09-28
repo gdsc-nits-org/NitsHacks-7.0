@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "name": "Sponsor 1",
+    "photo": "cloudinary url of Sponsor image",
+    "link": "href link to the Sponsor"
+  }
+]

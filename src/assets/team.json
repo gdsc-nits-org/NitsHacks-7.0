@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "photo": "cloudinary url of photo in webp format",
+    "designation": "Prime Minister",
+    "fb": "fb link",
+    "github": "github link",
+    "linkedin": "linkedin link"
+  }
+]
