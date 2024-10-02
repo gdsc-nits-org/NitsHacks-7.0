@@ -5,20 +5,14 @@ $fontcolor: #ffffff;
   src: url("../../../public/fonts/Starjedi.ttf");
 }
 .root {
-  font-size: 16px; // Set a base font size for the root
+  font-size: 16px;
 }
 .teamsCont {
   width: 100%;
   overflow-x: hidden;
   background-color: black;
   z-index: 1;
-
-  // Set the background image with linear-gradient to achieve the fade effect
-
-  // Background properties to make sure the image is visible from top and fades away at 40% viewport height
-
-  // Adjust the background-size to fit properly
-  background-size: 100% 40vh; // The image height is 40% of the viewport height
+  background-size: 100% 40vh;
   position: relative;
 
   .bgPng {
@@ -63,7 +57,6 @@ $fontcolor: #ffffff;
         position: relative;
         top: 7rem;
         text-align: center;
-        // text-shadow: 2px 10px 25px #ffffff;
       }
 
       .teamname_body {
