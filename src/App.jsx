@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import { Home, Error, Event, Faq, Team } from "./Pages";
+import Card from "./Components/Event/Card/Card";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Route path="/faq" element={<Faq />} />
       <Route path="/team" element={<Team />} />
       <Route path="*" element={<Error />} />
+      <Route path="/card" element={<Card />} />
     </Routes>
   );
 };
