@@ -6,6 +6,7 @@ const Home = () => {
     <main className={style.home}>
       <Navbar />
       <h1>Home Page</h1>
+
       <Footer />
     </main>
   );
