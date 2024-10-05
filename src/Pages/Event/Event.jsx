@@ -15,19 +15,19 @@ const Event = () => {
               <div className={styles.imgList}>
                 <img
                   className={styles.backImg}
-                  src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727799482/Event_bg_fth8hr.png"
+                  src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727799482/Event_bg_fth8hr.webp"
                   alt="img1"
                 />
 
                 <div className={styles.images}>
                   <img
                     className={styles.bot1}
-                    src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727804005/yoda_pdb5v4.png"
+                    src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727804005/yoda_pdb5v4.webp"
                     alt="im1"
                   />
                   <img
                     className={styles.bot2}
-                    src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727799326/Death_vader_it5m5h.png"
+                    src="https://res.cloudinary.com/dtt4ftdrw/image/upload/v1727799326/Death_vader_it5m5h.webp"
                     alt="im2"
                   />
                   <img
