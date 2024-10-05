@@ -17,7 +17,13 @@ const Teams = () => {
   return (
     <div className={styles.teamsCont}>
       <Navbar />
-      <div className={styles.bgPng}></div>
+      <div className={styles.bgPng}>
+        <img
+          src="/images/teamcover.svg"
+          alt="team page background"
+          className={styles.coverImg}
+        />
+      </div>
 
       <div className={styles.page}>
         <div className={styles.teamname}>
