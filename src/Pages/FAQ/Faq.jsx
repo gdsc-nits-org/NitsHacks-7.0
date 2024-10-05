@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaAngleUp, FaAngleDown } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 import { Navbar, Footer } from "../../Components/index";
 import styles from "./Faq.module.scss";
 import datas from "../../assets/faq.json";
@@ -8,11 +8,14 @@ const Faq = () => {
   return (
     <div className={styles.FaqParent}>
       <Navbar />
+      <div className={styles.mask}></div>
       <h1 className={styles.heading}>Faq</h1>
-      <div className={styles.innerCont}>
-        {datas.map((data) => (
-          <FaqItem key={data.id} question={data.question} answer={data.answer} />
-        ))}
+      <div className={styles.innerContHolder}>
+        <div className={styles.innerCont}>
+          {datas.map((data) => (
+            <FaqItem key={data.id} question={data.question} answer={data.answer} />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
@@ -31,7 +34,12 @@ const FaqItem = ({ question, answer }) => {
       <div className={styles.faqQuestion} onClick={toggleOpen}>
         <span className={styles.queText}>{question}</span>
         <span className={`${styles.arrow} ${isOpen ? "open" : ""}`}>
-          {isOpen ? <FaAngleUp /> : <FaAngleDown />}
+          <FaAngleDown
+            style={{
+              transform: `rotateZ(${isOpen ? 180 : 0}deg)`,
+              transition: "ease 200ms",
+            }}
+          />
         </span>
       </div>
       {isOpen && <div className={styles.faqAnswer}>{answer}</div>}
