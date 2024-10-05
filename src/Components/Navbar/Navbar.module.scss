@@ -33,7 +33,7 @@
     position: relative;
     margin-top: -2rem;
   }
-  @media (max-width: 950px) {
+  @media (max-width: 1080px) {
     margin-right: 0rem;
     margin-top: 1.5rem;
     img {
@@ -110,7 +110,7 @@
   }
   div {
     height: 3rem;
-    @media (max-width: 950px) {
+    @media (max-width: 1080px) {
       position: relative;
       right: 2rem;
     }
