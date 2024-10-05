@@ -113,6 +113,8 @@
   background: none;
   background-color: black;
   font-size: 15px;
+  opacity: 0;
+  display: none;
 }
 .buttons {
   display: flex;
@@ -222,6 +224,106 @@
   height: 100vh;
   opacity: 1;
 }
+@media screen and (max-width: 400px) {
+  .innerParent {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+  }
+  .eventInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .images {
+    height: 40vh;
+    width: 100%;
+    left: 1rem;
+    position: absolute;
+    gap: 0px;
+    padding: 1rem;
+  }
+
+  .backImg {
+    height: 20vh;
+    width: 100vw;
+    position: relative;
+  }
+  .title {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 12rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    left: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .poster {
+    height: 20vh;
+    top: 300px;
+    position: absolute;
+    width: 100%;
+  }
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .description {
+    top: 400px;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 78%;
+    left: 2rem;
+    height: 30vh;
+  }
+  .description1 {
+    top: 700px;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 78%;
+    left: 2rem;
+    opacity: 0;
+  }
+  .buttons {
+    width: 300px;
+    gap: 5px;
+  }
+  .btn1 {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .btn3 {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .btn5 {
+    margin-left: 5rem;
+  }
+}
 
 @media screen and (max-width: 850px) {
   .innerParent {
@@ -321,103 +423,6 @@
   }
 }
 
-@media screen and (max-width: 400px) {
-  .innerParent {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    height: auto;
-  }
-  .eventInfo {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .images {
-    height: 40vh;
-    width: 100%;
-    left: 1rem;
-    position: absolute;
-    gap: 0px;
-    padding: 1rem;
-  }
-
-  .backImg {
-    height: 20vh;
-    width: 100vw;
-    position: relative;
-  }
-  .title {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 12rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    left: 1rem;
-  }
-  p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .poster {
-    height: 20vh;
-    top: 300px;
-    position: absolute;
-    width: 100%;
-  }
-  .boxContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .description {
-    top: 400px;
-    font-size: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 78%;
-    left: 2rem;
-    height: 30vh;
-  }
-  .description1 {
-    top: 700px;
-    font-size: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 78%;
-    left: 2rem;
-    opacity: 0;
-  }
-  .buttons {
-    width: 300px;
-    gap: 5px;
-  }
-  .btn1 {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  .btn3 {
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-}
 @media screen and (max-width: 1000px) {
   .innerParent {
     display: flex;
