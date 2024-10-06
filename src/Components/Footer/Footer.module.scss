@@ -1,3 +1,477 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+}
+@font-face {
+  font-family: "StarJedi";
+  src: url("../src/assets/fonts/Starjedi.ttf");
+}
+@font-face {
+  font-family: "Alata";
+  src: url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+}
 .footer {
-  //write your styles
+  position: relative;
+  background-color: black;
+  width: 100vw;
+  height: 150vh;
+  .starwar {
+    position: absolute;
+    .starwarimg {
+      width: 100vw;
+      position: absolute;
+      top: -200px;
+      z-index: 100;
+    }
+
+    .background {
+      background: linear-gradient(to bottom, rgba(0, 240, 255, 0) 50%, #00a9b5 100%);
+      width: 100vw;
+      height: 400px;
+      position: absolute;
+      top: 140px;
+      background-position: center;
+    }
+  }
+}
+.visittecno {
+  text-decoration: none;
+  color: white;
+  .visited {
+    position: absolute;
+    top: 700px;
+    background-color: white;
+    color: black;
+    padding: 5px 50px;
+    left: 60px;
+  }
+  .div {
+    background: white;
+    height: 7px;
+    width: 225px;
+    position: absolute;
+    top: 692px;
+    left: 60px;
+  }
+  .divtwo {
+    background: white;
+    height: 7px;
+    width: 225px;
+    position: absolute;
+    left: 60px;
+    top: 734px;
+  }
+  .firstchange {
+    height: 7px;
+    border-top: 1px solid #faff00;
+    border-bottom: 1px solid #faff00;
+    border-left: 1px solid #faff00;
+    width: 75px;
+    position: absolute;
+    background-color: black;
+    top: 734px;
+    left: 60px;
+  }
+  .secondchange {
+    height: 7px;
+    border-bottom: 1px solid #faff00;
+    width: 4px;
+    position: absolute;
+    background-color: black;
+    top: 734px;
+    left: 135.2px;
+  }
+  .thirdchangebox {
+    height: 7px;
+    width: 7px;
+    background-color: white;
+    position: absolute;
+    top: 732px;
+    border-left: 1px solid #faff00;
+    left: 136px;
+    transform: rotate(-30deg);
+  }
+  .slashcombine {
+    display: flex;
+    gap: 2px;
+    position: absolute;
+    top: 681px;
+    left: 80px;
+    .slashes {
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      font-size: 7px;
+      transform: rotate(-149deg);
+    }
+  }
+  .fourthchange {
+    height: 7px;
+    border-bottom: 1px solid #faff00;
+    width: 137px;
+    position: absolute;
+    background-color: black;
+    top: 683.5px;
+    left: 148px;
+  }
+  .aboveline {
+    height: 1px;
+    background-color: #faff00;
+    width: 124px;
+    position: absolute;
+    top: 686px;
+    left: 155px;
+    border: none;
+  }
+  .abovelinetwo {
+    height: 1px;
+
+    width: 7px;
+    position: absolute;
+    top: 686px;
+    left: 146.5px;
+    border: none;
+    background-color: #faff00;
+    transform: rotate(-58deg);
+  }
+  .abovelinethree {
+    height: 1px;
+    width: 7px;
+    border: none;
+    background-color: #faff00;
+    position: absolute;
+    top: 686px;
+    left: 279.5px;
+    transform: rotate(-111deg);
+  }
+  .abovelinefour {
+    height: 1px;
+    width: 5px;
+    border: none;
+    background-color: #faff00;
+    position: absolute;
+    top: 685px;
+    transform: rotate(-144deg);
+    left: 150.5px;
+  }
+  .abovelinefive {
+    height: 1px;
+    width: 5px;
+    border: none;
+    background-color: #faff00;
+    position: absolute;
+    top: 684px;
+    transform: rotate(-46deg);
+    left: 277.5px;
+  }
+}
+.visittecno:hover {
+  .firstchange {
+    border-top: 1px solid #ffbf00;
+    border-bottom: 1px solid #ffbf00;
+    border-left: 1px solid #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .secondchange {
+    border-bottom: 1px solid #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .thirdchangebox {
+    border-left: 1px solid #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .slashcombine {
+    display: none;
+    transition: all 2s ease-in;
+  }
+  .fourthchange {
+    border-bottom: 1px solid #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .aboveline {
+    background-color: #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .abovelinetwo {
+    background-color: #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .abovelinethree {
+    background-color: #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .abovelinefour {
+    background-color: #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+  .abovelinefive {
+    background-color: #ffbf00;
+    transition-property: all;
+    transition-duration: 300ms;
+  }
+}
+
+.vector {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 676px;
+  transform: rotate(-21.6deg);
+  left: 55px;
+}
+.vectortwo {
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 737px;
+  left: 276px;
+  transform: rotate(-21.6deg);
+}
+.connect {
+  color: #f2c300;
+  position: absolute;
+  top: 770px;
+  font-family: "StarJedi";
+  font-size: 24px;
+  line-height: 34.5px;
+  left: 60px;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 820px;
+  left: 60px;
+}
+.contact {
+  color: #f2c300;
+  position: absolute;
+  font-family: "StarJedi";
+  font-size: 24px;
+  line-height: 34.5px;
+  top: 888px;
+  left: 60px;
+}
+.mail {
+  color: white;
+  font-family: "Alata";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  position: absolute;
+  left: 60px;
+  top: 922px;
+}
+.mapContainer {
+  position: absolute;
+  top: 710px; /* Adjust based on your layout */
+  right: 60px;
+  width: 320px; /* Adjust size */
+  height: 220px; /* Adjust size */
+  z-index: 10;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5)); /* Add drop-shadow */
+    transition: filter 0.4s ease;
+  }
+
+  &:hover iframe {
+    filter: blur(5px); /* On hover, blur the map */
+  }
+
+  .viewMap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 20;
+
+    .viewMapText {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+
+  &:hover .viewMap {
+    opacity: 1; /* On hover, show the "View Map" button */
+  }
+}
+.oncampus {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+.made {
+  position: absolute;
+  top: 1050px;
+  left: 540px;
+  letter-spacing: 1.5px;
+}
+.line {
+  color: white;
+  width: 1200px;
+  position: absolute;
+  top: 1075px;
+  left: 115px;
+}
+.copy {
+  position: absolute;
+  top: 1090px;
+  left: 415px;
+  letter-spacing: 1px;
+}
+.design1 {
+  background-color: white;
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1073px;
+  left: 115px;
+}
+.design2 {
+  background-color: white;
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 1073px;
+  right: 118px;
+}
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: 130vh;
+  }
+  .visited {
+    padding: 5px 40px;
+    top: 680px;
+  }
+  .mapContainer {
+    width: 280px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 100vh;
+  }
+  .visited {
+    padding: 5px 30px;
+    top: 620px;
+    font-size: 18px;
+  }
+  .connect,
+  .contact {
+    font-size: 20px;
+    top: 730px;
+    left: 30px;
+  }
+  .icons {
+    top: 770px;
+    left: 30px;
+  }
+  .mail {
+    top: 870px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .mapContainer {
+    width: 250px;
+    height: 180px;
+    right: 30px;
+    top: 620px;
+  }
+  .oncampus {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    height: 90vh;
+  }
+  .visited {
+    padding: 5px 20px;
+    top: 600px;
+    font-size: 16px;
+  }
+  .connect,
+  .contact {
+    font-size: 18px;
+    top: 710px;
+    left: 20px;
+  }
+  .icons {
+    top: 750px;
+    left: 20px;
+  }
+  .mail {
+    top: 850px;
+    left: 20px;
+    font-size: 14px;
+  }
+  .mapContainer {
+    width: 200px;
+    height: 160px;
+    right: 20px;
+    top: 600px;
+  }
+  .oncampus {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .footer {
+    height: 180vh;
+  }
+  .visited {
+    padding: 5px 60px;
+    top: 800px;
+    font-size: 30px;
+  }
+  .connect,
+  .contact {
+    font-size: 30px;
+    top: 900px;
+    left: 100px;
+  }
+  .icons {
+    top: 960px;
+    left: 100px;
+  }
+  .mail {
+    top: 1050px;
+    left: 100px;
+    font-size: 24px;
+  }
+  .mapContainer {
+    width: 420px;
+    height: 300px;
+    right: 100px;
+    top: 800px;
+  }
+  .oncampus {
+    font-size: 18px;
+  }
 }
