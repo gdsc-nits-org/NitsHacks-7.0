@@ -5,19 +5,24 @@
   font-style: normal;
 }
 
+.bar {
+  position: sticky;
+  top: 0;
+}
+
 .navbar {
   position: fixed;
   background-color: transparent;
+  top: 0;
   padding: 0;
-
+  z-index: 30;
   * {
     color: #acacac;
     font-family: "Star Jedi", sans-serif;
     font-size: 1.5rem;
     background-color: transparent;
-
-    @media (min-width: 600px) and (max-width: 1080px) {
-      font-size: 1rem;
+    @media (max-width: 1080px) {
+      font-size: 2vw;
     }
   }
 }
@@ -32,13 +37,6 @@
   img {
     position: relative;
     margin-top: -2rem;
-  }
-  @media (max-width: 1080px) {
-    margin-right: 0rem;
-    margin-top: 1.5rem;
-    img {
-      margin-top: -1.8rem;
-    }
   }
 }
 
@@ -68,23 +66,36 @@
   backdrop-filter: blur(20px);
   border-bottom: 4px solid #43434370;
   height: 5.5rem;
-  background-color: rgba(56, 56, 56, 0.65);
+  background-color: rgba(51, 51, 51, 0.34);
   display: flex;
   width: 100vw;
   justify-content: space-between;
   align-items: center;
 
   .logo {
-    height: max-content;
+    height: 100%;
     width: 15vw;
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 1080px) {
+      img {
+        width: 8vw;
+        height: auto;
+      }
+    }
   }
 
   a {
     margin-left: 5rem;
+    margin-top: 8px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   img {
@@ -92,28 +103,12 @@
     width: 5rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1080px) {
-    height: 3.5rem;
-
-    a {
-      margin-left: 2rem;
-    }
-
-    img {
-      height: 3rem;
-      width: 3.5rem;
-    }
-
-    logo {
-      width: 10vw;
-    }
-  }
   div {
     height: 3rem;
-    @media (max-width: 1080px) {
-      position: relative;
-      right: 2rem;
-    }
+  }
+
+  @media (max-width: 1080px) {
+    height: 7vw;
   }
 
   .deskNav {
@@ -159,13 +154,18 @@
 }
 
 .smallScn {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   border-bottom: 4px solid #43434370;
-  height: 3.2rem;
+  height: 8rem;
+
+  img {
+    transform: scale(2);
+  }
+
   background-color: rgba(51, 51, 51, 0.34);
   display: flex;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -197,20 +197,23 @@
   img {
     position: relative;
     transition: all 0.3s ease;
-    width: 2.1rem;
+    width: 3rem;
     margin: -0.1rem;
+    margin-bottom: 2px;
     height: auto;
   }
 
   &.open {
+    transform: scale(1.5);
+    transition: all 0.3s ease;
     img:nth-child(1) {
       transition: all 0.3s ease-in;
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -o-transform: rotate(45deg);
       transform: rotate(45deg);
-      top: 2px;
-      left: 8px;
+      top: 5px;
+      left: 14px;
     }
 
     img:nth-child(2) {
@@ -225,8 +228,8 @@
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
-      top: -2px;
-      left: 8px;
+      top: -5px;
+      left: 14px;
     }
   }
 }
@@ -240,13 +243,13 @@
   align-items: center;
   padding-top: 4rem;
   position: fixed;
-  top: 3.2rem;
+  top: 8rem;
   width: 100vw;
   transition: all 0.5s ease-in;
 
   button {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     background-color: #fff;
     width: 15.4rem;
     height: 3rem;
@@ -267,7 +270,7 @@
   border-right: 5px solid transparent;
   border-bottom: 5px solid black;
   height: 5px;
-  width: 46px;
+  width: 40px;
   position: absolute;
-  margin-left: 2.5rem;
+  margin-left: 2rem;
 }

@@ -57,6 +57,7 @@ $fontcolor: #ffffff;
         line-height: 2.5rem;
         width: 100%;
         position: relative;
+        text-transform: capitalize;
         top: 7rem;
         text-align: center;
       }
@@ -88,7 +89,7 @@ $fontcolor: #ffffff;
   }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1080px) {
   html {
     font-size: 60%;
   }

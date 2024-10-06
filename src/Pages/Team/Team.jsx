@@ -1,6 +1,6 @@
 import styles from "./Team.module.scss";
 import { Card } from "../../Components/Teams/index";
-import { Navbar, Footer } from "../../Components/index";
+import { Footer } from "../../Components/index";
 import Coordinator from "./Coordinator.json";
 import Convener from "./Convener.json";
 import Coreteam from "./Coreteam.json";
@@ -16,7 +16,6 @@ const MemberDetails = (data) => {
 const Teams = () => {
   return (
     <div className={styles.teamsCont}>
-      <Navbar />
       <div className={styles.bgPng}>
         <img
           src="/images/teamcover.svg"
@@ -49,7 +48,7 @@ const Teams = () => {
 
         <div className={styles.teamname}>
           <div className={styles.headingteamsa} id="ORGANISERS">
-            ORGANISERS
+            organisers
           </div>{" "}
           <div className={styles.teamname_body}>{ORGANISERS.map(MemberDetails)}</div>
         </div>
