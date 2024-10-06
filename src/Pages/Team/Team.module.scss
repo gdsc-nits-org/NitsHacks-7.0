@@ -1,3 +1,104 @@
-.teams {
-  font-size: 1rem;
+$fontcolor: #ffffff;
+
+@font-face {
+  font-family: "StarJedi";
+  src: url("/public/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.root {
+  font-size: 16px;
+}
+.teamsCont {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  min-height: 100vh;
+  z-index: 1;
+  background-size: 100% 40vh;
+
+  .bgPng {
+    width: 100%;
+    height: 45vh;
+    // background-image:url("../../../public/images/Team bg.png") !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to top, transparent, #000000);
+    mask-image: linear-gradient(to top, transparent, #000000);
+    mask-repeat: no-repeat;
+    overflow: hidden;
+    .coverImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    // position: fixed;
+    // top: 0;
+  }
+
+  .page {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to down, 2% transparent, #000000);
+    .teamname {
+      // position: relative;
+      padding-top: 1rem;
+      font-family: StarJedi;
+      z-index: 3;
+
+      .headingteamsa {
+        margin-bottom: 3rem;
+        color: #f2c300;
+        font-family: "StarJedi", sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 2.5rem;
+        width: 100%;
+        position: relative;
+        top: 7rem;
+        text-align: center;
+      }
+
+      .teamname_body {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        top: 7rem;
+        padding-bottom: 4rem;
+        width: 100%;
+        height: fit-content;
+        .sec {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 52%;
+  }
 }
