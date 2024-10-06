@@ -1,3 +1,72 @@
 .loader {
-  //write your styles here
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  background-image: url("./images/Earth.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 312px;
+    height: 252px;
+    overflow: hidden;
+    position: relative;
+
+    .logo {
+      max-height: 112px;
+      max-width: 199px;
+      position: relative;
+      animation: glow 2.2s infinite;
+      z-index: 10;
+      background: transparent;
+    }
+
+    .sword {
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+
+    @media (max-width: 760px) {
+      width: 156px;
+      height: 102px 102px;
+
+      .logo {
+        max-height: 56px;
+        max-width: 99px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .sword {
+        width: 156px;
+        position: relative;
+        transform: translateY(-44px);
+      }
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 10px 10px rgba(255, 255, 255, 0.5));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+  }
+
+  100% {
+    filter: drop-shadow(0 0 10px 10px rgba(255, 255, 255, 0.5));
+  }
 }

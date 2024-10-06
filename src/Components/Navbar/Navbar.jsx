@@ -36,7 +36,11 @@ const Navbar = () => {
     const links = document.querySelectorAll(`.${styles.deskNav}`);
     const underscores = document.querySelectorAll(".underscore");
     const latches = document.querySelectorAll(".latch");
-
+    links.forEach((linksm, niggdex) => {
+      linksm.classList.remove(styles.hovereffect);
+      underscores.item(niggdex).classList.remove(styles.hoverUnder);
+      latches.item(niggdex).classList.remove(styles.glow);
+    });
     links.item(curr).classList.add(styles.hovereffect);
     underscores.item(curr).classList.add(styles.hoverUnder);
     latches.item(curr).classList.add(styles.glow);
@@ -60,7 +64,7 @@ const Navbar = () => {
         });
       });
     });
-  }, [currPage]);
+  }, [location.pathname, currPage]);
 
   return (
     <nav className={styles.navbar}>
