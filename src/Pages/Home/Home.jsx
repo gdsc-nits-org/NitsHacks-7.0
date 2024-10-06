@@ -1,13 +1,12 @@
-import { Navbar, Footer, Event } from "../../Components/index";
+import style from "./Home.module.scss";
+import { Footer } from "../../Components/index";
 
 const Home = () => {
   return (
-    <div>
-      <Navbar />
+    <main className={style.home}>
       <h1>Home Page</h1>
-      <Event />
       <Footer />
-    </div>
+    </main>
   );
 };
 
