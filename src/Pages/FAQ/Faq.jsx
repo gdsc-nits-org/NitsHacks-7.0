@@ -7,7 +7,13 @@ import datas from "../../assets/faq.json";
 const Faq = () => {
   return (
     <div className={styles.FaqParent}>
-      <div className={styles.mask}></div>
+      <div className={styles.bgPng}>
+        <img
+          src="/images/faqcover.svg"
+          alt="team page background"
+          className={styles.coverImg}
+        />
+      </div>
       <h1 className={styles.heading}>Faq</h1>
       <div className={styles.innerContHolder}>
         <div className={styles.innerCont}>
