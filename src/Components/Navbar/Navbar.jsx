@@ -83,7 +83,7 @@ const Navbar = () => {
                   navigate("/");
                 }}
               >
-                <p>Hom;</p>
+                <p>Home</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
               </button>
             </div>

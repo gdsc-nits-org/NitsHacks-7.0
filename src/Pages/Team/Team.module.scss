@@ -2,7 +2,9 @@ $fontcolor: #ffffff;
 
 @font-face {
   font-family: "StarJedi";
-  src: url("../../../public/fonts/Starjedi.ttf");
+  src: url("/public/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 .root {
   font-size: 16px;
@@ -11,6 +13,7 @@ $fontcolor: #ffffff;
   width: 100%;
   overflow-x: hidden;
   background-color: black;
+  min-height: 100vh;
   z-index: 1;
   background-size: 100% 40vh;
 
@@ -57,7 +60,6 @@ $fontcolor: #ffffff;
         line-height: 2.5rem;
         width: 100%;
         position: relative;
-        text-transform: capitalize;
         top: 7rem;
         text-align: center;
       }

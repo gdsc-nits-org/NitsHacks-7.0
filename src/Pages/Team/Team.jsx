@@ -27,7 +27,7 @@ const Teams = () => {
       <div className={styles.page}>
         <div className={styles.teamname}>
           <div className={styles.headingteamsa} id="CORE">
-            CORE TEAM
+            core team
           </div>{" "}
           <div className={styles.teamname_body}>
             <section className={styles.sec}> {Convener.map(MemberDetails)}</section>
@@ -38,7 +38,7 @@ const Teams = () => {
 
         <div className={styles.teamname}>
           <div className={styles.headingteamsa} id="TECH">
-            TECH TEAM
+            tech team
           </div>{" "}
           <div className={styles.teamname_body}>
             <section className={styles.sec}> {Techlead.map(MemberDetails)}</section>
