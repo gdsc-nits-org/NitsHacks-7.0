@@ -1,17 +1,37 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.scss";
+
 const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(false);
   const navigate = useNavigate();
   const currPage = window.location.pathname;
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.split("#")[1];
+      const element = document.getElementById(id);
+      const headerOffset = 100;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      if (element) {
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [location]);
+
   useEffect(() => {
     const navMap = new Map([
       ["/", 0],
       ["/faq", 2],
       ["/team", 4],
     ]);
-
     const curr = navMap.get(currPage);
     const links = document.querySelectorAll(`.${styles.deskNav}`);
     const underscores = document.querySelectorAll(".underscore");
@@ -66,7 +86,7 @@ const Navbar = () => {
             <button
               className={styles.deskNav}
               onClick={() => {
-                navigate("/");
+                navigate("/#events");
               }}
             >
               <p>events</p>
@@ -88,7 +108,7 @@ const Navbar = () => {
             <button
               className={styles.deskNav}
               onClick={() => {
-                navigate("/");
+                navigate("/#sponsors");
               }}
             >
               <p>SponsorS</p>
@@ -126,11 +146,21 @@ const Navbar = () => {
         </button>
       </div>
       <section className={`${styles.mobileView} ${hamOpen ? styles.open : ""}`}>
-        <Latch link="/">Home</Latch>
-        <Latch link="/#events">Events</Latch>
-        <Latch link="/faq">Faq</Latch>
-        <Latch link="/#sponsors">Sponsors</Latch>
-        <Latch link="/team">Team</Latch>
+        <Latch setHam={setHamOpen} link="/">
+          Home
+        </Latch>
+        <Latch setHam={setHamOpen} link="/#events">
+          Events
+        </Latch>
+        <Latch setHam={setHamOpen} link="/faq">
+          Faq
+        </Latch>
+        <Latch setHam={setHamOpen} link="/#sponsors">
+          Sponsors
+        </Latch>
+        <Latch setHam={setHamOpen} link="/team">
+          Team
+        </Latch>
       </section>
     </nav>
   );
@@ -138,13 +168,19 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Latch = ({ children, link }) => {
+const Latch = ({ children, link, setHam }) => {
+  const navigate = useNavigate();
   return (
-    <a href={link}>
+    <button
+      onClick={() => {
+        setHam(false);
+        navigate(link);
+      }}
+    >
       <p style={{ color: "#494949" }} className="latch">
         {children}
       </p>
       <span className={styles.latch}></span>
-    </a>
+    </button>
   );
 };
