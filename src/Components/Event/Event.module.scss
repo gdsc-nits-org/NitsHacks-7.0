@@ -1,8 +1,17 @@
-.eventCont {
+.eventBox {
   width: 100vw;
   min-height: fit-content;
-
   padding-top: 4rem;
+  padding-top: 4rem;
+  overflow: hidden;
+
+  .eventCont {
+    width: 100vw;
+    min-height: fit-content;
+    margin-left: 2rem;
+    overflow: hidden;
+  }
+
   .heading {
     background-clip: text;
     -webkit-text-stroke: 2.7px transparent;
@@ -15,9 +24,7 @@
     letter-spacing: 0;
     line-height: 2.5rem;
     text-align: center;
-    top: 0;
     width: 100vw;
-    margin-bottom: 0;
   }
 }
 .pagebody {
@@ -111,9 +118,8 @@
   -webkit-transform: scale(1.2);
 }
 .content {
-  height: 6rem;
+  height: 4rem;
   width: fit-content;
-  padding: 0.4rem;
   position: absolute;
   bottom: 4.5rem;
   left: 0.5rem;
