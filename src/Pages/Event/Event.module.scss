@@ -307,6 +307,7 @@
     width: 78%;
     left: 2rem;
     opacity: 0;
+    display: none;
   }
   .buttons {
     width: 300px;
@@ -328,6 +329,12 @@
   }
   .btn5 {
     margin-left: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .description1 {
+    display: none;
+    opacity: 0;
   }
 }
 
@@ -392,10 +399,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 78%;
-    left: 2rem;
+    width: 70vw;
+    left: 4rem;
     height: 30vh;
     background: none;
+    display: flex;
+    justify-content: space-between;
   }
   .description1 {
     top: 700px;
@@ -407,6 +416,7 @@
     width: 78%;
     left: 2rem;
     background: none;
+    display: none;
   }
   .buttons {
     width: 400px;
@@ -472,7 +482,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    left: 1rem;
+    left: 4.5rem;
   }
   p {
     font-size: 1rem;
@@ -480,10 +490,12 @@
   }
 
   .poster {
-    height: 20vh;
+    height: 30vh;
     top: 300px;
     position: absolute;
-    width: 85%;
+    width: 70vw;
+    padding-bottom: 2rem;
+    background: none;
   }
   .boxContainer {
     display: flex;
@@ -492,16 +504,17 @@
     align-items: center;
   }
   .description {
-    top: 400px;
+    top: 470px;
     font-size: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 78%;
-    left: 2rem;
+    width: 70vw;
+    left: 3.5rem;
     height: 30vh;
     background: none;
+    justify-content: space-between;
   }
   .description1 {
     top: 500px;
@@ -513,6 +526,7 @@
     width: 78%;
     left: 2rem;
     background: none;
+    margin-top: 2rem;
   }
   .buttons {
     width: 300px;
