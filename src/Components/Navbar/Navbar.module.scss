@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Star Jedi";
+  src: url("/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  padding: 0;
+  z-index: 30;
+  * {
+    color: #acacac;
+    font-family: "Star Jedi", sans-serif;
+    font-size: 1.5rem;
+    background-color: transparent;
+    @media (max-width: 1080px) {
+      font-size: 2vw;
+    }
+  }
+}
+
+.pages {
+  display: flex;
+  width: 85vw;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+
+  img {
+    position: relative;
+    margin-top: -2rem;
+  }
+}
+
+.glow {
+  color: #087fff !important;
+  text-shadow: 0px 0px 10px #10cbff;
+}
+
+.hovereffect {
+  transform: translate(0, -0.3rem);
+  transition: all 0.3s ease-in;
+  color: #fff;
+
+  p {
+    color: #fff;
+  }
+}
+
+.hoverUnder {
+  width: 5.5rem !important;
+  align-self: center;
+  transform: translate((0, 0.3rem));
+  transition: all 0.3s ease-in;
+}
+
+.bigScn {
+  backdrop-filter: blur(20px);
+  border-bottom: 4px solid #43434370;
+  height: 5.5rem;
+  background-color: rgba(51, 51, 51, 0.34);
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 100%;
+    width: 15vw;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1080px) {
+      img {
+        width: 8vw;
+        height: auto;
+      }
+    }
+  }
+
+  a {
+    margin-left: 5rem;
+    margin-top: 8px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: 4rem;
+    width: 5rem;
+  }
+
+  div {
+    height: 3rem;
+  }
+
+  @media (max-width: 1080px) {
+    height: 7vw;
+  }
+
+  .deskNav {
+    color: transparent;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 100%;
+    }
+
+    img {
+      width: 0px;
+    }
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      transform: translate(0, -0.3rem);
+      transition: all 0.3s ease-in;
+      color: #fff;
+
+      p {
+        color: #fff;
+      }
+
+      img {
+        width: 5.5rem;
+        align-self: center;
+        transform: translate((0, 0.3rem));
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    visibility: hidden;
+  }
+}
+
+.smallScn {
+  backdrop-filter: blur(20px);
+  border-bottom: 4px solid #43434370;
+  height: 8rem;
+
+  img {
+    transform: scale(2);
+  }
+
+  background-color: rgba(51, 51, 51, 0.34);
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    height: 2.8rem;
+    width: 15vw;
+    display: block;
+
+    img {
+      height: 2.8rem;
+      width: 3.4rem;
+    }
+  }
+
+  @media (min-width: 601px) {
+    visibility: hidden;
+  }
+}
+
+.ham {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+
+  img {
+    position: relative;
+    transition: all 0.3s ease;
+    width: 3rem;
+    margin: -0.1rem;
+    margin-bottom: 2px;
+    height: auto;
+  }
+
+  &.open {
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+    img:nth-child(1) {
+      transition: all 0.3s ease-in;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 5px;
+      left: 14px;
+    }
+
+    img:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+      transition: all 0.3s ease-in;
+    }
+
+    img:nth-child(3) {
+      transition: all 0.3s ease-in;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: -5px;
+      left: 14px;
+    }
+  }
+}
+
+.mobileView {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  height: 0%;
+  opacity: 0%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  position: fixed;
+  top: 8rem;
+  width: 100vw;
+  transition: all 0.5s ease-in;
+
+  button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    width: 15.4rem;
+    height: 3rem;
+    text-align: center;
+    border: none;
+  }
+
+  &.open {
+    height: 100%;
+    opacity: 100%;
+    transition: all 0.5s ease-in;
+  }
+}
+
+.latch {
+  color: #414141;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+  height: 5px;
+  width: 40px;
+  position: absolute;
+  margin-left: 2rem;
+}

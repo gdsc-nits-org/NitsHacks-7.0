@@ -1,6 +1,8 @@
 // This is a part of Template
 .home {
   min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
+  background-color: black;
+  h1 {
+    font-weight: bold;
+  }
 }
