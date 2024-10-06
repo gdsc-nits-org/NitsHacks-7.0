@@ -39,6 +39,7 @@
     line-height: 2.5rem;
     letter-spacing: 0.1em;
     z-index: 1;
+    margin-top: 20rem;
     //  text-align: center;
   }
 
@@ -100,7 +101,7 @@
   }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 1080px) {
   html {
     font-size: 60%;
   }

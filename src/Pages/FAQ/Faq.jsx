@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import { Navbar, Footer } from "../../Components/index";
+import { Footer } from "../../Components/index";
 import styles from "./Faq.module.scss";
 import datas from "../../assets/faq.json";
 
 const Faq = () => {
   return (
     <div className={styles.FaqParent}>
-      <Navbar />
       <div className={styles.mask}></div>
       <h1 className={styles.heading}>Faq</h1>
       <div className={styles.innerContHolder}>

@@ -64,86 +64,88 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.bigScn}>
-        <div className={styles.logo}>
-          <a href="/">
-            <img src="/logo/logo.svg" height={40} width={100} alt="logo" />
-          </a>
+      <div className={styles.bar}>
+        <div className={styles.bigScn}>
+          <div className={styles.logo}>
+            <a href="/">
+              <img src="/logo/nitshacks_logo.svg" height={40} width={100} alt="logo" />
+            </a>
+          </div>
+          <div className={styles.pages}>
+            <div>
+              <button
+                className={styles.deskNav}
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                <p>Hom;</p>
+                <img alt="glow" src="/images/underscore.svg" className="underscore" />
+              </button>
+            </div>
+            <div>
+              <button
+                className={styles.deskNav}
+                onClick={() => {
+                  navigate("/#events");
+                }}
+              >
+                <p>events</p>
+                <img alt="glow" src="/images/underscore.svg" className="underscore" />
+              </button>
+            </div>
+            <div>
+              <button
+                className={styles.deskNav}
+                onClick={() => {
+                  navigate("/faq");
+                }}
+              >
+                <p>Faq</p>
+                <img alt="glow" src="/images/underscore.svg" className="underscore" />
+              </button>
+            </div>
+            <div>
+              <button
+                className={styles.deskNav}
+                onClick={() => {
+                  navigate("/#sponsors");
+                }}
+              >
+                <p>SponsorS</p>
+                <img alt="glow" src="/images/underscore.svg" className="underscore" />
+              </button>
+            </div>
+            <div>
+              <button
+                className={styles.deskNav}
+                onClick={() => {
+                  navigate("/team");
+                }}
+              >
+                <p>team</p>
+                <img alt="glow" src="/images/underscore.svg" className="underscore" />
+              </button>
+            </div>
+          </div>
         </div>
-        <div className={styles.pages}>
-          <div>
-            <button
-              className={styles.deskNav}
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              <p>Hom;</p>
-              <img alt="glow" src="/images/underscore.svg" className="underscore" />
-            </button>
+        <div className={styles.smallScn}>
+          <div className={styles.logo}>
+            <a href="/">
+              <img src="/logo/nitshacks_logo.svg" alt="logo" />
+            </a>
           </div>
-          <div>
-            <button
-              className={styles.deskNav}
-              onClick={() => {
-                navigate("/#events");
-              }}
-            >
-              <p>events</p>
-              <img alt="glow" src="/images/underscore.svg" className="underscore" />
-            </button>
-          </div>
-          <div>
-            <button
-              className={styles.deskNav}
-              onClick={() => {
-                navigate("/faq");
-              }}
-            >
-              <p>Faq</p>
-              <img alt="glow" src="/images/underscore.svg" className="underscore" />
-            </button>
-          </div>
-          <div>
-            <button
-              className={styles.deskNav}
-              onClick={() => {
-                navigate("/#sponsors");
-              }}
-            >
-              <p>SponsorS</p>
-              <img alt="glow" src="/images/underscore.svg" className="underscore" />
-            </button>
-          </div>
-          <div>
-            <button
-              className={styles.deskNav}
-              onClick={() => {
-                navigate("/team");
-              }}
-            >
-              <p>team</p>
-              <img alt="glow" src="/images/underscore.svg" className="underscore" />
-            </button>
-          </div>
+          <button
+            onClick={() => {
+              setHamOpen(!hamOpen);
+            }}
+            className={`${styles.ham} ${hamOpen ? styles.open : ""}`}
+          >
+            <img alt="glow" src="/images/hamber.svg" className="" />
+            <img alt="glow" src="/images/hamber.svg" className="" />
+            <img alt="glow" src="/images/hamber.svg" className="" />
+          </button>
         </div>
-      </div>
-      <div className={styles.smallScn}>
-        <div className={styles.logo}>
-          <a href="/">
-            <img src="/logo/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <button
-          onClick={() => {
-            setHamOpen(!hamOpen);
-          }}
-          className={`${styles.ham} ${hamOpen ? styles.open : ""}`}
-        >
-          <img alt="glow" src="/images/hamber.svg" className="" />
-          <img alt="glow" src="/images/hamber.svg" className="" />
-          <img alt="glow" src="/images/hamber.svg" className="" />
-        </button>
       </div>
       <section className={`${styles.mobileView} ${hamOpen ? styles.open : ""}`}>
         <Latch setHam={setHamOpen} link="/">
