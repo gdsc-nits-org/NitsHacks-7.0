@@ -25,7 +25,6 @@ const Loader = ({ setLoaded }) => {
           loop={false}
         />
       </div>
-      <div></div>
     </div>
   );
 };
