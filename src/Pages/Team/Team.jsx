@@ -49,7 +49,7 @@ const Teams = () => {
 
         <div className={styles.teamname}>
           <div className={styles.headingteamsa} id="ORGANISERS">
-            ORGANISERS
+            organisers
           </div>{" "}
           <div className={styles.teamname_body}>{ORGANISERS.map(MemberDetails)}</div>
         </div>
