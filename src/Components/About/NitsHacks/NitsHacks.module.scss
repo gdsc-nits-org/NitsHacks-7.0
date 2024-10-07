@@ -1,8 +1,168 @@
 .NitsHacks {
   .heading {
-    font-size: 1.5rem;
+    width: 652px;
+    height: 65px;
+    size: 64px;
+    background-color: black;
+    color: var(--gdsc-yellow-1-100);
+    line-height: 89.13px;
+    font-family: --gdsc-font-1;
+    left: 9px;
+    font-weight: 400;
+    font-style: Star Jedi;
   }
-  .aboutDesc {
-    font-size: 0.8rem;
+  .line {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+  }
+  hr.smallest {
+    height: 3px;
+    width: 9px;
+    border-radius: 3px;
+    background-color: white;
+  }
+  hr.small {
+    height: 3px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: white;
+  }
+  hr.large {
+    height: 3px;
+    width: 29px;
+    border-radius: 3px;
+    background-color: white;
+  }
+  hr.largest {
+    height: 3px;
+    width: 1425px;
+    border-radius: 3px;
+    background-color: white;
+  }
+
+  .p {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 450px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: Outfit;
+  }
+  .icon {
+    height: 30px;
+    width: 20px;
+    background-color: white;
+    margin-right: 10px;
+  }
+
+  .main {
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 7px;
+    margin-top: 44px;
+    width: 100%;
+  }
+  .footer {
+    height: 150px;
+    width: 100%;
+  }
+  .brochure {
+    display: flex;
+
+    height: 50px;
+    width: 400px;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 16px;
+    // padding-left:55px;
+    gap: 10px;
+    background-color: grey;
+    margin-top: 20px;
+    .btn {
+      color: #000;
+      width: 100px;
+      border-radius: 5px;
+      height: 40px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: var(--gdsc-font-1);
+      background-color: white;
+      margin-left: 55px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.footer1 {
+  display: flex;
+  gap: 5px;
+  margin-left: 1000px;
+  margin-top: 8px;
+  background-color: grey;
+}
+hr.line1 {
+  width: 19px;
+  height: 8px;
+  border: 2px solid red;
+  background-color: white;
+}
+hr.line2 {
+  width: 241px;
+  height: 8px;
+  border: 2px solid red;
+  background-color: white;
+}
+//}
+.element {
+  width: 100%; /* Adjust the width */
+  height: 150px; /* Adjust the height */
+  background-color: grey; /* Adjust the background color */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 185%, 80% 70%, 45% 70%, 40% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    padding-left: 50px;
+    font-size: 30px;
+  }
+
+  .p {
+    font-size: 2px;
+    color: white;
+    overflow-y: scroll;
+    left: 0px;
+    margin-left: px;
+    margin-right: 5px;
+    flex-wrap: wrap;
+  }
+
+  hr.line1 {
+    width: 6px;
+    height: 3px;
+    border: 2px solid red;
+    background-color: white;
+  }
+  hr.lin2 {
+    width: 77px;
+    height: 3px;
+    border: 2px solid red;
+    background-color: white;
+  }
+  .brochure {
+    justify-content: flex-start;
+    margin-left: 2rem;
   }
 }

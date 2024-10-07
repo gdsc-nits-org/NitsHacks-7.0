@@ -1,8 +1,161 @@
 .Tecno {
   .heading {
-    font-size: 1.5rem;
+    width: 100%;
+    height: 50px;
+    margin-left: 950px;
+    margin-top: 5px;
+    font-weight: 800;
+    size: 642px;
+    color: #f2c300;
   }
-  .TecnoDesc {
-    font-size: 1rem;
+  .line {
+    display: flex;
+    flex-direction: row;
+  }
+  hr.smallest {
+    width: 9px;
+    height: 3px;
+    top: 1112px;
+    border-radius: 3px;
+    color: white;
+  }
+  hr.small {
+    width: 15px;
+    height: 3px;
+    top: 1112px;
+    left: 12px;
+    border-radius: 3px;
+    color: white;
+  }
+  hr.large {
+    width: 29px;
+    height: 3pxx;
+    top: 1112px;
+    left: 30px;
+    border-radius: 3px;
+    color: white;
+  }
+  hr.largest {
+    width: 1425px;
+    height: 3px;
+    top: 1112px;
+    left: 62px;
+    color: white;
+  }
+  .main {
+    border-top: 3px solid grey;
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    border-radius: 7px;
+    margin-top: 44px;
+    width: 100%;
+  }
+
+  .p {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 450px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    line-height: 1.8;
+    font-family: Outfit;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+
+  .footer1 {
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+    background-color: grey;
+  }
+  hr.line1 {
+    width: 241px;
+    height: 5px;
+    margin-left: 31px;
+    border-radius: 2.45px;
+    border: 2.45px solid #209bf4;
+    background-color: white;
+  }
+  hr.line2 {
+    width: 17px;
+    height: 5px;
+
+    border-radius: 2.45px;
+    border: 2.45px solid #209bf4;
+    background-color: white;
+  }
+  .brochure {
+    margin-left: 800px;
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    width: 700px;
+    align-items: center;
+    padding-top: 16px;
+    padding-right: 55px;
+    padding-bottom: 16px;
+    padding-left: 55px;
+    background-color: grey;
+    .btn {
+      background-color: #ffffff;
+      color: #000;
+      width: 100px;
+      border-radius: 5px;
+      height: 40px;
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: var(--gdsc-font-1);
+
+      margin-left: 150px;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.element {
+  width: 100%; /* Adjust the width */
+  margin-bottom: 5px;
+  height: 150px; /* Adjust the height */
+  background-color: grey; /* Adjust the background color */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 500%, 40% 70%, 20% 70%, 15% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .heading {
+    margin-right: 20px;
+    font-size: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  hr.line1 {
+    width: 150px;
+    height: 5px;
+    margin-left: 20px;
+    border-radius: 2.45px;
+    border: 2.45px solid #209bf4;
+    background-color: white;
+  }
+  hr.line2 {
+    width: 10px;
+    height: 5px;
+
+    border-radius: 2.45px;
+    border: 2.45px solid #209bf4;
+    background-color: white;
   }
 }
