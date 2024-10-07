@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./CustomButton";
 import styles from "./Error.module.scss";
 
 const Error = () => {
