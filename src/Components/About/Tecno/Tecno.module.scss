@@ -123,7 +123,7 @@
         justify-content: center;
         font-size: 15px;
         padding: 1rem;
-        height: 4.5rem;
+        height: 3rem;
         font-weight: bold;
         font-family: "StarJedi", sans-serif;
         background-color: white;
@@ -172,27 +172,6 @@
       0% 100%
     );
   }
-
-  // @media screen and (max-width: 600px) {
-  //   .NitsHacks {
-  //     hr.line1 {
-  //       width: 6px;
-  //       height: 3px;
-  //       border: 2px solid red;
-  //       background-color: white;
-  //     }
-  //     hr.lin2 {
-  //       width: 77px;
-  //       height: 3px;
-  //       border: 2px solid red;
-  //       background-color: white;
-  //     }
-  //     .brochure {
-  //       justify-content: flex-start;
-  //       margin-left: 2rem;
-  //     }
-  //   }
-  // }
   @media screen and (max-width: 1100px) {
     .NitsHacks {
       height: 6rem;
