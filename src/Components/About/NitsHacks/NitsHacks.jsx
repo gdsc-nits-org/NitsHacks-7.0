@@ -4,7 +4,7 @@ const NitsHacks = () => {
     <div className={styles.nitsParent}>
       <div className={styles.NitsHacks}>
         <div className={styles.headWrapper}>
-          <h1 className={styles.heading}>ABOUT NITS HACKS</h1>
+          <h1 className={styles.heading}>about nits hacks</h1>
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1728314152/nits-hacks-7.0/lightsaber-underline_czhjdk.svg"
             className={styles.whiteSaber}
@@ -46,7 +46,7 @@ const NitsHacks = () => {
                     className={styles.icon}
                     alt="img"
                   />
-                  BROCHURE
+                  brochure
                 </a>
               </div>
             </div>
