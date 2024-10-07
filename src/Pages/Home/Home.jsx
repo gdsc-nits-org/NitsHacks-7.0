@@ -1,15 +1,12 @@
 import style from "./Home.module.scss";
-import { Navbar, Footer, NitsHacks, Tecno, Event } from "../../Components/index";
+import { Footer } from "../../Components/index";
+import Event from "../Event/Event";
 
 const Home = () => {
   return (
     <main className={style.home}>
-      <Navbar />
-      <div className={style.aboutsec}>
-        <NitsHacks />
-        <Tecno />
-        <Event />
-      </div>
+      <h1>Home Page</h1>
+      <Event />
       <Footer />
     </main>
   );
