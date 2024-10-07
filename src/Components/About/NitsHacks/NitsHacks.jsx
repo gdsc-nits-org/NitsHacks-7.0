@@ -3,13 +3,21 @@ const NitsHacks = () => {
   return (
     <div className={styles.nitsParent}>
       <div className={styles.NitsHacks}>
-        <h1 className={styles.heading}>ABOUT NITS HACKS</h1>
-        <div className={styles.line}>
+        <div className={styles.headWrapper}>
+          <h1 className={styles.heading}>ABOUT NITS HACKS</h1>
+          <img
+            src="https://res.cloudinary.com/dhry5xscm/image/upload/v1728314152/nits-hacks-7.0/lightsaber-underline_czhjdk.svg"
+            className={styles.whiteSaber}
+            alt="underline"
+          />
+        </div>
+        {/* <div className={styles.line}>
           <hr className={styles.smallest} />
           <hr className={styles.small} />
           <hr className={styles.large} />
           <hr className={styles.largest} />
-        </div>
+
+        </div> */}
         <div className={styles.main}>
           <p className={styles.p}>
             NITS HACKS is a distinguished hackathon hosted by NIT Silchar, recognized as
@@ -25,8 +33,11 @@ const NitsHacks = () => {
           <div className={styles.footer}>
             <div className={styles.element}>
               <div className={styles.footer1}>
-                <hr className={styles.line1} />
-                <hr className={styles.line2} />
+                <img
+                  src="https://res.cloudinary.com/dhry5xscm/image/upload/v1728314165/nits-hacks-7.0/Group_5360_iw4jwj.svg"
+                  alt="redsaber"
+                  className={styles.redSaber}
+                />
               </div>
               <div className={styles.brochure}>
                 <a className={styles.btn} href="/download">

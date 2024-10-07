@@ -1,11 +1,14 @@
 import style from "./Home.module.scss";
-import { Navbar, Footer } from "../../Components/index";
+import { Navbar, Footer, NitsHacks, Tecno } from "../../Components/index";
 
 const Home = () => {
   return (
     <main className={style.home}>
       <Navbar />
-      <h1>Home Page</h1>
+      <div className={style.aboutsec}>
+        <NitsHacks />
+        <Tecno />
+      </div>
       <Footer />
     </main>
   );
