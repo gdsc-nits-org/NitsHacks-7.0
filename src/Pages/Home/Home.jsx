@@ -1,6 +1,5 @@
 import style from "./Home.module.scss";
-import { Footer } from "../../Components/index";
-import Event from "../Event/Event";
+import { Footer, Event } from "../../Components/index";
 
 const Home = () => {
   return (
