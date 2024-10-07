@@ -1,23 +1,54 @@
 .card {
-  width: 400px;
-  height: 300px;
-  margin: 10px;
-  border-radius: 10px 10px 0 0;
-  padding: 20px;
-  background-image: url("background.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
+  height: 18rem;
+  width: 20rem;
+  margin-bottom: 0;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box {
+      background: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 90%;
+      width: 100%;
+
+      .img {
+        height: 30%;
+        width: 50%;
+        scale: 0.8;
+        overflow: hidden;
+        left: 1rem;
+        translate: 4rem 9rem;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
+  }
 }
-.card img {
-  position: absolute;
-  top: 70%;
-  left: 42%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  height: 55%;
+@media screen and (max-width: 768px) {
+  .card {
+    scale: 0.8;
+  }
 }
-.linkage:hover {
-  cursor: pointer;
+@media screen and (max-width: 350px) {
+  .card {
+    scale: 0.7;
+    .wrapper {
+      .box {
+        .img {
+          translate: 5.5rem 10rem;
+        }
+      }
+    }
+  }
 }

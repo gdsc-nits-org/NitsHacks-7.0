@@ -8,7 +8,7 @@ const Sponsor = () => {
       <h1 className={styles.heading}>Sponsor</h1>
       <div className={styles.innerCont}>
         {sponsors.map((sponsor) => (
-          <Card key={sponsor.id} photo={sponsor.photo} link={sponsor.link} />
+          <Card key={sponsor.id} photo={sponsor.img} link={sponsor.uri} />
         ))}
       </div>
     </div>
