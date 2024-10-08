@@ -5,4 +5,4 @@ import { NitsHacks, Tecno } from "./About";
 import Preview from "./Preview/Preview";
 import Hero from "./Hero/Hero";
 
-export { Navbar, Footer, Sponsor, NitsHacks, Tecno, Preview,Hero };
+export { Navbar, Footer, Sponsor, NitsHacks, Tecno, Preview, Hero };

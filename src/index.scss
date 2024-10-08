@@ -38,6 +38,9 @@
   font-family: var(--gdsc-font-1);
   color: #ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
 #root {
   background-color: #000000;
 }

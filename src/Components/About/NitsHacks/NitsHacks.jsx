@@ -1,7 +1,7 @@
 import styles from "./NitsHacks.module.scss";
 const NitsHacks = () => {
   return (
-    <div className={styles.nitsParent}>
+    <div className={styles.nitsParent} id="nitsparent">
       <div className={styles.NitsHacks}>
         <div className={styles.headWrapper}>
           <h1 className={styles.heading}>about nits hacks</h1>
