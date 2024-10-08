@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import styles from "./Hero.module.scss";
 const Radar = () => {
   return (
@@ -95,8 +95,20 @@ const ControlStation = (props) => {
 const Hero = () => {
   const [rightflame, setRightflame] = useState(0.1);
   const [leftflame, setLeftflame] = useState(0.1);
+  const [audio] = useState(new Audio("/sound/landing.mp3"));
+  useEffect(()=>{
+    const handleLandingAudio=()=>{
+      audio.volume = 1;
+      audio.play();
+    };
+    return()=>{
+      audio.addEventListener("canplaythrough", handleLandingAudio);
+    };
+  },[audio]);
   return (
     <div className={styles.hero}>
+      <img src="/images/smallrocket.png" alt="small rocket" className={styles.smallrocket} />
+      <img src="/images/bigrocket.png" alt="big rocket" className={styles.bigrocket} />
       <div className={styles.welcome}>
         <div className={styles.logoCont}>
           <img src="/logo/nitshacks_logo.svg" alt="logo" className={styles.logo} />

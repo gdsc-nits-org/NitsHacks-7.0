@@ -61,5 +61,6 @@ html {
   scroll-behavior: smooth;
 }
 #root {
-  background-color: #000000;
+  background-image: url("/public/images/starrybg.webp");
+  overflow-x: hidden;
 }
