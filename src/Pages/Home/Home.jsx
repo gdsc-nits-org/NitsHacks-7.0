@@ -1,5 +1,5 @@
 import style from "./Home.module.scss";
-import { Navbar, Footer, NitsHacks, Tecno } from "../../Components/index";
+import { Navbar, Footer, NitsHacks, Tecno, Sponsor } from "../../Components/index";
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
         <NitsHacks />
         <Tecno />
       </div>
+      <Sponsor />
       <Footer />
     </main>
   );
