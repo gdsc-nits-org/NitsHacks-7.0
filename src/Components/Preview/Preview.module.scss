@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "StarJedi";
+  src: url("/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes loadUp {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loadUp {
+  0% {
+    width: 0px;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728378963/image_51_xbs6wq.webp");
+  background-size: cover;
+  padding: 2.3rem;
+  overflow: hidden;
+
+  * {
+    font-family: "Starjedi", "sans-serif";
+  }
+
+  .glow_container {
+    border: 0.4rem solid white;
+    box-shadow: 1px 2px 3px 0.2rem #12deed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .text {
+      display: flex;
+      width: 100%;
+      padding: 1.5rem;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      text-align: center;
+      .transfer {
+        color: #12deed;
+      }
+
+      @media screen and (max-width: 950px) {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        .galactic,
+        .transfer {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .insignia {
+      img {
+        position: relative;
+        height: 25rem;
+
+        @media screen and (max-height: 580px) {
+          height: 20rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+          top: 4rem;
+          height: 22rem;
+        }
+
+        @media screen and (max-width: 700px) {
+          top: 10rem;
+          height: 15rem;
+        }
+
+        @media screen and (max-width: 550px) {
+          top: 8rem;
+          height: 10rem;
+        }
+
+        @media screen and (max-width: 480px) {
+          top: 10rem;
+          height: 15rem;
+        }
+
+        @media screen and (max-width: 380px) {
+          top: 9rem;
+        }
+
+        @media screen and (max-width: 340px) {
+          top: 12rem;
+          height: 7rem;
+        }
+
+        @media screen and (max-width: 280px) {
+          height: 5rem;
+        }
+      }
+    }
+
+    .upgrading {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      @media screen and (max-width: 1100px) {
+        translate: 0 3rem;
+        scale: 1.5;
+      }
+      .bar_container {
+        width: 30vw;
+        border-radius: 20px;
+        height: fit-content;
+        @media screen and (max-width: 500px) {
+          width: 50vw;
+        }
+
+        h1 {
+          text-align: center;
+          font-weight: 15;
+          font-size: 3em;
+          color: #fff;
+        }
+
+        .bar_parent {
+          width: 100%;
+          border: 2px solid #12deed;
+          border-radius: 20px;
+          height: 6px;
+          padding: 3px;
+          box-shadow: 1px 1px 1px 1px whitesmoke;
+
+          .bar {
+            margin: 0;
+            padding: 1px;
+            background-color: white;
+            height: 90%;
+            border-radius: 20px;
+            width: 0;
+            -webkit-animation: loadUp 2s infinite linear;
+            animation: loadUp 2s infinite linear;
+            animation-duration: 7s;
+          }
+        }
+      }
+    }
+  }
+}
