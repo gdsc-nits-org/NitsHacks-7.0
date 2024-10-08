@@ -161,7 +161,7 @@ const Hero = () => {
         </div>
         <div className={styles.rocket}>
           <img
-            src="/images/rocket-cockpit-new.svg"
+            src="/images/rocket-cockpit-new.png"
             className={styles.cockpit}
             alt="cockpit"
           />
