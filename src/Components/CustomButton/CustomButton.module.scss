@@ -4,12 +4,14 @@
 }
 .button {
   position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px;
   cursor: pointer;
+  @media screen and (max-width: 800px) {
+    scale: 0.8;
+  }
 }
 .backtohome {
   text-decoration: none;
+  width: 100%;
   color: black;
 }
 .visited {
@@ -17,18 +19,19 @@
   background-color: white;
   color: black;
   padding: 5px 50px;
+  width: 100%;
 }
 .div {
   background-color: white;
   height: 7px;
-  width: 213px;
+  width: 100%;
   position: absolute;
   top: -7px;
 }
 .divtwo {
   background-color: white;
   height: 7px;
-  width: 213px;
+  width: 100%;
   position: absolute;
 }
 .firstchange {

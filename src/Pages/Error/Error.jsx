@@ -1,5 +1,6 @@
-import Button from "./CustomButton";
+import { Link } from "react-router-dom";
 import styles from "./Error.module.scss";
+import { CustomButton } from "../../Components";
 
 const Error = () => {
   return (
@@ -13,7 +14,9 @@ const Error = () => {
       <p className={styles.find}>
         Find this page, you will not. The force, you will need, but exist, it does not.
       </p>
-      <Button className={styles.buttonname} />
+      <Link to="/">
+        <CustomButton name="Back to Home" />
+      </Link>
     </div>
   );
 };
