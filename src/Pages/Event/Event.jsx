@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-// import data from "../../assets/events.json";
 import { Navbar, Footer } from "../../Components";
 import styles from "./Event.module.scss";
 const Event = () => {

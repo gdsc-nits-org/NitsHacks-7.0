@@ -1,3 +1,87 @@
+@font-face {
+  font-family: "StarJedi";
+  src: url(../../../public/fonts/Starjedi.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../../../public/fonts/Outfit-Regular.ttf);
+}
 .error {
-  color: #ffff00;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+.jedi {
+  width: 35rem;
+  height: 25rem;
+  margin-top: 20vh;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  z-index: 4;
+}
+.errorline {
+  font-family: "StarJedi", sans-serif;
+  font-size: 48px;
+  line-height: 82px;
+  text-align: center;
+  color: #f2c300;
+  z-index: 5;
+  margin-top: 30px;
+}
+.find {
+  font-size: 26px;
+  width: 800px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: "Outfit", sans-serif;
+}
+@media screen and (max-width: 800px) {
+  .find {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 626px) {
+  .jedi {
+    width: 550px;
+    height: 390px;
+  }
+}
+@media screen and (max-width: 561px) {
+  .jedi {
+    width: 480px;
+    height: 340px;
+  }
+  .find {
+    width: 400px;
+    font-size: 20px;
+  }
+  .errorline {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 483px) {
+  .jedi {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 432px) {
+  .jedi {
+    width: 301.38px;
+    height: 225.79px;
+  }
+  .find {
+    width: 300px;
+    height: 36px;
+    font-size: 14px;
+  }
+  .errorline {
+    font-size: 32px;
+  }
+}
+.buttonname {
+  width: 150px;
+  height: 60px;
 }

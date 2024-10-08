@@ -1,10 +1,16 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import styles from "./Loader.module.scss";
 import swordAnimation from "../../assets/lottie/sword.json";
 
 const Loader = ({ setLoaded }) => {
   const lottieRef = useRef(null);
+  const [audio] = useState(new Audio("/sound/loading.mp3"));
+
+  useEffect(() => {
+    audio.volume = 1;
+    audio.play();
+  });
   return (
     <div className={styles.loader}>
       <div>
@@ -21,6 +27,7 @@ const Loader = ({ setLoaded }) => {
           initialSegment={[0, 22]}
           onComplete={() => {
             setLoaded(true);
+            audio.pause();
           }}
           loop={false}
         />

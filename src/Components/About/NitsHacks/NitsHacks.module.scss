@@ -1,8 +1,189 @@
-.NitsHacks {
-  .heading {
-    font-size: 1.5rem;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@font-face {
+  font-family: "StarJedi";
+  src: url("/public/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.nitsParent {
+  margin: 1rem;
+  .NitsHacks {
+    .headWrapper {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      .whiteSaber {
+        width: 100%;
+      }
+      .heading {
+        font-size: 1.5rem;
+        text-align: left;
+        // background-color: black;
+        color: var(--gdsc-yellow-1-100);
+        // line-height: 89.13px;
+        font-family: "StarJedi", sans-serif;
+        font-weight: 400;
+        @media screen and (min-width: 640px) {
+          font-size: 2rem;
+        }
+        @media screen and (min-width: 900px) {
+          font-size: 4rem;
+        }
+      }
+    }
+    .line {
+      display: flex;
+      flex-direction: row;
+      margin-top: 5px;
+    }
+    hr.smallest {
+      height: 3px;
+      width: 9px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    hr.small {
+      height: 3px;
+      width: 15px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    hr.large {
+      height: 3px;
+      width: 29px;
+      border-radius: 3px;
+      background-color: white;
+    }
+    hr.largest {
+      height: 3px;
+      width: 1425px;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .p {
+      display: flex;
+      width: 100%;
+      background-color: black;
+      color: #c0c0c0;
+      font-size: 14px;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      line-height: 1.8;
+      font-family: "Outfit", sans-serif;
+      padding: 1rem;
+      overflow: hidden;
+      @media screen and (min-width: 800px) {
+        font-size: 18px;
+      }
+    }
+    .icon {
+      height: 30px;
+      width: 20px;
+      background-color: white;
+      margin-right: 10px;
+    }
+
+    .main {
+      border-top: 3px solid grey;
+      border-left: 3px solid grey;
+      border-right: 3px solid grey;
+      border-radius: 7px;
+
+      width: 100%;
+    }
+    .footer {
+      height: 150px;
+      width: 100%;
+    }
+    .brochure {
+      display: flex;
+
+      height: 50px;
+      width: 400px;
+      align-items: center;
+      padding-top: 10px;
+      padding-right: 55px;
+      padding-bottom: 16px;
+      // padding-left:55px;
+      gap: 10px;
+      margin-top: 20px;
+      .btn {
+        color: #000;
+        width: 100px;
+        border-radius: 5px;
+        height: 40px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: "StarJedi", sans-serif;
+        background-color: white;
+        margin-left: 55px;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
   }
-  .aboutDesc {
-    font-size: 0.8rem;
+  .footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 2rem;
+    .redSaber {
+      width: 20%;
+    }
+  }
+  hr.line1 {
+    width: 19px;
+    height: 8px;
+    border: 2px solid red;
+    background-color: white;
+  }
+  hr.line2 {
+    width: 241px;
+    height: 8px;
+    border: 2px solid red;
+    background-color: white;
+  }
+  //}
+  .element {
+    width: 100%; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    background-color: #4a4a4a; /* Adjust the background color */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 185%, 80% 70%, 45% 70%, 40% 100%, 0% 100%);
+  }
+  @media screen and (min-width: 640px) {
+    margin: 2rem;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 4rem;
+  }
+  @media screen and (min-width: 1000px) {
+    margin: 15rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    hr.line1 {
+      width: 6px;
+      height: 3px;
+      border: 2px solid red;
+      background-color: white;
+    }
+    hr.lin2 {
+      width: 77px;
+      height: 3px;
+      border: 2px solid red;
+      background-color: white;
+    }
+    .brochure {
+      justify-content: flex-start;
+      margin-left: 2rem;
+    }
   }
 }

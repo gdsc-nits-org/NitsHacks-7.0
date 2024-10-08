@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import { Footer } from "../../Components/index";
 import styles from "./Faq.module.scss";
 import datas from "../../assets/faq.json";
+import { Navbar, Footer } from "../../Components/index";
 
 const Faq = () => {
   return (
     <div className={styles.FaqParent}>
+      <Navbar />
       <div className={styles.bgPng}>
         <img
           src="/images/faqcover.svg"
