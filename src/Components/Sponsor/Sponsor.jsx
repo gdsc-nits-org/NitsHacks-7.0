@@ -4,7 +4,7 @@ import sponsors from "../../assets/sponsors.json";
 
 const Sponsor = () => {
   return (
-    <div className={styles.sponsor}>
+    <div className={styles.sponsor} id="sponsors">
       <h1 className={styles.heading}>Sponsor</h1>
       <div className={styles.innerCont}>
         {sponsors.map((sponsor) => (
