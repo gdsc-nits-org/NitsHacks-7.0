@@ -39,10 +39,33 @@
       scale: 1;
       bottom: 0;
     }
+    .watchBulbs{
+      position: absolute;
+      top:15%;
+
+      min-height: 3rem;
+      width:20%;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .upper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .lower{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+    }
     .ControlStationCont{
       position: absolute;
       bottom:15%;
       scale:1;
+      width:20%;
       @media screen and (min-width:330px){
         bottom: 20%;
       }
@@ -51,6 +74,135 @@
         scale: 1.5;
       }
       z-index: 3;
+      .lights{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        width:100%;
+        margin-bottom: 1rem;
+        .BulbCont{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height:6px;
+          width:6px;
+          .redBulb{
+            min-height: 100%;
+            width: 100%;
+            border:2px solid #C81414;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image:radial-gradient(circle,#ffffff,#C81414);
+            box-shadow:0 0 1px #C81414;
+            animation-name: twinklingred;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            @keyframes twinklingred {
+              0%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #C81414;
+              }
+              50%{
+                transform:translate(0.5px,0.5px);
+                box-shadow:0 0 20px #C81414;
+              }
+              100%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #C81414;
+              }
+            }
+          }
+          .greenBulb{
+            min-height: 100%;
+            width: 100%;
+            border: 2px solid #81FF33;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image:radial-gradient(circle,#ffffff,#81FF33);
+            box-shadow:0 0 1px #81FF33;
+            animation-name: twinklinggreen;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            @keyframes twinklinggreen {
+              0%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #C81414;
+              }
+              50%{
+                transform:translate(-0.5px,0.5px);
+                box-shadow:0 0 20px #C81414;
+              }
+              100%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #C81414;
+              }
+            }
+          }
+          .blueBulb{
+            min-height: 100%;
+            width: 100%;
+            border: 2px solid #5A92FF;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background-image:radial-gradient(circle,#ffffff,#5A92FF);
+            box-shadow:0 0 1px #5A92FF;
+            animation-name: twinklingblue;
+            animation-duration: 0.2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            @keyframes twinklingblue {
+              0%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #5A92FF;
+              }
+              50%{
+                transform:translate(-0.5px,0.5px);
+                box-shadow:0 0 20px #5A92FF;
+              }
+              100%{
+                transform:translate(0px,0px);
+                box-shadow:0 0 1px #5A92FF;
+              }
+            }
+          }
+        }
+        .left{
+          display: flex;
+          flex-direction:row;
+          align-items: center;
+          justify-content: center;
+          gap:5px;
+        }
+        .right{
+          display: flex;
+          flex-direction:row;
+          align-items: center;
+          justify-content: flex-end;
+          .rightChild{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap:5rem;
+            .grandchild1{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            }
+            .grandchild2{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap:5px;
+            }
+          }
+        }
+      }
       .ControlStation{
         display: flex;
         flex-direction: column;
@@ -68,7 +220,11 @@
             align-items: center;
             justify-content: center;
             .radar{
-              min-height: 100%;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100%;
               width:90%;
               background-image: url('/images/radarbg.svg');
               background-size: contain;
@@ -76,6 +232,146 @@
               background-repeat: no-repeat;
               border: 1px solid #FEE141;
               border-radius: 2px;
+              overflow: hidden;
+              .redLinesCont{
+                width:10%;
+                min-height: 100%;
+                border:1.84px solid #FF5A1D;
+                border-top: none;
+                border-bottom:none;
+                animation-name: redlines;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+                @keyframes redlines {
+                  0%{
+                    width: 10%;
+                  }
+                  50%{
+                    width: 90%;
+                  }
+                  100%{
+                    width: 10%;
+                  }
+                }
+              }
+              .yellowLinesCont{
+                position: absolute;
+                top:0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                .rect1{
+                  width: 64px;
+                  height:64px;
+                  border:1px solid #FEE141;
+                  border-top: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  animation-name: rect1;
+                  @keyframes rect1 {
+                    0%{
+                      width: 64px;
+                      height: 64px;
+                    }
+                    50%{
+                      width: 10px;
+                      height: 10px;
+                    }
+                    100%{
+                      width:64px;
+                      height: 64px;
+                    }
+                  }
+                  animation-duration: 3s;
+                  animation-fill-mode: forwards;
+                  animation-iteration-count: infinite;
+                  .rect2{
+                    width:25px;
+                    height: 25px;
+                    border:1px solid #FEE141;
+                    border-top: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    animation-name: rect2;
+                    @keyframes rect2 {
+                      0%{
+                        width: 25px;
+                        height: 25px;
+                      }
+                      50%{
+                        width: 6px;
+                        height: 6px;
+                      }
+                      100%{
+                        width:25px;
+                        height: 25px;
+                      }
+                    }
+                    animation-duration: 3s;
+                    animation-fill-mode: forwards;
+                    animation-iteration-count: infinite;
+                    .rect3{
+                      width: 10px;
+                      height: 10px;
+                      border:1px solid #FEE141;
+                      border-top: none;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      animation-name: rect3;
+                      @keyframes rect3 {
+                        0%{
+                          width: 10px;
+                          height: 10px;
+                        }
+                        50%{
+                          width: 4px;
+                          height: 4px;
+                        }
+                        100%{
+                          width:10px;
+                          height: 10px;
+                        }
+                      }
+                      animation-duration: 3s;
+                      animation-fill-mode: forwards;
+                      animation-iteration-count: infinite;
+                      .rect4{
+                        width:5px;
+                        height:5px;
+                        display: flex;
+                        border:1px solid #FEE141;
+                        border-top: none;
+                        align-items: center;
+                        justify-content: center;
+                        animation-name: rect4;
+                        @keyframes rect4 {
+                          0%{
+                            width: 5px;
+                            height: 5px;
+                          }
+                          50%{
+                            width: 1px;
+                            height: 1px;
+                          }
+                          100%{
+                            width:5px;
+                            height: 5px;
+                          }
+                        }
+                        animation-duration: 3s;
+                        animation-fill-mode: forwards;
+                        animation-iteration-count: infinite;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
           .dirbtncont{
