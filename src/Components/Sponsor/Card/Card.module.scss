@@ -15,20 +15,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
     .box {
-      background: url("");
+      background: url("https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728385691/Screenshot_2024-10-07_211938_caahzz.webp");
       background-repeat: no-repeat;
       background-size: cover;
       height: 90%;
       width: 100%;
+      a {
+        background: none;
+      }
 
       .img {
-        height: 30%;
-        width: 50%;
+        height: 50%;
+        width: 70%;
         scale: 0.8;
         overflow: hidden;
         left: 1rem;
-        translate: 4rem 9rem;
+        translate: 3rem 4.5rem;
         background: transparent;
         cursor: pointer;
       }
@@ -40,15 +44,8 @@
     scale: 0.8;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .card {
     scale: 0.7;
-    .wrapper {
-      .box {
-        .img {
-          translate: 5.5rem 10rem;
-        }
-      }
-    }
   }
 }
