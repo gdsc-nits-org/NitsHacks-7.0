@@ -15,7 +15,9 @@ const Error = () => {
       <p className={styles.find}>
         Find this page, you will not. The force, you will need, but exist, it does not.
       </p>
-      <Button className={styles.buttonname} />
+      <div className={styles.buttonname}>
+        <Button name="back to home" ohref="/" />
+      </div>
     </div>
   );
 };

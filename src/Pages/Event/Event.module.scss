@@ -1,3 +1,86 @@
-.event {
-  //write your styles here
+.innerParent {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #000;
+}
+
+.infoParent {
+  height: 100%;
+  width: 50%;
+  background-color: #000;
+  background-image: linear-gradient(to bottom, transparent, #000 45vh),
+    url("/images/nightsky.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    position: relative;
+    top: 3rem;
+  }
+  .info {
+    position: relative;
+    bottom: 14rem;
+    width: 100%;
+    padding: 0 4vw;
+    text-align: center;
+    h1 {
+      font-family: "StarJedi", sans-serif;
+      font-size: 1.75rem;
+      color: #f2c300;
+    }
+    p {
+      font-family: "Outfit", sans-serif;
+      text-align: justify;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+    }
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-top: 0;
+        letter-spacing: 0;
+      }
+    }
+    @media (max-width: 1080px) {
+      bottom: 28rem;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.mobileimg {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media (min-width: 900px) {
+    display: none;
+  }
+}
+
+.eImg {
+  height: 24rem;
+  width: 32rem;
+  aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.eventImage {
+  height: 100vh;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
 }

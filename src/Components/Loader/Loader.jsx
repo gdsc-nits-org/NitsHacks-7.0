@@ -46,9 +46,9 @@ const Loader = ({ setLoaded }) => {
             <Lottie
               className={styles.sword}
               lottieRef={lottieRef}
-              onEnterFrame={() => lottieRef.current.setSpeed(0.27)}
+              onEnterFrame={() => lottieRef.current.setSpeed(0.3)}
               animationData={swordAnimation}
-              initialSegment={[0, 23]}
+              initialSegment={[0, 22]}
               onComplete={() => {
                 setLoaded(true);
                 audio.pause();

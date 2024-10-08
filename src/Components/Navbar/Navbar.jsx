@@ -5,7 +5,7 @@ import styles from "./Navbar.module.scss";
 const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(false);
   const navigate = useNavigate();
-  const currPage = window.location.pathname;
+  const currPage = window.location.pathname.split("/")[1];
   const location = useLocation();
 
   useEffect(() => {
@@ -28,9 +28,10 @@ const Navbar = () => {
 
   useEffect(() => {
     const navMap = new Map([
-      ["/", 0],
-      ["/faq", 2],
-      ["/team", 4],
+      ["", 0],
+      ["event", 1],
+      ["faq", 2],
+      ["team", 4],
     ]);
     const curr = navMap.get(currPage);
     const links = document.querySelectorAll(`.${styles.deskNav}`);
