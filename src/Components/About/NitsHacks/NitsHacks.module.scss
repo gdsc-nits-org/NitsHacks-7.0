@@ -15,7 +15,9 @@
     margin: 4rem;
   }
   @media screen and (min-width: 1000px) {
-    margin: 15rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 10rem;
   }
   .NitsHacks {
     .headWrapper {
@@ -26,17 +28,18 @@
       }
       .heading {
         font-size: 1.5rem;
+        text-align: left;
         @media screen and (min-width: 640px) {
           font-size: 2rem;
         }
         @media screen and (min-width: 900px) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
-        text-align: left;
+        text-align: right;
         // background-color: black;
         color: var(--gdsc-yellow-1-100);
         // line-height: 89.13px;
-        font-family: "StarJedi", sans-serif;
+        font-family: "StarJedi";
         font-weight: 400;
       }
     }
@@ -90,8 +93,6 @@
     .icon {
       height: 30px;
       width: 20px;
-      background-color: white;
-      margin-right: 10px;
     }
 
     .main {
@@ -108,14 +109,13 @@
     }
     .brochure {
       display: flex;
-
       height: 50px;
-      width: 400px;
+      width: 100%;
+      justify-content: start;
       align-items: center;
-      padding-top: 10px;
       padding-right: 55px;
+      padding-top: 10px;
       padding-bottom: 16px;
-      // padding-left:55px;
       gap: 10px;
       margin-top: 20px;
       .btn {
@@ -125,6 +125,7 @@
         height: 40px;
         width: 180px;
         display: flex;
+        gap: 10px;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
@@ -143,9 +144,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 2rem;
-    .redSaber {
+    .blueSaber {
       width: 20%;
     }
   }
@@ -163,28 +164,19 @@
   }
   //}
   .element {
+    position: relative;
     width: 100%; /* Adjust the width */
     height: 150px; /* Adjust the height */
     background-color: #4a4a4a; /* Adjust the background color */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 185%, 80% 70%, 45% 70%, 40% 100%, 0% 100%);
-  }
-
-  @media screen and (max-width: 600px) {
-    hr.line1 {
-      width: 6px;
-      height: 3px;
-      border: 2px solid red;
-      background-color: white;
-    }
-    hr.lin2 {
-      width: 77px;
-      height: 3px;
-      border: 2px solid red;
-      background-color: white;
-    }
-    .brochure {
-      justify-content: flex-start;
-      margin-left: 2rem;
-    }
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 100%,
+      55% 100%,
+      50% 70%,
+      15% 70%,
+      10% 100%,
+      0% 100%
+    );
   }
 }

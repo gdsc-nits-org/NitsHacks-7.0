@@ -245,15 +245,19 @@
   position: fixed;
   top: 8rem;
   width: 100vw;
+  z-index: 30;
   transition: all 0.5s ease-in;
 
   button {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    transform: scale(1.5);
+    margin-bottom: 5rem;
+    overflow: hidden;
     background-color: #fff;
-    width: 15.4rem;
-    height: 3rem;
+    width: 0;
+    height: 0;
     text-align: center;
+    transition: all 0.5s ease-in;
     border: none;
   }
 
@@ -261,6 +265,10 @@
     height: 100%;
     opacity: 100%;
     transition: all 0.5s ease-in;
+    button {
+      height: 3rem;
+      width: 15.4rem;
+    }
   }
 }
 
@@ -272,5 +280,6 @@
   height: 5px;
   width: 40px;
   position: absolute;
+  bottom: 0;
   margin-left: 2rem;
 }
