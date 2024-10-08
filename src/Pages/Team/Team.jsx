@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./Team.module.scss";
 import { Card } from "../../Components/Teams/index";
 import { Navbar, Footer } from "../../Components/index";
@@ -7,6 +8,7 @@ import Coreteam from "./Coreteam.json";
 import Techlead from "./Techlead.json";
 import TECH from "./Tech.json";
 import ORGANISERS from "./Organisers.json";
+import Loader from "../../Components/Loader/Loader";
 // import data from "../../assets/team.json";
 
 const MemberDetails = (data) => {
@@ -14,48 +16,58 @@ const MemberDetails = (data) => {
 };
 
 const Teams = () => {
+  const [loaded, setLoaded] = useState(false);
   return (
-    <div className={styles.teamsCont}>
-      <Navbar />
-      <div className={styles.bgPng}>
-        <img
-          src="/images/teamcover.svg"
-          alt="team page background"
-          className={styles.coverImg}
-        />
-      </div>
-
-      <div className={styles.page}>
-        <div className={styles.teamname}>
-          <div className={styles.headingteamsa} id="CORE">
-            core team
-          </div>{" "}
-          <div className={styles.teamname_body}>
-            <section className={styles.sec}> {Convener.map(MemberDetails)}</section>
-            <section className={styles.sec}> {Coordinator.map(MemberDetails)}</section>
-            <section className={styles.sec}> {Coreteam.map(MemberDetails)}</section>
+    <main>
+      {loaded ? (
+        <div className={styles.teamsCont}>
+          <Navbar />
+          <div className={styles.bgPng}>
+            <img
+              src="/images/teamcover.svg"
+              alt="team page background"
+              className={styles.coverImg}
+            />
           </div>
-        </div>
 
-        <div className={styles.teamname}>
-          <div className={styles.headingteamsa} id="TECH">
-            tech team
-          </div>{" "}
-          <div className={styles.teamname_body}>
-            <section className={styles.sec}> {Techlead.map(MemberDetails)}</section>
-            <section className={styles.sec}> {TECH.map(MemberDetails)}</section>
+          <div className={styles.page}>
+            <div className={styles.teamname}>
+              <div className={styles.headingteamsa} id="CORE">
+                core team
+              </div>{" "}
+              <div className={styles.teamname_body}>
+                <section className={styles.sec}> {Convener.map(MemberDetails)}</section>
+                <section className={styles.sec}>
+                  {" "}
+                  {Coordinator.map(MemberDetails)}
+                </section>
+                <section className={styles.sec}> {Coreteam.map(MemberDetails)}</section>
+              </div>
+            </div>
+
+            <div className={styles.teamname}>
+              <div className={styles.headingteamsa} id="TECH">
+                tech team
+              </div>{" "}
+              <div className={styles.teamname_body}>
+                <section className={styles.sec}> {Techlead.map(MemberDetails)}</section>
+                <section className={styles.sec}> {TECH.map(MemberDetails)}</section>
+              </div>
+            </div>
+
+            <div className={styles.teamname}>
+              <div className={styles.headingteamsa} id="ORGANISERS">
+                organisers
+              </div>{" "}
+              <div className={styles.teamname_body}>{ORGANISERS.map(MemberDetails)}</div>
+            </div>
           </div>
+          <Footer />
         </div>
-
-        <div className={styles.teamname}>
-          <div className={styles.headingteamsa} id="ORGANISERS">
-            organisers
-          </div>{" "}
-          <div className={styles.teamname_body}>{ORGANISERS.map(MemberDetails)}</div>
-        </div>
-      </div>
-      <Footer />
-    </div>
+      ) : (
+        <Loader setLoaded={setLoaded} />
+      )}
+    </main>
   );
 };
 
