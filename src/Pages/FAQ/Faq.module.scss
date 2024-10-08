@@ -10,6 +10,7 @@
 .FaqParent {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
   .bgPng {
     width: 100%;
     height: 45vh;
