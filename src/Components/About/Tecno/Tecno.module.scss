@@ -6,7 +6,7 @@
   font-style: normal;
 }
 .nitsParent {
-  margin: 1rem;
+  margin: 2rem;
   @media screen and (min-width: 640px) {
     margin: 2rem;
   }
@@ -14,7 +14,9 @@
     margin: 4rem;
   }
   @media screen and (min-width: 1000px) {
-    margin: 15rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 10rem;
   }
   .NitsHacks {
     .headWrapper {
@@ -29,7 +31,7 @@
           font-size: 2rem;
         }
         @media screen and (min-width: 900px) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
         text-align: right;
         // background-color: black;
@@ -104,29 +106,32 @@
       width: 100%;
     }
     .brochure {
-      position: absolute;
-      right: 0;
-      bottom: 5.5rem;
       display: flex;
-      height: 0.5rem;
-      width: 18rem;
-      padding-right: 4rem;
+      height: 50px;
+      width: 100%;
+      justify-content: end;
       align-items: center;
-      justify-content: center;
+      padding-right: 55px;
+      padding-top: 10px;
+      padding-bottom: 16px;
+      gap: 10px;
+      margin-top: 20px;
       .btn {
         color: #000;
-        width: 100%;
+        width: 100px;
         border-radius: 5px;
+        height: 40px;
+        width: 180px;
         display: flex;
         gap: 10px;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
         font-size: 15px;
-        padding: 1rem;
-        height: 2.5rem;
         font-weight: bold;
         font-family: "StarJedi", sans-serif;
         background-color: white;
+        margin-left: 55px;
       }
     }
     a {
@@ -171,23 +176,5 @@
       10% 100%,
       0% 100%
     );
-  }
-  @media screen and (max-width: 1100px) {
-    .NitsHacks {
-      height: 6rem;
-      .brochure {
-        width: 28rem;
-      }
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .NitsHacks {
-      .brochure {
-        height: 9rem;
-        .btn {
-          height: 5rem;
-        }
-      }
-    }
   }
 }

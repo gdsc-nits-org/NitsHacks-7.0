@@ -5,7 +5,7 @@ import styles from "./Navbar.module.scss";
 const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(false);
   const navigate = useNavigate();
-  const currPage = window.location.pathname;
+  const currPage = window.location.pathname.split("/")[1];
   const location = useLocation();
 
   useEffect(() => {
@@ -28,15 +28,20 @@ const Navbar = () => {
 
   useEffect(() => {
     const navMap = new Map([
-      ["/", 0],
-      ["/faq", 2],
-      ["/team", 4],
+      ["", 0],
+      ["event", 1],
+      ["faq", 2],
+      ["team", 4],
     ]);
     const curr = navMap.get(currPage);
     const links = document.querySelectorAll(`.${styles.deskNav}`);
     const underscores = document.querySelectorAll(".underscore");
     const latches = document.querySelectorAll(".latch");
-
+    links.forEach((linksm, niggdex) => {
+      linksm.classList.remove(styles.hovereffect);
+      underscores.item(niggdex).classList.remove(styles.hoverUnder);
+      latches.item(niggdex).classList.remove(styles.glow);
+    });
     links.item(curr).classList.add(styles.hovereffect);
     underscores.item(curr).classList.add(styles.hoverUnder);
     latches.item(curr).classList.add(styles.glow);
@@ -60,7 +65,7 @@ const Navbar = () => {
         });
       });
     });
-  }, [currPage]);
+  }, [location.pathname, currPage]);
 
   return (
     <nav className={styles.navbar}>

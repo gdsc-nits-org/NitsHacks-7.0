@@ -1,7 +1,14 @@
+import { useState } from "react";
 import styles from "./Card.module.scss";
+
 const Card = (props) => {
+  const [audio] = useState(new Audio("/sound/teamcard.wav"));
+  const playm = () => {
+    audio.volume = 0.5;
+    audio.play();
+  };
   return (
-    <div className={styles.cardBox}>
+    <div onMouseEnter={playm} className={styles.cardBox}>
       <div className={styles.topLeftLine}></div>
       <div className={styles.bottomLeftLine}></div>
       <div className={styles.bottomRightLine}></div>
