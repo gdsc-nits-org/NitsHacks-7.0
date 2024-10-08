@@ -17,8 +17,9 @@
 .jedi {
   width: 35rem;
   height: 25rem;
+  margin-top: 10vh;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  z-index: 20;
+  z-index: 4;
 }
 .errorline {
   font-family: "StarJedi", sans-serif;
@@ -26,7 +27,7 @@
   line-height: 82px;
   text-align: center;
   color: #f2c300;
-  z-index: 100;
+  z-index: 5;
   margin-top: 30px;
 }
 .find {
@@ -79,4 +80,8 @@
   .errorline {
     font-size: 32px;
   }
+}
+.buttonname {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }

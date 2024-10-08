@@ -1,11 +1,14 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { Navbar, Footer, Button } from "../../Components";
 import data from "../../assets/events.json";
-import { Footer, Navbar, CustomButton } from "../../Components";
 import styles from "./Event.module.scss";
-
+import Loader from "../../Components/Loader/Loader";
 const Event = () => {
   const { id } = useParams();
-  return (
+  const info = data[id - 1];
+  const [loaded, setLoaded] = useState(false);
+  return loaded ? (
     <div className={styles.event}>
       <Navbar />
       <div className={styles.event_parent}>
@@ -30,26 +33,27 @@ const Event = () => {
             </div>
           </div>
           <div className={styles.middle}>
-            <h1 className={styles.title}>{data[id - 1].name}</h1>
-            <img className={styles.poster_mob} src={data[id - 1].photo} alt="POSTER" />
+            <h1 className={styles.title}>{info.name}</h1>
+            <img className={styles.poster_mob} src={info.photo} alt="POSTER" />
             <div className={styles.desc}>
-              <p className={styles.description}>{data[id - 1].desc}</p>
-              <p className={styles.description}>{data[id - 1].desc1}</p>
+              {info.bigdesc.split("\n").map((value) => (
+                <p>{value}</p>
+              ))}
             </div>
           </div>
           <div className={styles.bottom}>
-            <Link to="/">
-              <CustomButton name="Back To Home" />
-            </Link>
-            <CustomButton name="Register Now" />
+            <Button name="register now" ohref={info.gform} />
+            <Button name="back to home" ohref="/" />
           </div>
         </div>
         <div className={styles.right}>
-          <img className={styles.poster} src={data[id - 1].photo} alt="POSTER" />
+          <img className={styles.poster} src={info.photo} alt="POSTER" />
         </div>
       </div>
       <Footer />
     </div>
+  ) : (
+    <Loader setLoaded={setLoaded} />
   );
 };
 

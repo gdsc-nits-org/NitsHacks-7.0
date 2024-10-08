@@ -1,5 +1,6 @@
 import style from "./Home.module.scss";
-import { Footer, Navbar, Event, NitsHacks, Tecno, Sponsor } from "../../Components/index";
+import { Navbar, Footer, NitsHacks, Tecno, Sponsor } from "../../Components/index";
+import Event from "../../Components/Event/Event";
 
 const Home = () => {
   return (
