@@ -118,6 +118,7 @@
       padding-bottom: 16px;
       gap: 10px;
       margin-top: 20px;
+      transform: rotateY(180deg);
       .btn {
         color: #000;
         width: 100px;
@@ -146,7 +147,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 2rem;
-    .blueSaber {
+    .redSaber {
       width: 20%;
     }
   }
@@ -168,6 +169,7 @@
     width: 100%; /* Adjust the width */
     height: 150px; /* Adjust the height */
     background-color: #4a4a4a; /* Adjust the background color */
+    transform: rotateY(180deg);
     clip-path: polygon(
       0% 0%,
       100% 0%,

@@ -11,13 +11,6 @@ const NitsHacks = () => {
             alt="underline"
           />
         </div>
-        {/* <div className={styles.line}>
-          <hr className={styles.smallest} />
-          <hr className={styles.small} />
-          <hr className={styles.large} />
-          <hr className={styles.largest} />
-
-        </div> */}
         <div className={styles.main}>
           <p className={styles.p}>
             NITS HACKS is a distinguished hackathon hosted by NIT Silchar, recognized as
