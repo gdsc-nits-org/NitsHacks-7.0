@@ -20,7 +20,7 @@ const Home = () => {
     <main className={style.home}>
       <Navbar />
       <Hero />
-      <div className={style.more} id="root">
+      <div className={style.more}>
         <div className={style.aboutsec} id="about">
           <NitsHacks />
           <Tecno />

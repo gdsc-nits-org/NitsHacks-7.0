@@ -38,7 +38,7 @@ const Preview = ({ setLoaded }) => {
             entering the <span style={{ color: "#12DEED" }}>galactic</span> grid
           </h1>
           <h1 className={styles.transfer}>
-            navigating to <span style={{ color: "white" }}>NITS HACKS 7.0</span>
+            navigating to <span style={{ color: "white" }}>nits hacks 7.0</span>
           </h1>
         </div>
         <div className={styles.insignia}>
