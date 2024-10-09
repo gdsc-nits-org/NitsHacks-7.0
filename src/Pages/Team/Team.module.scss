@@ -37,7 +37,8 @@ $fontcolor: #ffffff;
   }
 
   .page {
-    padding-top: 4rem;
+    padding-top: 0rem;
+    translate: 0 -3rem;
     padding-bottom: 4rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -46,7 +47,6 @@ $fontcolor: #ffffff;
     background-image: linear-gradient(to down, 2% transparent, #000000);
     .teamname {
       // position: relative;
-      padding-top: 1rem;
       font-family: StarJedi;
       z-index: 3;
 

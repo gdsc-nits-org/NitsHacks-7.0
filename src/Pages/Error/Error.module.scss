@@ -8,18 +8,18 @@
 }
 .error {
   display: grid;
-  min-height: 100vh;
+  max-height: 100vh;
   place-items: center;
   margin: 0%;
   padding: 0%;
   overflow: hidden;
+  translate: 0 -2rem;
 }
 .jedi {
   width: 35rem;
   height: 25rem;
   margin-top: 10vh;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  z-index: 4;
+  z-index: 100;
 }
 .errorline {
   font-family: "StarJedi", sans-serif;

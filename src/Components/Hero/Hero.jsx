@@ -73,6 +73,11 @@ const Bulb = (props) => {
 };
 
 const ControlStation = (props) => {
+  const [audio] = useState(new Audio("/sound/button.wav"));
+  const playm = () => {
+    audio.volume = 0.5;
+    audio.play();
+  };
   return (
     <div className={styles.ControlStation}>
       <div className={styles.upperRow}>
@@ -88,7 +93,9 @@ const ControlStation = (props) => {
       </div>
       <div className={styles.lowerRow}>
         <Link to="about">
-          <button className={styles.proceed}>proceed</button>
+          <button onMouseEnter={playm} className={styles.proceed}>
+            proceed
+          </button>
         </Link>
       </div>
     </div>

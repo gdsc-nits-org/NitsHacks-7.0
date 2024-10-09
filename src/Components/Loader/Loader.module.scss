@@ -21,6 +21,7 @@
     height: 252px;
     overflow: hidden;
     position: relative;
+    translate: 0 -2rem;
 
     .logo {
       max-height: 112px;
@@ -34,7 +35,7 @@
     .sword {
       width: 100%;
       position: absolute;
-      top: 0;
+      top: 1rem;
     }
 
     @media (max-width: 760px) {
