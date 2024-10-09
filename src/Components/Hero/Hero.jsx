@@ -1,4 +1,5 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import styles from "./Hero.module.scss";
 const Radar = () => {
   return (
@@ -86,7 +87,9 @@ const ControlStation = (props) => {
         </div>
       </div>
       <div className={styles.lowerRow}>
-        <button className={styles.proceed}>proceed</button>
+        <Link to="about">
+          <button className={styles.proceed}>proceed</button>
+        </Link>
       </div>
     </div>
   );
@@ -96,18 +99,22 @@ const Hero = () => {
   const [rightflame, setRightflame] = useState(0.1);
   const [leftflame, setLeftflame] = useState(0.1);
   const [audio] = useState(new Audio("/sound/landing.mp3"));
-  useEffect(()=>{
-    const handleLandingAudio=()=>{
+  useEffect(() => {
+    const handleLandingAudio = () => {
       audio.volume = 1;
       audio.play();
     };
-    return()=>{
+    return () => {
       audio.addEventListener("canplaythrough", handleLandingAudio);
     };
-  },[audio]);
+  }, [audio]);
   return (
     <div className={styles.hero}>
-      <img src="/images/smallrocket.png" alt="small rocket" className={styles.smallrocket} />
+      <img
+        src="/images/smallrocket.png"
+        alt="small rocket"
+        className={styles.smallrocket}
+      />
       <img src="/images/bigrocket.png" alt="big rocket" className={styles.bigrocket} />
       <div className={styles.welcome}>
         <div className={styles.logoCont}>

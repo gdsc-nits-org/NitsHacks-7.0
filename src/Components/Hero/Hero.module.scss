@@ -15,55 +15,56 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-image: radial-gradient(circle,transparent 50%,#e9941e54),url("/public/images/starrybg.webp");
+  background-image: radial-gradient(circle, transparent 50%, #e9941e54),
+    url("/public/images/starrybg.webp");
   background-attachment: fixed;
-  .smallrocket{
+  .smallrocket {
     position: absolute;
-    top:45rem;
-    @media screen and (min-width:1060px) {
-      top:10rem;
+    top: 45rem;
+    @media screen and (min-width: 1060px) {
+      top: 10rem;
     }
-    left:-20vw;
+    left: -20vw;
     animation-name: smallrocket;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    scale:0.5;
-    @media screen and (min-width:720px) {
-      scale:1;
+    scale: 0.5;
+    @media screen and (min-width: 720px) {
+      scale: 1;
     }
     @keyframes smallrocket {
-      0%{
+      0% {
         left: -140vw;
       }
-      100%{
-        left:140vw;
+      100% {
+        left: 140vw;
       }
     }
   }
-  .bigrocket{
+  .bigrocket {
     position: absolute;
-    top:30rem;
-    @media screen and (min-width:1060px) {
-      top:10rem;
+    top: 30rem;
+    @media screen and (min-width: 1060px) {
+      top: 10rem;
     }
-    scale:0.2;
-    @media screen and (min-width:720px) {
-      scale:0.5;
+    scale: 0.2;
+    @media screen and (min-width: 720px) {
+      scale: 0.5;
     }
-    left:-80vw;
+    left: -80vw;
     animation-name: bigrocket;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     @keyframes bigrocket {
-      0%{
+      0% {
         left: -200vw;
       }
-      100%{
-        left:200vw;
+      100% {
+        left: 200vw;
       }
     }
   }
@@ -620,6 +621,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          padding-top: 0.5rem;
           .proceed {
             font-size: 0.5rem;
             background-color: #ff0000;
@@ -629,6 +631,7 @@
             border-radius: 2px;
             padding: 0.1rem 0.5rem;
             scroll-behavior: smooth;
+            cursor: pointer;
           }
         }
       }
