@@ -38,7 +38,7 @@ $fontcolor: #ffffff;
 
   .page {
     padding-top: 0rem;
-    translate: 0 -11rem;
+    translate: 0 -6rem;
     padding-bottom: 4rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -60,7 +60,7 @@ $fontcolor: #ffffff;
         line-height: 2.5rem;
         width: 100%;
         position: relative;
-        top: 7rem;
+        top: 5rem;
         text-align: center;
       }
 
@@ -89,7 +89,7 @@ $fontcolor: #ffffff;
       }
     }
     @media screen and (max-width: 500px) {
-      transform: translateY(-15rem);
+      transform: translateY(-10rem);
     }
   }
 }

@@ -1,43 +1,50 @@
-import { FaInstagram } from "react-icons/fa6";
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import style from "./Footer.module.scss";
-import Button from "./Buttonf";
-import Jedi from "./Jedi";
+import Button from "../CustomButton/CustomButton";
 
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <Jedi />
+      <div className={style.container}>
+        <img
+          src="https://res.cloudinary.com/dmhbmurzw/image/upload/v1728145561/f11b95bf1b0b9d78cb200c0df87defa4_opezmf.png"
+          alt="bg_img"
+          className={style.bg}
+        />
+      </div>
       <div className={style.seconddiv}>
         <section className={style.contact}>
-          <Button />
+          <div className={style.btn}>
+            <Button name="visit Tecnoesis" ohref="https://www.tecnoesis.co.in/" />
+          </div>
           <p className={style.connect}>Connect With us:</p>
-          <a href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-            <FaInstagram className={style.icons} />
-          </a>
-          <a href="https://www.facebook.com/NITSHacks/">
-            <FaFacebook className={style.icons} />
-          </a>
-          <a href="https://twitter.com/nitshacks">
-            <FaTwitter className={style.icons} />
-          </a>
-          <a href="https://www.linkedin.com/in/nitshacks/?originalSubdomain=in">
-            <FaLinkedin className={style.icons} />
-          </a>
+          <section className={style.socials}>
+            <a href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <FaInstagram className={style.icons} />
+            </a>
+            <a href="https://www.facebook.com/NITSHacks/">
+              <FaFacebook className={style.icons} />
+            </a>
+            <a href="https://twitter.com/nitshacks">
+              <FaXTwitter className={style.icons} />
+            </a>
+            <a href="https://www.linkedin.com/in/nitshacks/?originalSubdomain=in">
+              <FaLinkedin className={style.icons} />
+            </a>
+          </section>
           <p className={style.contactus}>Contact us</p>
           <a href="mailto:nitshacks.nits@gmail.com" className={style.mailto}>
             <p className={style.mail}>nitshacks.nits@gmail.com</p>
           </a>
         </section>
-        <section className={style.nitshacklogo}>
+        <section className={style.logo}>
           <img
             src="https://res.cloudinary.com/dmhbmurzw/image/upload/v1728137912/Group_13_1_1_12_1_xp9yev.svg"
             alt=""
             style={{
-              width: "200px",
+              width: "20rem",
               height: "auto",
-              filter: `drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.6))
-           drop-shadow(0px 0px 40px rgba(255, 255, 255, 0.4))`,
             }}
           />
         </section>

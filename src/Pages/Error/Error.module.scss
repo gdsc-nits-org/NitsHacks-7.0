@@ -8,12 +8,12 @@
 }
 .error {
   display: grid;
-  max-height: 100vh;
+  min-height: 100vh;
   place-items: center;
+  background-color: black;
   margin: 0%;
   padding: 0%;
   overflow: hidden;
-  translate: 0 -2rem;
 }
 .jedi {
   width: 35rem;
