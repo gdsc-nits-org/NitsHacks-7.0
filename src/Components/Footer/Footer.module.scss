@@ -1,3 +1,163 @@
-.footer {
-  //write your styles
+@font-face {
+  font-family: "StarJedi";
+  src: url(../../../public/fonts/Starjedi.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(../../../public/fonts/Outfit-Regular.ttf);
+}
+@font-face {
+  font-family: "DeathStar";
+  src: url(../../../public/fonts/Death\ Star\ 400.ttf);
+}
+.seconddiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100vw;
+}
+.connect {
+  font-family: "StarJedi";
+  font-size: 20px;
+  color: #f2c300;
+  line-height: 24px;
+  margin-top: 20px;
+}
+.contactus {
+  font-family: "StarJedi";
+  color: #f2c300;
+  font-size: 20px;
+}
+.icons {
+  font-size: 40px;
+  margin-right: 9px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.how {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 21px;
+  text-align: right;
+}
+.mapContainer {
+  width: 250px; /* Adjust size */
+  height: 190px; /* Adjust size */
+  z-index: 10;
+  position: relative;
+  border-radius: 10px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5)); /* Add drop-shadow */
+    transition: filter 0.4s ease;
+  }
+
+  &:hover iframe {
+    filter: blur(5px); /* On hover, blur the map */
+  }
+
+  .viewMap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 20;
+
+    .viewMapText {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+
+  &:hover .viewMap {
+    opacity: 1; /* On hover, show the "View Map" button */
+  }
+}
+@media screen and (max-width: 768px) {
+  .mapContainer {
+    width: 220px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 659px) {
+  .icons {
+    margin-right: 4px;
+  }
+}
+@media screen and (max-width: 636px) {
+  .seconddiv {
+    display: grid;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+  }
+  .mapContainer {
+    width: 300px;
+    height: 200px;
+  }
+  .nitshacklogo {
+    margin-left: 60px;
+  }
+  .contact {
+    margin-left: 60px;
+  }
+}
+.mailto {
+  text-decoration: none;
+}
+@media screen and (max-width: 1080px) {
+  .mailto {
+    font-size: 14px;
+  }
+}
+.partition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lineone {
+  height: 1.5px;
+  width: 90%;
+}
+.sqone {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.sqtwo {
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+.gdg {
+  text-align: center;
+  font-family: "Outfit";
+  font-size: 16px;
+}
+.nit {
+  font-weight: 600;
+  letter-spacing: 10%;
+  line-height: 25.2px;
+}
+.copy {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Outfit";
+  letter-spacing: 10%;
+  line-height: 25.2px;
+  margin-bottom: 40px;
 }
