@@ -1,6 +1,6 @@
 @font-face {
   font-family: "StarJedi";
-  src: url("/public/fonts/Starjedi.ttf") format("truetype");
+  src: url("/fonts/Starjedi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: flex-end;
   background-image: radial-gradient(circle, transparent 50%, #e9941e54),
-    url("/public/images/starrybg.webp");
+    url("/images/starrybg.webp");
   background-attachment: fixed;
   .smallrocket {
     position: absolute;
