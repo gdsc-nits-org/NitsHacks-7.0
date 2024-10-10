@@ -6,4 +6,17 @@ import Preview from "./Preview/Preview";
 import Button from "./CustomButton/CustomButton";
 import Hero from "./Hero/Hero";
 import Event from "./Event/Event";
-export { Navbar, Footer, Sponsor, NitsHacks, Tecno, Preview, Button, Hero, Event };
+import Testimonial from "./Testimonial/Testimonial";
+
+export {
+  Navbar,
+  Footer,
+  Sponsor,
+  NitsHacks,
+  Tecno,
+  Preview,
+  Button,
+  Hero,
+  Event,
+  Testimonial,
+};
