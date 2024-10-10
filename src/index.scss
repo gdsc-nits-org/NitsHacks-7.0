@@ -1,4 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "StarJedi";
+  src: url("../../../public/fonts/Starjedi.ttf");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Death Star";
+  src: url("/fonts/Death Star 400.ttf");
+}
+
+@font-face {
+  font-family: Starwars;
+  src: url("/public/fonts/Starjedi.ttf");
+}
 
 :root {
   --gdsc-font-1: "Poppins", sans-serif;
@@ -38,6 +57,10 @@
   font-family: var(--gdsc-font-1);
   color: #ffffff;
 }
+html {
+  scroll-behavior: smooth;
+}
 #root {
-  background-color: #000000;
+  background-image: url("/images/starrybg.webp");
+  overflow-x: hidden;
 }
