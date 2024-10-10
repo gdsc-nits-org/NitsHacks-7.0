@@ -1,7 +1,17 @@
-// This is a part of Template
 .home {
-  height: 100vh;
-  h1 {
-    font-weight: bold;
+  height: max-content;
+  background-color: black;
+  overflow-x: hidden;
+  .more {
+    perspective: 500px;
+    padding-top: 0rem;
+    @media screen and (max-width: 900px) {
+      padding-top: 5rem;
+    }
+    .aboutsec {
+      margin-bottom: 1rem;
+      height: fit-content;
+      padding-bottom: 2rem;
+    }
   }
 }
