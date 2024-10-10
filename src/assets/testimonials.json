@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "image":"https://res.cloudinary.com/dtt4ftdrw/image/upload/v1728534876/19f280a2-2b97-4be2-b782-1fd5c70b84f4_ksewki.jpg",
+        "name":"PIYUSH CHATTERJEE",
+        "about":"2nd Year BTech UG at NIT SILCHAR",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id":2,
+        "image":"https://res.cloudinary.com/dtt4ftdrw/image/upload/v1728534876/19f280a2-2b97-4be2-b782-1fd5c70b84f4_ksewki.jpg",
+        "name":"PIYUSH CHATTERJEE",
+        "about":"2nd Year BTech UG at NIT SILCHAR",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id":3,
+        "image":"https://res.cloudinary.com/dtt4ftdrw/image/upload/v1728534876/19f280a2-2b97-4be2-b782-1fd5c70b84f4_ksewki.jpg",
+        "name":"PIYUSH CHATTERJEE",
+        "about":"2nd Year BTech UG at NIT SILCHAR",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id":4,
+        "image":"https://res.cloudinary.com/dtt4ftdrw/image/upload/v1728534876/19f280a2-2b97-4be2-b782-1fd5c70b84f4_ksewki.jpg",
+        "name":"PIYUSH CHATTERJEE",
+        "about":"2nd Year BTech UG at NIT SILCHAR",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id":5,
+        "image":"https://res.cloudinary.com/dtt4ftdrw/image/upload/v1728534876/19f280a2-2b97-4be2-b782-1fd5c70b84f4_ksewki.jpg",
+        "name":"PIYUSH CHATTERJEE",
+        "about":"2nd Year BTech UG at NIT SILCHAR",
+        "desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+]
