@@ -91,13 +91,11 @@ const ControlStation = (props) => {
           <DirectionBtn button="right" setRightflame={props.setRightflame} />
         </div>
       </div>
-      <div className={styles.lowerRow}>
-        <Link to="about">
-          <button onMouseEnter={playm} className={styles.proceed}>
-            proceed
-          </button>
-        </Link>
-      </div>
+      <Link to="about" className={styles.lowerRow}>
+        <button className={styles.proceed} onMouseEnter={playm}>
+          proceed
+        </button>
+      </Link>
     </div>
   );
 };
@@ -127,6 +125,7 @@ const Hero = () => {
         <div className={styles.logoCont}>
           <img src="/logo/nitshacks_logo.svg" alt="logo" className={styles.logo} />
         </div>
+        <div className={styles.title}>nits hacks 7.0</div>
         <div className={styles.time}>
           <div className={styles.dates}>
             <span>07</span>.<span>08</span>.<span>09</span>.<span>10</span>
@@ -135,16 +134,19 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.rocketFront}>
-        <div className={styles.watchBulbs}>
-          <div className={styles.upper}>
-            <Bulb bulb="blue" />
-            <Bulb bulb="blue" />
-          </div>
-          <div className={styles.lower}>
-            <Bulb blue="red" />
-          </div>
-        </div>
         <div className={styles.windshield}>
+          <div className={styles.welcome}>
+            <div className={styles.logoCont}>
+              <img src="/logo/nitshacks_logo.svg" alt="logo" className={styles.logo} />
+            </div>
+            <div className={styles.title}>nits hacks 7.0</div>
+            <div className={styles.time}>
+              <div className={styles.dates}>
+                <span>07</span>.<span>08</span>.<span>09</span>.<span>10</span>
+              </div>
+              <div className={styles.month}>november</div>
+            </div>
+          </div>
           <div className={styles.blaze}>
             <div className={styles.leftBlaze}>
               <img
