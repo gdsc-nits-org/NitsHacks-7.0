@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
 import styles from "./Hero.module.scss";
 const Radar = () => {
   return (
@@ -73,11 +72,6 @@ const Bulb = (props) => {
 };
 
 const ControlStation = (props) => {
-  const [audio] = useState(new Audio("/sound/button.wav"));
-  const playm = () => {
-    audio.volume = 0.5;
-    audio.play();
-  };
   return (
     <div className={styles.ControlStation}>
       <div className={styles.upperRow}>
@@ -92,11 +86,7 @@ const ControlStation = (props) => {
         </div>
       </div>
       <div className={styles.lowerRow}>
-        <Link to="about">
-          <button onMouseEnter={playm} className={styles.proceed}>
-            proceed
-          </button>
-        </Link>
+        <button className={styles.proceed}>proceed</button>
       </div>
     </div>
   );
@@ -127,6 +117,7 @@ const Hero = () => {
         <div className={styles.logoCont}>
           <img src="/logo/nitshacks_logo.svg" alt="logo" className={styles.logo} />
         </div>
+        <div className={styles.title}>nits hacks 7.0</div>
         <div className={styles.time}>
           <div className={styles.dates}>
             <span>07</span>.<span>08</span>.<span>09</span>.<span>10</span>
@@ -135,16 +126,19 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.rocketFront}>
-        <div className={styles.watchBulbs}>
-          <div className={styles.upper}>
-            <Bulb bulb="blue" />
-            <Bulb bulb="blue" />
-          </div>
-          <div className={styles.lower}>
-            <Bulb blue="red" />
-          </div>
-        </div>
         <div className={styles.windshield}>
+          <div className={styles.welcome}>
+            <div className={styles.logoCont}>
+              <img src="/logo/nitshacks_logo.svg" alt="logo" className={styles.logo} />
+            </div>
+            <div className={styles.title}>nits hacks 7.0</div>
+            <div className={styles.time}>
+              <div className={styles.dates}>
+                <span>07</span>.<span>08</span>.<span>09</span>.<span>10</span>
+              </div>
+              <div className={styles.month}>november</div>
+            </div>
+          </div>
           <div className={styles.blaze}>
             <div className={styles.leftBlaze}>
               <img
