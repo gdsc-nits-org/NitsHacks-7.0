@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import styles from "./Hero.module.scss";
 const Radar = () => {
   return (
@@ -72,6 +73,11 @@ const Bulb = (props) => {
 };
 
 const ControlStation = (props) => {
+  const [audio] = useState(new Audio("/sound/button.wav"));
+  const playm = () => {
+    audio.volume = 0.5;
+    audio.play();
+  };
   return (
     <div className={styles.ControlStation}>
       <div className={styles.upperRow}>
@@ -85,9 +91,11 @@ const ControlStation = (props) => {
           <DirectionBtn button="right" setRightflame={props.setRightflame} />
         </div>
       </div>
-      <div className={styles.lowerRow}>
-        <button className={styles.proceed}>proceed</button>
-      </div>
+      <Link to="about" className={styles.lowerRow}>
+        <button className={styles.proceed} onMouseEnter={playm}>
+          proceed
+        </button>
+      </Link>
     </div>
   );
 };
