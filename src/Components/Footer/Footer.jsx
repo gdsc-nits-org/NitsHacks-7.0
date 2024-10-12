@@ -40,8 +40,8 @@ const Footer = () => {
         </section>
         <section className={style.logo}>
           <img
-            src="https://res.cloudinary.com/dmhbmurzw/image/upload/v1728137912/Group_13_1_1_12_1_xp9yev.svg"
-            alt=""
+            src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728374490/nitshacks_logo_17_bggppj.webp"
+            alt="hacks_logo"
             style={{
               width: "20rem",
               height: "auto",

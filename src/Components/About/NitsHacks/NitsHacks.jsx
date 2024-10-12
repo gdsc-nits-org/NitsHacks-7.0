@@ -33,7 +33,11 @@ const NitsHacks = () => {
                 />
               </div>
               <div className={styles.brochure}>
-                <a className={styles.btn} href="/download">
+                <a
+                  className={styles.btn}
+                  href="https://drive.usercontent.google.com/u/0/uc?id=1BRYQ3PIRKCpRqHQmuhdPVkTxIj4ZALKs&export=download"
+                  target="blank"
+                >
                   <img
                     src="https://media.istockphoto.com/id/844294300/vector/download-icon-isolated-vector.jpg?s=612x612&w=0&k=20&c=VCmvy8uEoTQnt9W0kZzjEBplN_opDkGKF_eQTLfkivs="
                     className={styles.icon}
