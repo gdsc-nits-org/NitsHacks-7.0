@@ -4,6 +4,7 @@ import styles from "./Navbar.module.scss";
 
 const Navbar = () => {
   const [hamOpen, setHamOpen] = useState(false);
+  const [audio] = useState(new Audio("/sound/button.wav"));
   const navigate = useNavigate();
   const currPage = window.location.pathname.split("/")[1];
   const location = useLocation();
@@ -81,6 +82,7 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
+                  audio.play();
                   navigate("/");
                 }}
               >
@@ -92,6 +94,7 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
+                  audio.play();
                   navigate("/#events");
                 }}
               >
@@ -103,6 +106,7 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
+                  audio.play();
                   navigate("/faq");
                 }}
               >
@@ -114,6 +118,7 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
+                  audio.play();
                   navigate("/#sponsors");
                 }}
               >
@@ -125,6 +130,7 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
+                  audio.play();
                   navigate("/team");
                 }}
               >
@@ -142,6 +148,7 @@ const Navbar = () => {
           </div>
           <button
             onClick={() => {
+              audio.play();
               setHamOpen(!hamOpen);
             }}
             className={`${styles.ham} ${hamOpen ? styles.open : ""}`}
@@ -153,19 +160,19 @@ const Navbar = () => {
         </div>
       </div>
       <section className={`${styles.mobileView} ${hamOpen ? styles.open : ""}`}>
-        <Latch setHam={setHamOpen} link="/">
+        <Latch ham={hamOpen} setHam={setHamOpen} link="/">
           Home
         </Latch>
-        <Latch setHam={setHamOpen} link="/#events">
+        <Latch ham={hamOpen} setHam={setHamOpen} link="/#events">
           Events
         </Latch>
-        <Latch setHam={setHamOpen} link="/faq">
+        <Latch ham={hamOpen} setHam={setHamOpen} link="/faq">
           Faq
         </Latch>
-        <Latch setHam={setHamOpen} link="/#sponsors">
+        <Latch ham={hamOpen} setHam={setHamOpen} link="/#sponsors">
           Sponsors
         </Latch>
-        <Latch setHam={setHamOpen} link="/team">
+        <Latch ham={hamOpen} setHam={setHamOpen} link="/team">
           Team
         </Latch>
       </section>
@@ -175,11 +182,15 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Latch = ({ children, link, setHam }) => {
+const Latch = ({ children, link, setHam, ham }) => {
   const navigate = useNavigate();
+  const [audio] = useState(new Audio("/sound/button.wav"));
   return (
     <button
+      className="navbut"
+      style={ham ? { position: "relative", zIndex: "100", cursor: "pointer" } : {}}
       onClick={() => {
+        audio.play();
         setHam(false);
         navigate(link);
       }}
