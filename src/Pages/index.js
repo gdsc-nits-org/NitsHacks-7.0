@@ -5,4 +5,4 @@ import Faq from "./FAQ/Faq";
 import Team from "./Team/Team";
 import CfStandings from "./CFStandings/CfStandings";
 
-export { Home, Error, Event, Faq, Team,CfStandings };
+export { Home, Error, Event, Faq, Team, CfStandings };
