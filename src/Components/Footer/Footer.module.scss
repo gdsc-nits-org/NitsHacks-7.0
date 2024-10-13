@@ -26,6 +26,7 @@
 .footer {
   width: 100vw;
   height: fit-content;
+  
   .container {
     background-image: linear-gradient(
       to bottom,
@@ -82,6 +83,9 @@
       .socials {
         display: flex;
         gap: 1.3rem;
+        a{
+          color: #ffffff;
+        }
         .icons {
           height: 2.35rem;
           width: 2.35rem;
@@ -94,6 +98,7 @@
         transform: translateY(-1rem);
         cursor: pointer;
         font-family: "Outfit", sans-serif;
+        color:#ffffff;
       }
     }
     .logo {
