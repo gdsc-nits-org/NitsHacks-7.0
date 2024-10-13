@@ -22,7 +22,7 @@ const Testimonial = () => {
 
                     <div className={styles.info}>
                       <div className={styles.profileName}>{testimonial.name}</div>
-                      <div className={styles.about}>{testimonial.about}</div>
+                      <div className={styles.about}>{testimonial.TrackParticipated}</div>
                     </div>
                   </div>
                   <hr />
