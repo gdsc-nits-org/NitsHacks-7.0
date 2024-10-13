@@ -37,7 +37,7 @@ const NitsHacks = () => {
                 />
               </div>
               <div className={styles.brochure}>
-                <a className={styles.btn} href="https://tecnoesis.co.in/">
+                <a className={styles.btn} href="https://tecnoesis.co.in/" target="_blank">
                   <img
                     src="https://res.cloudinary.com/dhry5xscm/image/upload/v1728316364/nits-hacks-7.0/earth_1_brhpjt.svg"
                     className={styles.icon}
