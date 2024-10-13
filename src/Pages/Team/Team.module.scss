@@ -44,6 +44,7 @@ $fontcolor: #ffffff;
     padding-right: 2.5rem;
     min-height: 100vh;
     overflow: hidden;
+    transform: translateY(-2rem);
 
     background-image: linear-gradient(to down, 2% transparent, #000000);
     .teamname {
@@ -62,6 +63,7 @@ $fontcolor: #ffffff;
         position: relative;
         top: 5rem;
         text-align: center;
+        margin-top: 2rem;
       }
 
       .teamname_body {

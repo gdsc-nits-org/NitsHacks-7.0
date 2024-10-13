@@ -2,14 +2,8 @@ import { useState } from "react";
 import styles from "./Team.module.scss";
 import { Card } from "../../Components/Teams/index";
 import { Navbar, Footer } from "../../Components/index";
-import Coordinator from "./Coordinator.json";
-import Convener from "./Convener.json";
-import Coreteam from "./Coreteam.json";
-import Techlead from "./Techlead.json";
-import TECH from "./Tech.json";
-import ORGANISERS from "./Organisers.json";
+import teamData from "../../assets/team.json";
 import Loader from "../../Components/Loader/Loader";
-// import data from "../../assets/team.json";
 
 const MemberDetails = (data) => {
   return <Card key={data.id} {...data} />;
@@ -17,6 +11,13 @@ const MemberDetails = (data) => {
 
 const Teams = () => {
   const [loaded, setLoaded] = useState(false);
+  const coreTeam = teamData.filter((member) => member.role === "Coreteam");
+  const convener = teamData.filter((member) => member.role === "Convener");
+  const coordinator = teamData.filter((member) => member.role === "Coordinator");
+  const techLead = teamData.filter((member) => member.role === "Techlead");
+  const tech = teamData.filter((member) => member.role === "Tech");
+  const organisers = teamData.filter((member) => member.role === "Organisers");
+
   return (
     <main>
       {loaded ? (
@@ -36,12 +37,12 @@ const Teams = () => {
                 core team
               </div>{" "}
               <div className={styles.teamname_body}>
-                <section className={styles.sec}> {Convener.map(MemberDetails)}</section>
+                <section className={styles.sec}> {convener.map(MemberDetails)}</section>
                 <section className={styles.sec}>
                   {" "}
-                  {Coordinator.map(MemberDetails)}
+                  {coordinator.map(MemberDetails)}
                 </section>
-                <section className={styles.sec}> {Coreteam.map(MemberDetails)}</section>
+                <section className={styles.sec}> {coreTeam.map(MemberDetails)}</section>
               </div>
             </div>
 
@@ -50,8 +51,8 @@ const Teams = () => {
                 tech team
               </div>{" "}
               <div className={styles.teamname_body}>
-                <section className={styles.sec}> {Techlead.map(MemberDetails)}</section>
-                <section className={styles.sec}> {TECH.map(MemberDetails)}</section>
+                <section className={styles.sec}> {techLead.map(MemberDetails)}</section>
+                <section className={styles.sec}> {tech.map(MemberDetails)}</section>
               </div>
             </div>
 
@@ -59,7 +60,7 @@ const Teams = () => {
               <div className={styles.headingteamsa} id="ORGANISERS">
                 organisers
               </div>{" "}
-              <div className={styles.teamname_body}>{ORGANISERS.map(MemberDetails)}</div>
+              <div className={styles.teamname_body}>{organisers.map(MemberDetails)}</div>
             </div>
           </div>
           <Footer />

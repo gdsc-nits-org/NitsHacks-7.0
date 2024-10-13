@@ -27,7 +27,7 @@ const Card = (props) => {
                 <a href={props.fb} target="_blank" rel="noreferrer">
                   <img
                     className={`${styles.logo} ${styles.fbImg}`}
-                    src="https://res.cloudinary.com/dxafdfvui/image/upload/v1705083563/fbpxl_imhsav.svg"
+                    src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728845141/Vector_xj7xds.png"
                     alt="facebook"
                   />
                 </a>
@@ -39,7 +39,7 @@ const Card = (props) => {
                 <a href={props.linkedin} target="_blank" rel="noreferrer">
                   <img
                     className={`${styles.logo} ${styles.linkedinImg}`}
-                    src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1705425898/Nits%20hacks%206.0/Teams/nnj4l11tum53qdgmny4v.png"
+                    src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728845141/ld_nrmndl.png"
                     alt="linkedin"
                   />
                 </a>
