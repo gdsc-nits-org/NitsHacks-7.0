@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.scss";
-import { Error, Event, Faq, Team } from "./Pages";
+import { Error, Event, Faq, Team,CfStandings } from "./Pages";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/event/:id",
     element: <Event />,
+  },
+  {
+    path: "/event/2/standings",
+    element: <CfStandings />,
   },
   {
     path: "/faq",
