@@ -1,10 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import styles from "./Event.module.scss";
 import data from "../../assets/events.json";
 
 const Event = () => {
   const navigate = useNavigate();
-
+  const [audio] = useState(new Audio("/sound/button.wav"));
   return (
     <main className={styles.contain}>
       <h1 className={styles.heading}>events</h1>
@@ -14,6 +15,8 @@ const Event = () => {
             className={styles.event}
             style={{ backgroundImage: `url(${marvel.photo})` }}
             onClick={() => {
+              audio.volume = 0.7;
+              audio.play();
               navigate(`/event/${marvel.id}`);
             }}
           >
