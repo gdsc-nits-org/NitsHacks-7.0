@@ -20,16 +20,16 @@ const Footer = () => {
           </div>
           <p className={style.connect}>Connect With us:</p>
           <section className={style.socials}>
-            <a href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <a href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
               <FaInstagram className={style.icons} />
             </a>
-            <a href="https://www.facebook.com/NITSHacks/">
+            <a href="https://www.facebook.com/NITSHacks/" target="_blank">
               <FaFacebook className={style.icons} />
             </a>
-            <a href="https://twitter.com/nitshacks">
+            <a href="https://twitter.com/nitshacks" target="_blank">
               <FaXTwitter className={style.icons} />
             </a>
-            <a href="https://www.linkedin.com/company/nitshacks/posts/?feedView=all">
+            <a href="https://www.linkedin.com/company/nitshacks/posts/?feedView=all" target="_blank">
               <FaLinkedin className={style.icons} />
             </a>
           </section>
