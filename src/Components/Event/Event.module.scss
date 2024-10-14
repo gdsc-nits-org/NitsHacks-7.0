@@ -1,3 +1,89 @@
-.event {
-  //write your styles
+.heading {
+  font-family: "StarJedi", sans-serif;
+  color: #f2c300;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contain {
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.events {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .event {
+    width: 24rem;
+    height: 24rem;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    margin: 2rem;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    &:hover {
+      .detailshadow {
+        top: 0%;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.detailshadow {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 100%;
+  background-image: linear-gradient(to top, #000, #000000aa, transparent);
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: end;
+  display: none;
+}
+
+.details {
+  height: 55%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  h1 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+  p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-top: 0.2rem;
+  }
+  button {
+    color: #000;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: "Death Star", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.7rem;
+    @media (max-width: 600px) {
+      margin-top: 0.7rem;
+      padding: 0 0.6rem;
+      img {
+        scale: 0.8;
+      }
+    }
+  }
 }

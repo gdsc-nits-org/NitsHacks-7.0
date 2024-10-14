@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "StarJedi";
+  src: url("/fonts/Starjedi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.mainCont {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000000;
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 8rem;
+    .headerCont {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .header {
+        font-family: "StarJedi", sans-serif;
+        color: #f2c300;
+        font-size: 3rem;
+        letter-spacing: 1px;
+      }
+    }
+    .inputCont {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        padding: 0.5rem;
+        width: 50%;
+        outline: 0;
+        border: 1px solid #f2c300;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: #ffffff;
+        background-color: #000000;
+        &::placeholder {
+          color: #818181;
+        }
+      }
+      button {
+        padding: 0.5rem;
+        cursor: pointer;
+        width: 5rem;
+        color: #000000;
+        background-color: #f2c300;
+        border: 1px solid #f2c300;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    .innerCont {
+      width: 100%;
+      @media screen and (min-width: 600px) {
+        width: 80%;
+      }
+      .tableBody {
+        .row {
+          border: 0 solid transparent;
+          border-radius: 8px;
+          scale: 1;
+          transition-duration: 0.2s;
+          box-shadow: none;
+          &:hover {
+            scale: 1.01;
+            transition-duration: 0.2s;
+            box-shadow: 0 0 5rem #f2c300;
+          }
+          td {
+            padding: 1rem;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+        .evenRow {
+          background-color: rgb(32, 25, 0);
+        }
+        .oddRow {
+          background-color: rgb(63, 63, 63);
+        }
+      }
+    }
+  }
+}
