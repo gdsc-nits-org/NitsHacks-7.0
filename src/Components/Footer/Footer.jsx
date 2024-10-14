@@ -29,7 +29,7 @@ const Footer = () => {
             <a href="https://twitter.com/nitshacks">
               <FaXTwitter className={style.icons} />
             </a>
-            <a href="https://www.linkedin.com/in/nitshacks/?originalSubdomain=in">
+            <a href="https://www.linkedin.com/company/nitshacks/posts/?feedView=all">
               <FaLinkedin className={style.icons} />
             </a>
           </section>
