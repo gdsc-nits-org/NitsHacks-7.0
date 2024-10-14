@@ -7,6 +7,7 @@ import Button from "./CustomButton/CustomButton";
 import Hero from "./Hero/Hero";
 import Event from "./Event/Event";
 import Testimonial from "./Testimonial/Testimonial";
+import Carousel from "./Carausel/Carausel";
 
 export {
   Navbar,
@@ -19,4 +20,5 @@ export {
   Hero,
   Event,
   Testimonial,
+  Carousel,
 };

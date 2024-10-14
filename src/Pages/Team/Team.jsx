@@ -1,13 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Team.module.scss";
-import { Card } from "../../Components/Teams/index";
 import { Navbar, Footer } from "../../Components/index";
 import teamData from "../../assets/team.json";
 import Loader from "../../Components/Loader/Loader";
-
-const MemberDetails = (data) => {
-  return <Card key={data.id} {...data} />;
-};
+import { DeskTeam, MobTeam } from "./TeamSection";
 
 const Teams = () => {
   const [loaded, setLoaded] = useState(false);
@@ -17,6 +13,18 @@ const Teams = () => {
   const techLead = teamData.filter((member) => member.role === "Techlead");
   const tech = teamData.filter((member) => member.role === "Tech");
   const organisers = teamData.filter((member) => member.role === "Organisers");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 400);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <main>
@@ -30,39 +38,26 @@ const Teams = () => {
               className={styles.coverImg}
             />
           </div>
+          {isMobile ? (
+            <MobTeam
+              convener={convener}
+              coordinator={coordinator}
+              coreTeam={coreTeam}
+              techLead={techLead}
+              tech={tech}
+              organisers={organisers}
+            />
+          ) : (
+            <DeskTeam
+              convener={convener}
+              coordinator={coordinator}
+              coreTeam={coreTeam}
+              techLead={techLead}
+              tech={tech}
+              organisers={organisers}
+            />
+          )}
 
-          <div className={styles.page}>
-            <div className={styles.teamname}>
-              <div className={styles.headingteamsa} id="CORE">
-                core team
-              </div>{" "}
-              <div className={styles.teamname_body}>
-                <section className={styles.sec}> {convener.map(MemberDetails)}</section>
-                <section className={styles.sec}>
-                  {" "}
-                  {coordinator.map(MemberDetails)}
-                </section>
-                <section className={styles.sec}> {coreTeam.map(MemberDetails)}</section>
-              </div>
-            </div>
-
-            <div className={styles.teamname}>
-              <div className={styles.headingteamsa} id="TECH">
-                tech team
-              </div>{" "}
-              <div className={styles.teamname_body}>
-                <section className={styles.sec}> {techLead.map(MemberDetails)}</section>
-                <section className={styles.sec}> {tech.map(MemberDetails)}</section>
-              </div>
-            </div>
-
-            <div className={styles.teamname}>
-              <div className={styles.headingteamsa} id="ORGANISERS">
-                organisers
-              </div>{" "}
-              <div className={styles.teamname_body}>{organisers.map(MemberDetails)}</div>
-            </div>
-          </div>
           <Footer />
         </div>
       ) : (
