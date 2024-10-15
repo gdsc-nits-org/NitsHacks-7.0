@@ -2,16 +2,23 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 
+import { useState } from "react";
 import { Navbar } from "../../Components";
 import styles from "./CfStandings.module.scss";
 const queryClient = new QueryClient();
 
 const CfStandings = () => {
+  const [cf]=useState(false);
   return (
     <QueryClientProvider client={queryClient}>
       <div className={styles.mainCont}>
         <Navbar />
-        <Wrapper />
+        {cf?
+          <Wrapper />:
+          <div className={styles.comingsoon}>
+            Standings will Appear after the contest starts
+          </div>
+        }
       </div>
       <ToastContainer />
     </QueryClientProvider>
