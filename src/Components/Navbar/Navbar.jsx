@@ -8,7 +8,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const currPage = window.location.pathname.split("/")[1];
   const location = useLocation();
-
+  console.log(location);
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.split("#")[1];
@@ -26,7 +26,26 @@ const Navbar = () => {
       }
     }
   }, [location]);
-
+  const homeController=()=>{
+    audio.play();
+    if(location.pathname!='/'){
+      navigate("/");
+    }
+    else{
+      const element = document.getElementById("hero");
+      const headerOffset = 100;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      if (element) {
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }
   useEffect(() => {
     const navMap = new Map([
       ["", 0],
@@ -81,10 +100,7 @@ const Navbar = () => {
             <div>
               <button
                 className={styles.deskNav}
-                onClick={() => {
-                  audio.play();
-                  navigate("/");
-                }}
+                onClick={homeController}
               >
                 <p>Home</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
