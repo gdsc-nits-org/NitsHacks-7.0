@@ -189,7 +189,7 @@ const Hero = () => {
         </div>
         <div className={styles.rocket}>
           <img
-            src="/images/rocket-cockpit-new.png"
+            src="/images/rocket-cockpit-new.webp"
             className={styles.cockpit}
             alt="cockpit"
           />
