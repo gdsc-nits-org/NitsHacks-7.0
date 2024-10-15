@@ -58,10 +58,10 @@
       top: 10rem;
     }
 
-    scale: 0.2;
+    scale: 0.1;
 
     @media screen and (min-width: 720px) {
-      scale: 0.5;
+      scale: 0.3;
     }
 
     left: -80vw;
@@ -707,7 +707,12 @@
           .proceed {
             font-size: 0.5rem;
             background-color: #ff0000;
-            color: #ffff00;
+            color: #ffffff;
+            transition-duration: 0.5s;
+            &:hover {
+              color: #ffff00;
+              transition-duration: 0.5s;
+            }
             font-family: "StarJedi", sans-serif;
             border: none;
             border-radius: 2px;
@@ -722,11 +727,14 @@
 
     .windshield {
       position: absolute;
-      bottom: 0;
+      bottom: 0.5rem;
       min-height: 80%;
       border: 0 solid transparent;
       border-radius: 80%;
-      width: 50%;
+      width: 70%;
+      @media screen and (min-width: 495px) {
+        width: 50%;
+      }
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -757,27 +765,31 @@
           justify-content: center;
 
           .logo {
-            width: 70%;
-            height: 70%;
+            width: 50%;
+            height: 50%;
 
             @media screen and (min-width: 495px) {
               width: 30%;
               height: 30%;
             }
 
-            @media screen and (min-width: 600px) {
-              width: 30%;
-              height: 30%;
+            @media screen and (min-width: 700px) {
+              width: 32%;
+              height: 32%;
             }
 
-            @media screen and (min-width: 760px) {
-              width: 20%;
-              height: 20%;
+            @media screen and (min-width: 720px) {
+              width: 25%;
+              height: 25%;
             }
 
             @media screen and (min-width: 850px) {
               width: 30%;
               height: 30%;
+            }
+            @media screen and (min-width: 1237px) {
+              width: 32%;
+              height: 32%;
             }
           }
         }
@@ -905,7 +917,7 @@
         align-items: center;
         justify-content: space-around;
         flex-direction: row;
-        width: 100%;
+        width: 70%;
 
         @media screen and (min-width: 555px) {
           width: 90%;
