@@ -114,7 +114,7 @@ const Hero = () => {
     };
   }, [audio]);
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="hero">
       <img
         src="/images/smallrocket.png"
         alt="small rocket"

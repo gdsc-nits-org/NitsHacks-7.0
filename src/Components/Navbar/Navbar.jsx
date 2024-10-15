@@ -191,7 +191,9 @@ export default Navbar;
 
 const Latch = ({ children, link, setHam, ham }) => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [audio] = useState(new Audio("/sound/button.wav"));
+
   return (
     <button
       className="navbut"
@@ -199,7 +201,14 @@ const Latch = ({ children, link, setHam, ham }) => {
       onClick={() => {
         audio.play();
         setHam(false);
-        navigate(link);
+        if (link === "/" && location.pathname === "/") {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          navigate(link);
+        }
       }}
     >
       <p style={{ color: "#494949" }} className="latch">
