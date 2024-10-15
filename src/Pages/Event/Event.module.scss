@@ -12,7 +12,7 @@
 }
 .event {
   min-height: 100vh;
-  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
   background-color: #000000;
   .event_parent {
@@ -28,8 +28,9 @@
       flex-direction: column;
     }
 
-    .left {
-      width: 50%;
+    .left,
+    .right {
+      width: 50vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -54,6 +55,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 0%;
+        margin-top: 0%;
         gap: 0;
         .images {
           display: flex;
@@ -69,9 +72,13 @@
           @media screen and (max-width: 768px) {
             scale: 2;
           }
+          @media screen and (max-width: 600px) {
+            scale: 1.5;
+            transform: translateY(-1rem);
+          }
           @media screen and (max-width: 400px) {
             scale: 1.5;
-            transform: translateY(-2rem);
+            transform: translateY(1rem);
           }
           .bot1,
           .bot3 {
@@ -102,6 +109,9 @@
         @media screen and (max-width: 1100px) {
           margin-bottom: 8rem;
         }
+        @media screen and (max-width: 500px) {
+          margin-top: 8rem;
+        }
         .poster_mob {
           display: none;
           @media screen and (max-width: 1100px) {
@@ -121,6 +131,9 @@
           font-size: 2.3rem;
           text-align: center;
           text-transform: lowercase;
+          @media screen and (max-width: 400px) {
+            font-size: 2rem;
+          }
         }
         .desc {
           display: flex;
@@ -134,7 +147,7 @@
           font-size: 1rem;
           @media screen and (max-width: 1100px) {
             width: 55vw;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
           }
         }
       }
@@ -187,6 +200,9 @@
     .poster {
       height: 100vh;
       width: 100%;
+      @media screen and (max-width: 1100px) {
+        display: none;
+      }
     }
   }
 }
