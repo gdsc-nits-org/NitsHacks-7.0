@@ -35,7 +35,7 @@ const NitsHacks = () => {
               <div className={styles.brochure}>
                 <a
                   className={styles.btn}
-                  href="https://drive.usercontent.google.com/u/0/uc?id=1BRYQ3PIRKCpRqHQmuhdPVkTxIj4ZALKs&export=download"
+                  href="https://drive.google.com/file/d/1BRYQ3PIRKCpRqHQmuhdPVkTxIj4ZALKs/view?usp=sharing"
                   target="blank"
                 >
                   <img

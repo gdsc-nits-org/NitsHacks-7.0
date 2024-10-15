@@ -114,7 +114,7 @@ const Hero = () => {
     };
   }, [audio]);
   return (
-    <div className={styles.hero}>
+    <div className={styles.hero} id="hero">
       <img
         src="/images/smallrocket.png"
         alt="small rocket"
@@ -189,7 +189,7 @@ const Hero = () => {
         </div>
         <div className={styles.rocket}>
           <img
-            src="/images/rocket-cockpit-new.png"
+            src="/images/rocket-cockpit-new.webp"
             className={styles.cockpit}
             alt="cockpit"
           />

@@ -27,25 +27,25 @@
       top: 10rem;
     }
 
-    left: -20vw;
+    left: 140vw;
     animation-name: smallrocket;
     animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    scale: 0.5;
+    transform: scale(-0.5, -0.5);
 
     @media screen and (min-width: 720px) {
-      scale: 1;
+      transform: scale(-1, -1);
     }
 
     @keyframes smallrocket {
       0% {
-        left: -140vw;
+        left: 140vw;
       }
 
       100% {
-        left: 140vw;
+        left: -140vw;
       }
     }
   }
@@ -133,10 +133,14 @@
     .title {
       font-family: "StarJedi", sans-serif;
       color: white;
-      font-size: 2rem;
+      font-size: 2.4rem;
 
-      @media screen and (min-width: 395px) {
-        font-size: 1rem;
+      @media screen and (min-width: 382px) {
+        font-size: 2rem;
+      }
+
+      @media screen and (min-width: 415px) {
+        font-size: 1.8rem;
       }
 
       animation: glow 3s ease 0s infinite alternate forwards;
@@ -783,20 +787,28 @@
           color: whitesmoke;
           font-size: 0.8rem;
 
-          @media screen and (min-width: 720px) {
-            font-size: 1.2rem;
-          }
-
-          @media screen and (min-width: 1080px) {
-            font-size: 0.9rem;
-          }
-
-          @media screen and (min-width: 1237px) {
+          @media screen and (min-width: 520px) {
             font-size: 1rem;
           }
 
-          @media screen and (min-width: 1800px) {
+          @media screen and (min-width: 560px) {
             font-size: 1.2rem;
+          }
+
+          @media screen and (min-width: 720px) {
+            font-size: 1.4rem;
+          }
+
+          @media screen and (min-width: 1080px) {
+            font-size: 1.2rem;
+          }
+
+          @media screen and (min-width: 1237px) {
+            font-size: 1.5rem;
+          }
+
+          @media screen and (min-width: 1800px) {
+            font-size: 1.3rem;
           }
 
           animation: glow 3s ease 0s infinite alternate forwards;
@@ -829,7 +841,7 @@
           }
 
           @media screen and (min-width: 1237px) {
-            font-size: 1rem;
+            font-size: 0.7rem;
           }
 
           @media screen and (min-width: 1800px) {

@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={style.footer}>
       <div className={style.container}>
         <img
-          src="https://res.cloudinary.com/dmhbmurzw/image/upload/v1728145561/f11b95bf1b0b9d78cb200c0df87defa4_opezmf.png"
+          src="https://res.cloudinary.com/dgnlmdkyq/image/upload/v1728979721/footer_1_xydq5v.svg"
           alt="bg_img"
           className={style.bg}
         />
@@ -20,7 +20,10 @@ const Footer = () => {
           </div>
           <p className={style.connect}>Connect With us:</p>
           <section className={style.socials}>
-            <a href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <a
+              href="https://www.instagram.com/nitshacks?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+            >
               <FaInstagram className={style.icons} />
             </a>
             <a href="https://www.facebook.com/NITSHacks/" target="_blank">
@@ -29,7 +32,10 @@ const Footer = () => {
             <a href="https://twitter.com/nitshacks" target="_blank">
               <FaXTwitter className={style.icons} />
             </a>
-            <a href="https://www.linkedin.com/company/nitshacks/posts/?feedView=all" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/nitshacks/posts/?feedView=all"
+              target="_blank"
+            >
               <FaLinkedin className={style.icons} />
             </a>
           </section>
@@ -71,9 +77,14 @@ const Footer = () => {
           </div>
         </section>
       </div>
-      <p className={style.gdg}>
-        Made by <span className={style.nit}>GDG</span> On Campus NIT Silchar
-      </p>
+      <div className={style.gdg}>
+        <p>
+          Made by <span className={style.nit}>GDG</span> On Campus NIT Silchar
+        </p>
+        <a href="https://gdscnits.in/" target="_blank">
+          <img src="/images/gdg.png" alt="gdg_logo" className={style.gdg_logo} />
+        </a>
+      </div>
       <div className={style.partition}>
         <div className={style.sqone}></div>
         <hr className={style.lineone} />
