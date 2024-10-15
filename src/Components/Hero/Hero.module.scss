@@ -689,7 +689,7 @@
               background-position: center;
               border: none;
               border-radius: 100%;
-
+              z-index: 5;
               .img {
                 width: 90%;
                 height: 90%;
@@ -923,6 +923,9 @@
           width: 90%;
         }
 
+        @media screen and (min-width:720px) {
+          width: 80%;
+        }
         .leftBlaze {
           position: relative;
           display: flex;
