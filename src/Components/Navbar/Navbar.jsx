@@ -83,7 +83,14 @@ const Navbar = () => {
                 className={styles.deskNav}
                 onClick={() => {
                   audio.play();
-                  navigate("/");
+                  if (location.pathname !== "/") {
+                    navigate("/");
+                  } else {
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }
                 }}
               >
                 <p>Home</p>
