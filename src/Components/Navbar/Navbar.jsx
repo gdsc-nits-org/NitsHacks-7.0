@@ -8,7 +8,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   const currPage = window.location.pathname.split("/")[1];
   const location = useLocation();
-  console.log(location);
   useEffect(() => {
     if (location.hash) {
       const id = location.hash.split("#")[1];
@@ -28,7 +27,7 @@ const Navbar = () => {
   }, [location]);
   const homeController=()=>{
     audio.play();
-    if(location.pathname!='/'){
+    if(location.pathname!=='/'){
       navigate("/");
     }
     else{
