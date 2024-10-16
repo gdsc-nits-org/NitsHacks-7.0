@@ -13,7 +13,7 @@ const DeskTeam = ({ convener, coordinator, coreTeam, techLead, tech, organisers 
           core team
         </div>{" "}
         <div className={styles.teamname_body}>
-          <section className={styles.sec}> {convener.map(MemberDetails)}</section>
+          {/* <section className={styles.sec}> {convener.map(MemberDetails)}</section> */}
           <section className={styles.sec}> {coordinator.map(MemberDetails)}</section>
           <section className={styles.sec}> {coreTeam.map(MemberDetails)}</section>
         </div>
@@ -46,10 +46,10 @@ const MobTeam = ({ convener, coordinator, coreTeam, techLead, tech, organisers }
         <div className={styles.heading}>
           <p>CORE</p>
         </div>
-
+{/* 
         <div className={styles.Events}>
           <Carousel>{convener.map(MemberDetails)}</Carousel>
-        </div>
+        </div> */}
         <div className={styles.Events}>
           <Carousel>{coordinator.map(MemberDetails)}</Carousel>
         </div>
