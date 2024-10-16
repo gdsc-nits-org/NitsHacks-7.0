@@ -39,7 +39,7 @@
     "linkedin": "https://www.linkedin.com/in/gitsentinel/",
     "fb": "https://www.facebook.com/jacinth.mahanta/"
   },
- 
+
   {
     "id": 5,
     "name": "Maharnav Deka",
@@ -68,9 +68,9 @@
     "cf": "https://codeforces.com/profile/Amartya3",
     "role": "Coordinator",
     "linkedin": "https://www.linkedin.com/in/amartyaahmed",
-     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
+    "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
   },
-  
+
   {
     "id": 8,
     "name": "Arunaditya Dasgupta",
@@ -141,7 +141,6 @@
     "role": "Tech",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015228/team_img/gtiacnuktxzgnbaersxc.webp",
     "fb": "https://m.facebook.com/jubaraj.talukdar.37/"
- 
   },
   {
     "id": 16,
@@ -218,14 +217,12 @@
     "name": "Mayukh Das",
     "designation": "UI/UX",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dieef3h1w/image/upload/v1726411197/mayukh_fmbwe9.webp" ,
+    "img": "https://res.cloudinary.com/dieef3h1w/image/upload/v1726411197/mayukh_fmbwe9.webp",
     "git": "https://github.com/MayukhCANTcode",
-    "linkedin":"https://www.linkedin.com/in/mayukh-das-b282a930a/",
+    "linkedin": "https://www.linkedin.com/in/mayukh-das-b282a930a/",
     "fb": "https://www.facebook.com/profile.php?id=61565492228532"
   },
-  
 
- 
   {
     "id": 24,
     "name": "Saptarshi Adhikari",
@@ -286,7 +283,4 @@
     "linkedin": "https://www.linkedin.com/in/jagatjyotideb/",
     "fb": "https://www.facebook.com/profile.php?id=100084536361943"
   }
- 
 ]
-
-

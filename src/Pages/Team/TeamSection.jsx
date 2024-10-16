@@ -5,7 +5,15 @@ import styles from "./Team.module.scss";
 const MemberDetails = (data) => {
   return <Card key={data.id} {...data} />;
 };
-const DeskTeam = ({convener,  coordinator, coreTeam, techLead, tech, organisers }) => {
+const DeskTeam = ({
+  faculty,
+  convener,
+  coordinator,
+  coreTeam,
+  techLead,
+  tech,
+  organisers,
+}) => {
   return (
     <div className={styles.page}>
       <div className={styles.teamname}>
@@ -13,6 +21,7 @@ const DeskTeam = ({convener,  coordinator, coreTeam, techLead, tech, organisers 
           core team
         </div>{" "}
         <div className={styles.teamname_body}>
+          <section className={styles.sec}> {faculty.map(MemberDetails)}</section>
           <section className={styles.sec}> {convener.map(MemberDetails)}</section>
           <section className={styles.sec}> {coordinator.map(MemberDetails)}</section>
           <section className={styles.sec}> {coreTeam.map(MemberDetails)}</section>
@@ -35,18 +44,35 @@ const DeskTeam = ({convener,  coordinator, coreTeam, techLead, tech, organisers 
         </div>{" "}
         <div className={styles.teamname_body}>{organisers.map(MemberDetails)}</div>
       </div>
+
+      {/* <div className={styles.teamname}>
+        <div className={styles.headingteamsa} id="VOLUNTEERS">
+          volunteers
+        </div>{" "}
+        <div className={styles.teamname_body}>{volunteers.map(MemberDetails)}</div>
+      </div> */}
     </div>
   );
 };
 
-const MobTeam = ({convener, coordinator, coreTeam, techLead, tech, organisers }) => {
+const MobTeam = ({
+  faculty,
+  convener,
+  coordinator,
+  coreTeam,
+  techLead,
+  tech,
+  organisers,
+}) => {
   return (
     <div className={styles.page2}>
       <div className={styles.content}>
         <div className={styles.heading}>
           <p>CORE</p>
         </div>
-
+        <div className={styles.Events}>
+          <Carousel>{faculty.map(MemberDetails)}</Carousel>
+        </div>
         <div className={styles.Events}>
           <Carousel>{convener.map(MemberDetails)}</Carousel>
         </div>
@@ -76,6 +102,14 @@ const MobTeam = ({convener, coordinator, coreTeam, techLead, tech, organisers })
           <Carousel>{organisers.map(MemberDetails)}</Carousel>
         </div>
       </div>
+      {/* <div className={styles.content}>
+        <div className={styles.heading}>
+          <p>volunteers</p>
+        </div>
+        <div className={styles.Events}>
+          <Carousel>{volunteers.map(MemberDetails)}</Carousel>
+        </div>
+      </div> */}
     </div>
   );
 };
