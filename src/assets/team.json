@@ -1,5 +1,15 @@
 [
   {
+    "id": 1,
+    "name": "Partha Protim Lahkar",
+    "designation": "Convener",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729073173/nits-hacks-7.0/parthaplahkar_bep8yj.png",
+    "git": "",
+    "role": "Convener",
+    "linkedin": "https://www.linkedin.com/in/partha-p-lahkar/",
+    "fb": "https://www.facebook.com/partha.lahkar.16"
+  },
+  {
     "id": 2,
     "name": "Bijay Jiwrajka",
     "designation": "Coordinator",
@@ -22,8 +32,8 @@
   {
     "id": 4,
     "name": "Jacinth Mahanta",
-    "designation": "Coordinator",
-    "role": "Coordinator",
+    "designation": "Core Member",
+    "role": "Coreteam",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013596/team_img/rehtmagkltalyfelbqmy.webp",
     "git": "http://github.com/gitsentinel",
     "linkedin": "https://www.linkedin.com/in/gitsentinel/",
@@ -33,11 +43,11 @@
   {
     "id": 5,
     "name": "Maharnav Deka",
-    "designation": "Coordinator",
+    "designation": "Core Member",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013691/team_img/cszrt5vym28umkxpbjhz.webp",
     "git": "http://github.com/mdekaa",
     "linkedin": "https://www.linkedin.com/in/maharnav-deka-06742815a/",
-    "role": "Coordinator",
+    "role": "Coreteam",
     "fb": "https://www.facebook.com/profile.php?id=100076295825121"
   },
   {
@@ -64,8 +74,8 @@
   {
     "id": 8,
     "name": "Arunaditya Dasgupta",
-    "designation": "Core Team",
-    "role": "Coreteam",
+    "designation": "Outreach",
+    "role": "Organisers",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.webp",
     "git": "http://github.com/git-ADG",
     "linkedin": "https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
