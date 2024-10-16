@@ -1,17 +1,26 @@
 [
-
   {
     "id": 2,
+    "name": "Bijay Jiwrajka",
+    "designation": "Coordinator",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013684/team_img/gcqlir6xpgj2hljp6hy9.webp",
+    "git": "https://github.com/bj-jiwrajka/",
+    "role": "Coordinator",
+    "linkedin": "https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/",
+    "fb": "https://www.facebook.com/bijay.jiwrajka.1"
+  },
+  {
+    "id": 3,
     "name": "Sameer Zaidi ",
     "designation": "Coordinator",
     "role": "Coordinator",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729012543/team_img/gzdvybsexi7chlcc33ho.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729012543/team_img/gzdvybsexi7chlcc33ho.webp",
     "git": "https://github.com/Interstellar07",
     "linkedin": "https://www.linkedin.com/in/sameer-zaidi-541261226/",
     "fb": "https://www.facebook.com/SyedSameerZaidi123"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Jacinth Mahanta",
     "designation": "Coordinator",
     "role": "Coordinator",
@@ -20,21 +29,12 @@
     "linkedin": "https://www.linkedin.com/in/gitsentinel/",
     "fb": "https://www.facebook.com/jacinth.mahanta/"
   },
-  {
-    "id": 4,
-    "name": "Bijay Jiwrajka",
-    "designation": "Coordinator",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013684/team_img/gcqlir6xpgj2hljp6hy9.jpg",
-    "git": "https://github.com/bj-jiwrajka/",
-    "role": "Coordinator",
-    "linkedin": "https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/",
-    "fb": "https://www.facebook.com/bijay.jiwrajka.1"
-  },
+ 
   {
     "id": 5,
     "name": "Maharnav Deka",
     "designation": "Coordinator",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013691/team_img/cszrt5vym28umkxpbjhz.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013691/team_img/cszrt5vym28umkxpbjhz.webp",
     "git": "http://github.com/mdekaa",
     "linkedin": "https://www.linkedin.com/in/maharnav-deka-06742815a/",
     "role": "Coordinator",
@@ -42,55 +42,56 @@
   },
   {
     "id": 6,
-    "name": "Amartya Ahmed",
-    "designation": "Coordinator",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013838/team_img/q3c50x06wlnae06tufrx.jpg",
-    "cf": "https://codeforces.com/profile/Amartya3",
-    "role": "Coordinator",
-    "linkedin": "https://www.linkedin.com/in/amartyaahmed",
-     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
-  },
-  {
-    "id": 7,
     "name": "Siddhid Saha",
     "designation": "Coordinator",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013836/team_img/xqpkkpdv2hplt5nhiro8.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013836/team_img/xqpkkpdv2hplt5nhiro8.webp",
     "role": "Coordinator",
     "cf": "https://codeforces.com/profile/sroid_03",
     "linkedin": "https://www.linkedin.com/in/siddhid-saha/",
     "fb": "https://www.facebook.com/siddhid.saha/"
   },
   {
+    "id": 7,
+    "name": "Amartya Ahmed",
+    "designation": "Coordinator",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013838/team_img/q3c50x06wlnae06tufrx.webp",
+    "cf": "https://codeforces.com/profile/Amartya3",
+    "role": "Coordinator",
+    "linkedin": "https://www.linkedin.com/in/amartyaahmed",
+     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
+  },
+  
+  {
     "id": 8,
     "name": "Arunaditya Dasgupta",
     "designation": "Core Team",
     "role": "Coreteam",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.webp",
     "git": "http://github.com/git-ADG",
     "linkedin": "https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
     "fb": "https://www.facebook.com/share/Lv1SU685tHLaWhPg/"
   },
-  
   {
     "id": 10,
-    "name": "Rishi Raj Saha",
-    "linkedin": "https://www.linkedin.com/in/rishi-raj-saha-696b44257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "git": "https://github.com/rishinhk004",
-    "role": "Techlead",
-    "fb": "https://www.facebook.com/rishiraj.saha.353?mibextid=2JQ9oc",
-    "designation": "Tech Lead",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013690/team_img/v50t4jgssgxz2kunywgf.jpg"
-  },
-  {
-    "id": 11,
     "name": "Barnil Sarma",
     "linkedin": "https://www.linkedin.com/in/barnil-sarma-34383a255",
     "git": "https://github.com/barnilsarma",
     "fb": "https://www.facebook.com/barnil.sarma.3/",
     "designation": "Tech Lead",
     "role": "Techlead",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014507/team_img/fwdhqjmmim1i709goqfx.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014507/team_img/fwdhqjmmim1i709goqfx.webp"
   },
+  {
+    "id": 11,
+    "name": "Rishi Raj Saha",
+    "linkedin": "https://www.linkedin.com/in/rishi-raj-saha-696b44257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "git": "https://github.com/rishinhk004",
+    "role": "Techlead",
+    "fb": "https://www.facebook.com/rishiraj.saha.353?mibextid=2JQ9oc",
+    "designation": "Tech Lead",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013690/team_img/v50t4jgssgxz2kunywgf.webp"
+  },
+
   {
     "id": 12,
     "name": "Samarjit Roy",
@@ -99,7 +100,7 @@
     "fb": "https://www.facebook.com/profile.php?id=100087733476599",
     "designation": "UI/UX Lead",
     "role": "Techlead",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014578/team_img/sc1zjjsjiupc4hmaiygc.png"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014578/team_img/sc1zjjsjiupc4hmaiygc.webp"
   },
   {
     "id": 13,
@@ -109,7 +110,7 @@
     "fb": "https://www.facebook.com/profile.php?id=61553104123672",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014958/team_img/fn3s3jmhqtwuowwv7qx3.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014958/team_img/fn3s3jmhqtwuowwv7qx3.webp"
   },
   {
     "id": 14,
@@ -119,7 +120,7 @@
     "fb": "https://www.facebook.com/profile.php?id=61555806877486&mibextid=ZbWKwL",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014958/team_img/etoxbig9db51ynva5cdl.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014958/team_img/etoxbig9db51ynva5cdl.webp"
   },
   {
     "id": 15,
@@ -128,7 +129,7 @@
     "git": "https://github.com/JACKIE30",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015228/team_img/gtiacnuktxzgnbaersxc.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015228/team_img/gtiacnuktxzgnbaersxc.webp",
     "fb": "https://m.facebook.com/jubaraj.talukdar.37/"
  
   },
@@ -140,7 +141,7 @@
     "fb": "https://www.facebook.com/profile.php?id=61550331861556&mibextid=ZbWKwL",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015119/team_img/drqdrho9wpxmjc8h1wsh.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015119/team_img/drqdrho9wpxmjc8h1wsh.webp"
   },
   {
     "id": 17,
@@ -150,7 +151,7 @@
     "fb": "https://www.facebook.com/muskan.bharti.18062?mibextid=ZbWKwL",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014957/team_img/knlujenaleskirufepof.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014957/team_img/knlujenaleskirufepof.webp"
   },
   {
     "id": 18,
@@ -160,7 +161,7 @@
     "fb": "https://www.facebook.com/profile.php?id=61555487639898",
     "designation": "Developer",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729016367/team_img/miw6l0k0pouv9oplne1y.jpg"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729016367/team_img/miw6l0k0pouv9oplne1y.webp"
   },
   {
     "id": 19,
@@ -170,7 +171,7 @@
     "fb": "https://www.facebook.com/profile.php?id=61551008331160",
     "designation": "UI/UX",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015123/team_img/yw3f8ik0wkad4pvbzmjk.png"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015123/team_img/yw3f8ik0wkad4pvbzmjk.webp"
   },
   {
     "id": 20,
@@ -180,14 +181,14 @@
     "fb": "https://www.facebook.com/jack.zustin?mibextid=ZbWKwL",
     "designation": "UI/UX",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015507/team_img/buywsvm8lqihdyxtnzlu.png"
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015507/team_img/buywsvm8lqihdyxtnzlu.webp"
   },
   {
     "id": 21,
     "name": "Evangeline Hasda ",
     "designation": "UI/UX",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015822/team_img/i1nsmrmjizoewxdcydak.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015822/team_img/i1nsmrmjizoewxdcydak.webp",
     "git": "https://github.com/EvangelineHasda",
     "linkedin": "https://www.linkedin.com/in/evangeline-hasda-0191002a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "fb": "https://www.facebook.com/profile.php?id=100095026613104&mibextid=ZbWKwL"
@@ -220,7 +221,7 @@
     "name": "Saptarshi Adhikari",
     "designation": "Outreach",
     "role": "Organisers",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014279/team_img/ysvoy6qrfnwxauobtnug.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014279/team_img/ysvoy6qrfnwxauobtnug.webp",
     "git": "https://github.com/Mastermind-sap",
     "linkedin": "https://www.linkedin.com/in/saptarshi-adhikari",
     "fb": "https://www.facebook.com/profile.php?id=100013361384712"
@@ -230,7 +231,7 @@
     "name": "Bishal Paul Biswas",
     "designation": "Outreach",
     "role": "Organisers",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/hguefjvwsiuktfccvxdw.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/hguefjvwsiuktfccvxdw.webp",
     "git": "https://github.com/bishalpb2004",
     "linkedin": "https://www.linkedin.com/in/bishal-paul-biswas-592341257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "fb": "https://www.facebook.com/profile.php?id=100087658158317&mibextid=ZbWKwL"
@@ -240,7 +241,7 @@
     "name": "Siddharth Shankar",
     "designation": "Marketing",
     "role": "Organisers",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014506/team_img/zidtzop3nrliofe0unpt.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014506/team_img/zidtzop3nrliofe0unpt.webp",
     "git": "https://github.com/Sid-NITS",
     "fb": "https://www.facebook.com/profile.php?id=100087527186672",
     "linkedin": "https://www.linkedin.com/in/siddharth-shankar-6003a1255/"
@@ -249,7 +250,7 @@
     "id": 27,
     "name": "Manjit Kumar Poddar",
     "designation": "Design",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014655/team_img/k7iautap1lbgnxe2vxyr.png",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014655/team_img/k7iautap1lbgnxe2vxyr.webp",
     "cf": "https://codeforces.com/profile/noob4zero4",
     "role": "Organisers",
     "linkedin": "https://www.linkedin.com/in/manjit-poddar/",
@@ -259,7 +260,7 @@
     "id": 28,
     "name": "Sahin Alam",
     "designation": "Management",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014745/team_img/oyiknerd4lqrxgjw9opa.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014745/team_img/oyiknerd4lqrxgjw9opa.webp",
     "git": "https://github.com/ruler45",
     "role": "Organisers",
     "linkedin": "https://www.linkedin.com/in/sahin-alam-96250324a/",
@@ -269,7 +270,7 @@
     "id": 29,
     "name": "Jagatjyoti Deb ",
     "designation": "Marketing",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014577/team_img/wrmhf7p0czwwddxyqxdz.jpg",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014577/team_img/wrmhf7p0czwwddxyqxdz.webp",
     "git": "",
     "role": "Organisers",
     "linkedin": "https://www.linkedin.com/in/jagatjyotideb/",
