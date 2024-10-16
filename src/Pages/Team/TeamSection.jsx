@@ -5,7 +5,7 @@ import styles from "./Team.module.scss";
 const MemberDetails = (data) => {
   return <Card key={data.id} {...data} />;
 };
-const DeskTeam = ({ convener, coordinator, coreTeam, techLead, tech, organisers }) => {
+const DeskTeam = ({  coordinator, coreTeam, techLead, tech, organisers }) => {
   return (
     <div className={styles.page}>
       <div className={styles.teamname}>
@@ -39,7 +39,7 @@ const DeskTeam = ({ convener, coordinator, coreTeam, techLead, tech, organisers 
   );
 };
 
-const MobTeam = ({ convener, coordinator, coreTeam, techLead, tech, organisers }) => {
+const MobTeam = ({ coordinator, coreTeam, techLead, tech, organisers }) => {
   return (
     <div className={styles.page2}>
       <div className={styles.content}>
