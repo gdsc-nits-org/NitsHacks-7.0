@@ -1,5 +1,38 @@
 [
   {
+    "id": 31,
+    "name": "Dr. Prashanth Jain",
+    "designation": "Faculty Member",
+    "img": "http://ce.nits.ac.in/wp-content/uploads/2022/04/prashanth.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "",
+    "fb": "",
+    "portfolio": "http://ce.nits.ac.in/prashanth/"
+  },
+  {
+    "id": 32,
+    "name": "Dr. Wasim Arif",
+    "designation": "Faculty Member",
+    "img": "http://ec.nits.ac.in/wp-content/uploads/2022/02/252856543_10228065030078886_3525247611489912406_n.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "https://www.linkedin.com/in/dr-wasim-arif-12523a1ba/",
+    "fb": "",
+    "portfolio": "http://ec.nits.ac.in/arif/"
+  },
+  {
+    "id": 33,
+    "name": "Dr. Ashish B. Deoghare",
+    "designation": "Faculty Member",
+    "img": "http://me.nits.ac.in/wp-content/uploads/2022/04/abd.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "",
+    "fb": "",
+    "portfolio": "http://me.nits.ac.in/dr-a-b-deoghare/"
+  },
+  {
     "id": 1,
     "name": "Partha Protim Lahkar",
     "designation": "Convener",
@@ -18,6 +51,39 @@
     "role": "Coordinator",
     "linkedin": "https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/",
     "fb": "https://www.facebook.com/bijay.jiwrajka.1"
+  },
+  {
+    "id": 30,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017407/gdsc%20seniors/team_pics/AdhirajDutta_oe0c3l.jpg",
+    "name": "Adhiraj Dutta",
+    "designation": "Coordinator",
+    "role": "Coordinator",
+    "linkedin": "https://home.byt3h3ad.workers.dev/linkedin",
+    "fb": "https://www.facebook.com/byt3h3ad/",
+    "git": "https://home.byt3h3ad.workers.dev/github",
+    "portfolio": "https://home.byt3h3ad.workers.dev/website"
+  },
+  {
+    "id": 34,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729516704/nits-hacks-7.0/BFC8C0E3-662C-43A9-9F0D-CE780B64484C_1_102_a_-_Jaydeep_Das_u8gjup.jpg",
+    "name": "Jaydeep Prapanch Das",
+    "designation": "Core Member",
+    "role": "Coreteam",
+    "linkedin": "https://www.linkedin.com/in/jdeepd/",
+    "fb": "",
+    "git": "https://github.com/JDeepD",
+    "portfolio": "https://jdeep.vercel.app/"
+  },
+  {
+    "id": 35,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729516888/nits-hacks-7.0/DIP_8347_2_-_Sandeep_Kherkatary_utj6xc.jpg",
+    "name": "Sandeep Kherkatary",
+    "designation": "Core Member",
+    "role": "Coreteam",
+    "linkedin": "https://www.linkedin.com/in/kherkatary",
+    "fb": "https://www.facebook.com/kherkatarySan?mibextid=ZbWKwL",
+    "git": "https://github.com/kherkatary",
+    "portfolio": ""
   },
   {
     "id": 3,
