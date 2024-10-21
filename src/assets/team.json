@@ -1,5 +1,48 @@
 [
   {
+    "id": 31,
+    "name": "Dr. Prashanth Jain",
+    "designation": "Faculty Member",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729517346/nits-hacks-7.0/prashanthjain_frgp1o.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "",
+    "fb": "",
+    "portfolio": "http://ce.nits.ac.in/prashanth/"
+  },
+  {
+    "id": 32,
+    "name": "Dr. Wasim Arif",
+    "designation": "Faculty Member",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729517345/nits-hacks-7.0/wasimarif_xgvmxs.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "https://www.linkedin.com/in/dr-wasim-arif-12523a1ba/",
+    "fb": "",
+    "portfolio": "http://ec.nits.ac.in/arif/"
+  },
+  {
+    "id": 33,
+    "name": "Dr. Ashish B. Deoghare",
+    "designation": "Faculty Member",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729517375/nits-hacks-7.0/abdeoghare_znphbt.jpg",
+    "git": "",
+    "role": "Faculty",
+    "linkedin": "",
+    "fb": "",
+    "portfolio": "http://me.nits.ac.in/dr-a-b-deoghare/"
+  },
+  {
+    "id": 1,
+    "name": "Partha Protim Lahkar",
+    "designation": "Convener",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729073173/nits-hacks-7.0/parthaplahkar_bep8yj.png",
+    "git": "",
+    "role": "Convener",
+    "linkedin": "https://www.linkedin.com/in/partha-p-lahkar/",
+    "fb": "https://www.facebook.com/partha.lahkar.16"
+  },
+  {
     "id": 2,
     "name": "Bijay Jiwrajka",
     "designation": "Coordinator",
@@ -8,6 +51,39 @@
     "role": "Coordinator",
     "linkedin": "https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/",
     "fb": "https://www.facebook.com/bijay.jiwrajka.1"
+  },
+  {
+    "id": 30,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017407/gdsc%20seniors/team_pics/AdhirajDutta_oe0c3l.jpg",
+    "name": "Adhiraj Dutta",
+    "designation": "Coordinator",
+    "role": "Coordinator",
+    "linkedin": "https://home.byt3h3ad.workers.dev/linkedin",
+    "fb": "https://www.facebook.com/byt3h3ad/",
+    "git": "https://home.byt3h3ad.workers.dev/github",
+    "portfolio": "https://home.byt3h3ad.workers.dev/website"
+  },
+  {
+    "id": 34,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729516704/nits-hacks-7.0/BFC8C0E3-662C-43A9-9F0D-CE780B64484C_1_102_a_-_Jaydeep_Das_u8gjup.jpg",
+    "name": "Jaydeep Prapanch Das",
+    "designation": "Core Member",
+    "role": "Coreteam",
+    "linkedin": "https://www.linkedin.com/in/jdeepd/",
+    "fb": "",
+    "git": "https://github.com/JDeepD",
+    "portfolio": "https://jdeep.vercel.app/"
+  },
+  {
+    "id": 35,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1729516888/nits-hacks-7.0/DIP_8347_2_-_Sandeep_Kherkatary_utj6xc.jpg",
+    "name": "Sandeep Kherkatary",
+    "designation": "Core Member",
+    "role": "Coreteam",
+    "linkedin": "https://www.linkedin.com/in/kherkatary",
+    "fb": "https://www.facebook.com/kherkatarySan?mibextid=ZbWKwL",
+    "git": "https://github.com/kherkatary",
+    "portfolio": ""
   },
   {
     "id": 3,
@@ -22,22 +98,22 @@
   {
     "id": 4,
     "name": "Jacinth Mahanta",
-    "designation": "Coordinator",
-    "role": "Coordinator",
+    "designation": "Core Member",
+    "role": "Coreteam",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013596/team_img/rehtmagkltalyfelbqmy.webp",
     "git": "http://github.com/gitsentinel",
     "linkedin": "https://www.linkedin.com/in/gitsentinel/",
     "fb": "https://www.facebook.com/jacinth.mahanta/"
   },
- 
+
   {
     "id": 5,
     "name": "Maharnav Deka",
-    "designation": "Coordinator",
+    "designation": "Core Member",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729013691/team_img/cszrt5vym28umkxpbjhz.webp",
     "git": "http://github.com/mdekaa",
     "linkedin": "https://www.linkedin.com/in/maharnav-deka-06742815a/",
-    "role": "Coordinator",
+    "role": "Coreteam",
     "fb": "https://www.facebook.com/profile.php?id=100076295825121"
   },
   {
@@ -58,14 +134,14 @@
     "cf": "https://codeforces.com/profile/Amartya3",
     "role": "Coordinator",
     "linkedin": "https://www.linkedin.com/in/amartyaahmed",
-     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
+    "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
   },
-  
+
   {
     "id": 8,
     "name": "Arunaditya Dasgupta",
-    "designation": "Core Team",
-    "role": "Coreteam",
+    "designation": "Outreach",
+    "role": "Organisers",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.webp",
     "git": "http://github.com/git-ADG",
     "linkedin": "https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
@@ -131,7 +207,6 @@
     "role": "Tech",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015228/team_img/gtiacnuktxzgnbaersxc.webp",
     "fb": "https://m.facebook.com/jubaraj.talukdar.37/"
- 
   },
   {
     "id": 16,
@@ -208,14 +283,12 @@
     "name": "Mayukh Das",
     "designation": "UI/UX",
     "role": "Tech",
-    "img": "https://res.cloudinary.com/dieef3h1w/image/upload/v1726411197/mayukh_fmbwe9.webp" ,
+    "img": "https://res.cloudinary.com/dieef3h1w/image/upload/v1726411197/mayukh_fmbwe9.webp",
     "git": "https://github.com/MayukhCANTcode",
-    "linkedin":"https://www.linkedin.com/in/mayukh-das-b282a930a/",
+    "linkedin": "https://www.linkedin.com/in/mayukh-das-b282a930a/",
     "fb": "https://www.facebook.com/profile.php?id=61565492228532"
   },
-  
 
- 
   {
     "id": 24,
     "name": "Saptarshi Adhikari",
@@ -276,7 +349,4 @@
     "linkedin": "https://www.linkedin.com/in/jagatjyotideb/",
     "fb": "https://www.facebook.com/profile.php?id=100084536361943"
   }
- 
 ]
-
-
