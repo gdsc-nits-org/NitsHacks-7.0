@@ -13,7 +13,7 @@ const Navbar = () => {
     if (location.hash) {
       const id = location.hash.split("#")[1];
       const element = document.getElementById(id);
-      const headerOffset = 100;
+      const headerOffset = 200;
       const bodyRect = document.body.getBoundingClientRect().top;
       if (element) {
         const elementRect = element.getBoundingClientRect().top;
