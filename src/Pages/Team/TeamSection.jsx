@@ -13,6 +13,7 @@ const DeskTeam = ({
   techLead,
   tech,
   organisers,
+  volunteers,
 }) => {
   return (
     <div className={styles.page}>
@@ -45,12 +46,12 @@ const DeskTeam = ({
         <div className={styles.teamname_body}>{organisers.map(MemberDetails)}</div>
       </div>
 
-      {/* <div className={styles.teamname}>
+      <div className={styles.teamname}>
         <div className={styles.headingteamsa} id="VOLUNTEERS">
           volunteers
         </div>{" "}
         <div className={styles.teamname_body}>{volunteers.map(MemberDetails)}</div>
-      </div> */}
+      </div>
     </div>
   );
 };
@@ -63,6 +64,7 @@ const MobTeam = ({
   techLead,
   tech,
   organisers,
+  volunteers,
 }) => {
   return (
     <div className={styles.page2}>
@@ -102,14 +104,14 @@ const MobTeam = ({
           <Carousel>{organisers.map(MemberDetails)}</Carousel>
         </div>
       </div>
-      {/* <div className={styles.content}>
+      <div className={styles.content}>
         <div className={styles.heading}>
           <p>volunteers</p>
         </div>
         <div className={styles.Events}>
           <Carousel>{volunteers.map(MemberDetails)}</Carousel>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
