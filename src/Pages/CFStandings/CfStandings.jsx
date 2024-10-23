@@ -7,7 +7,7 @@ import styles from "./CfStandings.module.scss";
 const queryClient = new QueryClient();
 
 const CfStandings = () => {
-  const [comingsoon] = useState(false);
+  const [comingsoon] = useState(true);
   return (
     <QueryClientProvider client={queryClient}>
       <div className={styles.mainCont}>
