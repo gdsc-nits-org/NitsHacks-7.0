@@ -52,7 +52,7 @@ const JudgeCard = () => {
   ];
   return (
     <section className={styles.section} id="speakers">
-      <h1 className={styles.heading}>software tracU judge</h1>
+      <h1 className={styles.heading}>our judges</h1>
       <div className={styles.SWjudge}>
         <div
           className={styles.gridContainer}
@@ -64,13 +64,7 @@ const JudgeCard = () => {
             role={SWJudge.role}
             data={SWJudge.data.split(";")}
           />
-        </div>
-        <h1 className={styles.heading} style={{ marginTop: "2rem" }}>
-          ui/ux judges
-        </h1>
-      </div>
-      <div className={styles.gridContainer}>
-        {UIUXJudges.map((judge) => {
+          {UIUXJudges.map((judge) => {
           const dataList = judge.data.split(";");
           return (
             <Card
@@ -82,6 +76,7 @@ const JudgeCard = () => {
             />
           );
         })}
+        </div>
       </div>
     </section>
   );
