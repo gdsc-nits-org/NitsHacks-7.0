@@ -137,6 +137,16 @@
     "fb": "https://www.facebook.com/siddhid.saha/"
   },
   {
+    "id": 36,
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1694017421/gdsc%20seniors/team_pics/ParthapratimDeka_ad18y0.jpg",
+    "name": "Partha Pratim Deka",
+    "designation": "Coordinator",
+    "role": "Coordinator",
+    "linkedin": "https://www.linkedin.com/in/partha-pratim-deka-46a406203/",
+    "fb": "https://www.facebook.com/profile.php?id=100076429322657",
+    "git": "https://github.com/parthaxntn"
+  },
+  {
     "id": 7,
     "name": "Amartya Ahmed",
     "designation": "Coordinator",
@@ -600,4 +610,3 @@
     "id": 63
   }
 ]
-

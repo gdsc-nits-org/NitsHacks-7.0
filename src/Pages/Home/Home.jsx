@@ -28,7 +28,7 @@ const Home = () => {
           <Tecno />
         </div>
         <Event />
-        <JudgeCard/>
+        <JudgeCard />
         <Sponsor />
         <Testimonial />
       </div>
