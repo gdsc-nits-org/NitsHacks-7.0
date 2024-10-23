@@ -3,15 +3,19 @@
   color: white;
   padding-top: 2rem;
 }
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem 2rem;
-  gap: 1.5rem;
-  justify-items: center;
+.SWjudge {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 650px) {
+      flex-direction: row;
+    }
+    padding: 1rem 2rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 .heading {
   font-family: "StarJedi";
   color: #f2c300;
@@ -20,8 +24,8 @@
 }
 
 .speaker_image {
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 1rem;
 }
 
@@ -45,12 +49,12 @@
   border-radius: 1rem;
   transform-style: preserve-3d;
   perspective: 1000px;
-  width: 50%;
+  width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .flip_card {
-    width: 100%;
+    width: 50%;
   }
 
   .name {
@@ -72,9 +76,9 @@
 }
 
 @media screen and (max-width: 850px) and (min-width: 601px) {
-  .flip_card {
-    width: 50%;
-  }
+  // .flip_card {
+  //   width: 50%;
+  // }
 
   .name {
     font-size: 1rem;
@@ -102,7 +106,10 @@
   transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   backface-visibility: hidden;
   width: 100%;
-  height: 425px;
+  height: 225px;
+  @media screen and (min-width: 650px) {
+    height: 350px;
+  }
   border-radius: 0.6rem;
   background-color: black;
   color: #fff;
