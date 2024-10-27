@@ -10,6 +10,7 @@ import {
   Hero,
   Testimonial,
   JudgeCard,
+  Speaker,
 } from "../../Components/index";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
         </div>
         <Event />
         <JudgeCard />
+        <Speaker />
         <Sponsor />
         <Testimonial />
       </div>
