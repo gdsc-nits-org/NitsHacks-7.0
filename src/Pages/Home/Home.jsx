@@ -10,7 +10,7 @@ import {
   Hero,
   Testimonial,
   JudgeCard,
-  Speaker,
+  // Speaker
 } from "../../Components/index";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
         </div>
         <Event />
         <JudgeCard />
-        <Speaker />
+        {/* <Speaker/> */}
         <Sponsor />
         <Testimonial />
       </div>

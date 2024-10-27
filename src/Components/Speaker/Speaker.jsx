@@ -31,7 +31,7 @@ const Speaker = () => {
         "https://res.cloudinary.com/dmezugavw/image/upload/v1729997061/kamlesh_epoa9x.jpg",
       name: "Kamlesh Nagware",
       role: "Co-Founder @ FSV Capital",
-      data: "TEDx Speaker|Blockchain TOP VOICE | Co-chair of the IEEE Blockchain Initiative|Mentor to Blockchain start-ups|Former Blockchain Consultant at IBM",
+      data: "TEDx Speaker|Blockchain TOP VOICE | Co-chair of the IEEE Blockchain Initiative|Former Blockchain Consultant at IBM",
     },
   ];
   return (
