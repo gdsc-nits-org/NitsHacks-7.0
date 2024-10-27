@@ -312,7 +312,7 @@
   {
     "id": 25,
     "name": "Bishal Paul Biswas",
-    "designation": "Outreach",
+    "designation": "Software Track Head",
     "role": "Organisers",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/hguefjvwsiuktfccvxdw.webp",
     "git": "https://github.com/bishalpb2004",
@@ -378,6 +378,16 @@
 		"git": "https://github.com/Z-Maniac-Sidd",
 		"linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
 		"fb": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/"
+	},
+  {
+		"id": 32,
+		"name": "Rajdeep Sarkar",
+    "designation":"UI/UX Track Head",
+    "role":"Organisers",
+		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/IMG-20221111-WA0020_2_-_EIE_030_RAJDEEP_SARKAR_g0xej9.jpg",
+		"git": "https://github.com/Rajdeepsark",
+		"linkedin": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
+		"fb": "https://www.facebook.com/freaky.Rajdeep"
 	},
   {
     "role": "volunteer",
