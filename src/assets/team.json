@@ -360,6 +360,26 @@
     "fb": "https://www.facebook.com/profile.php?id=100084536361943"
   },
   {
+		"id": 30,
+		"name": "Rishav Bora",
+    "role":"Organisers",
+		"linkedin": "https://www.linkedin.com/in/rishav-bora-377157258/",
+		"git": "https://github.com/rishav3110",
+		"fb": "https://www.facebook.com/rishav.bora.31586",
+		"designation": "Marketing",
+		"img": "https://res.cloudinary.com/dl19r276g/image/upload/v1705494482/newimgrishav2_gfjrgb.webp"
+	},
+  {
+		"id": 31,
+		"name": "Siddharth Ghosh",
+    "role":"Organisers",
+    "designation":"Design",
+		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827576/GDSC%20images/WhatsApp_Image_2023-09-01_at_20.15.25_-_Siddharth_Ghosh_ofceqg.webp",
+		"git": "https://github.com/Z-Maniac-Sidd",
+		"linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
+		"fb": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/"
+	},
+  {
     "role": "volunteer",
     "name": "Abhishekh Kumar Mishra ",
     "designation": "Outreach",
