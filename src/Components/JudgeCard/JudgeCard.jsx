@@ -51,7 +51,7 @@ const JudgeCard = () => {
     },
   ];
   return (
-    <section className={styles.section} id="speakers">
+    <section className={styles.section} id="judges">
       <h1 className={styles.heading}>our judges</h1>
       <div className={styles.SWjudge}>
         <div className={styles.gridContainer}>
