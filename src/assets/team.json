@@ -146,17 +146,6 @@
     "linkedin": "https://www.linkedin.com/in/amartyaahmed",
     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
   },
-
-  {
-    "id": 8,
-    "name": "Arunaditya Dasgupta",
-    "designation": "Outreach",
-    "role": "Organisers",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.webp",
-    "git": "http://github.com/git-ADG",
-    "linkedin": "https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-    "fb": "https://www.facebook.com/share/Lv1SU685tHLaWhPg/"
-  },
   {
     "id": 10,
     "name": "Barnil Sarma",
@@ -298,17 +287,6 @@
     "linkedin": "https://www.linkedin.com/in/mayukh-das-b282a930a/",
     "fb": "https://www.facebook.com/profile.php?id=61565492228532"
   },
-
-  {
-    "id": 24,
-    "name": "Saptarshi Adhikari",
-    "designation": "Outreach",
-    "role": "Organisers",
-    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014279/team_img/ysvoy6qrfnwxauobtnug.webp",
-    "git": "https://github.com/Mastermind-sap",
-    "linkedin": "https://www.linkedin.com/in/saptarshi-adhikari",
-    "fb": "https://www.facebook.com/profile.php?id=100013361384712"
-  },
   {
     "id": 25,
     "name": "Bishal Paul Biswas",
@@ -318,6 +296,46 @@
     "git": "https://github.com/bishalpb2004",
     "linkedin": "https://www.linkedin.com/in/bishal-paul-biswas-592341257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "fb": "https://www.facebook.com/profile.php?id=100087658158317&mibextid=ZbWKwL"
+  },
+  {
+		"id": 32,
+		"name": "Rajdeep Sarkar",
+    "designation":"UI/UX Track Head",
+    "role":"Organisers",
+		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/IMG-20221111-WA0020_2_-_EIE_030_RAJDEEP_SARKAR_g0xej9.jpg",
+		"git": "https://github.com/Rajdeepsark",
+		"linkedin": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
+		"fb": "https://www.facebook.com/freaky.Rajdeep"
+	},
+  {
+		"id": 33,
+		"name": "Rishi Jha",
+    "designation":"Coding Track Head",
+    "role":"Organisers",
+		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730054693/nits-hacks-7.0/WhatsApp_Image_2024-10-28_at_12.12.33_AM_snesjr.jpg",
+		"git": "",
+		"linkedin": "https://www.linkedin.com/in/rishi-jha-3604191a3",
+		"fb": ""
+	},
+  {
+    "id": 8,
+    "name": "Arunaditya Dasgupta",
+    "designation": "Outreach",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014379/team_img/bz2xefxnsiz56nupkz4x.webp",
+    "git": "http://github.com/git-ADG",
+    "linkedin": "https://www.linkedin.com/in/arunaditya-dasgupta-662aa4256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
+    "fb": "https://www.facebook.com/share/Lv1SU685tHLaWhPg/"
+  },
+  {
+    "id": 24,
+    "name": "Saptarshi Adhikari",
+    "designation": "Outreach",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729014279/team_img/ysvoy6qrfnwxauobtnug.webp",
+    "git": "https://github.com/Mastermind-sap",
+    "linkedin": "https://www.linkedin.com/in/saptarshi-adhikari",
+    "fb": "https://www.facebook.com/profile.php?id=100013361384712"
   },
   {
     "id": 26,
@@ -378,16 +396,6 @@
 		"git": "https://github.com/Z-Maniac-Sidd",
 		"linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
 		"fb": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/"
-	},
-  {
-		"id": 32,
-		"name": "Rajdeep Sarkar",
-    "designation":"UI/UX Track Head",
-    "role":"Organisers",
-		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/IMG-20221111-WA0020_2_-_EIE_030_RAJDEEP_SARKAR_g0xej9.jpg",
-		"git": "https://github.com/Rajdeepsark",
-		"linkedin": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
-		"fb": "https://www.facebook.com/freaky.Rajdeep"
 	},
   {
     "role": "volunteer",
