@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <Event />,
   },
   {
-    path: "/event/2/standings",
+    path: "/event/3/standings",
     element: <CfStandings />,
   },
   {

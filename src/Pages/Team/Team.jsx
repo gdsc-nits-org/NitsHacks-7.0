@@ -13,6 +13,8 @@ const Teams = () => {
   const techLead = teamData.filter((member) => member.role === "Techlead");
   const tech = teamData.filter((member) => member.role === "Tech");
   const organisers = teamData.filter((member) => member.role === "Organisers");
+  const volunteers = teamData.filter((member) => member.role === "volunteer");
+  const faculty = teamData.filter((member) => member.role === "Faculty");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -40,21 +42,25 @@ const Teams = () => {
           </div>
           {isMobile ? (
             <MobTeam
+              faculty={faculty}
               convener={convener}
               coordinator={coordinator}
               coreTeam={coreTeam}
               techLead={techLead}
               tech={tech}
               organisers={organisers}
+              volunteers={volunteers}
             />
           ) : (
             <DeskTeam
+              faculty={faculty}
               convener={convener}
               coordinator={coordinator}
               coreTeam={coreTeam}
               techLead={techLead}
               tech={tech}
               organisers={organisers}
+              volunteers={volunteers}
             />
           )}
 

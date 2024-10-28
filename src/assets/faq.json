@@ -2,7 +2,7 @@
   {
     "id": 1,
     "question": "Q. Will the events be online or offline?",
-    "answer": "A. It is going to be a combination of online and offline , i.e. Hybrid(Offline for the students of NITS and online for outside students)"
+    "answer": "A. It is going to be a combination of online and offline."
   },
   {
     "id": 2,
@@ -17,17 +17,17 @@
   {
     "id": 4,
     "question": "Q. Can students of other colleges participate remotely?",
-    "answer": "A. Yes, remote participation is allowed."
+    "answer": "A. Remote participation is allowed only for students outside NITS."
   },
   {
     "id": 5,
     "question": "Q. Do we need to be very good in order to participate?",
-    "answer": "A. You need the basic knowledge of HTML, CSS to participate in the Software track. That is more than enough.\n\nBasic programming knowledge in any language is enough for the Coding track.\n\nAny sort of design thinking is welcome to participate in UI/UX. You need not be an expert in it."
+    "answer": "A. The SW track does not expect expert level of proficiency, all you need is a good idea and a good solution which solves the given problem statement nicely.\n\nBasic programming knowledge in any language is enough for the Coding track.\n\nAny sort of design thinking is welcome to participate in UI/UX. You need not be an expert in it."
   },
   {
     "id": 6,
     "question": "Q. What are the eligibility criteria for participation?",
-    "answer": "A. Anyone with the interest to learn is free to participate. No one is restricted from participating."
+    "answer": "A. Anyone from Btech level is allowed to participate."
   },
   {
     "id": 7,
@@ -38,5 +38,15 @@
     "id": 8,
     "question": "Q. Will there be prizes for the winners?",
     "answer": "A. There are perks for both winners and participants."
+  },
+  {
+    "id": 9,
+    "question": "Q. Is there any provision of accomodation for participants from other colleges?",
+    "answer": "A. Yes, accomodation will be provided to the participants from other collges."
+  },
+  {
+    "id": 10,
+    "question": "Q. What is the team size for Software Track?",
+    "answer": "A. Minimum 2, Maximum 5."
   }
 ]
