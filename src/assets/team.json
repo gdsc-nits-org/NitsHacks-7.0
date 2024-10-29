@@ -298,25 +298,92 @@
     "fb": "https://www.facebook.com/profile.php?id=100087658158317&mibextid=ZbWKwL"
   },
   {
-		"id": 32,
-		"name": "Rajdeep Sarkar",
-    "designation":"UI/UX Track Head",
-    "role":"Organisers",
-		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/IMG-20221111-WA0020_2_-_EIE_030_RAJDEEP_SARKAR_g0xej9.jpg",
-		"git": "https://github.com/Rajdeepsark",
-		"linkedin": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
-		"fb": "https://www.facebook.com/freaky.Rajdeep"
-	},
+    "id": 32,
+    "name": "Rajdeep Sarkar",
+    "designation": "UI/UX Track Head",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827558/GDSC%20images/IMG-20221111-WA0020_2_-_EIE_030_RAJDEEP_SARKAR_g0xej9.jpg",
+    "git": "https://github.com/Rajdeepsark",
+    "linkedin": "https://www.linkedin.com/in/rajdeep-sarkar-00b80a244",
+    "fb": "https://www.facebook.com/freaky.Rajdeep"
+  },
   {
-		"id": 33,
-		"name": "Rishi Jha",
-    "designation":"Coding Track Head",
-    "role":"Organisers",
-		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730054693/nits-hacks-7.0/WhatsApp_Image_2024-10-28_at_12.12.33_AM_snesjr.jpg",
-		"git": "",
-		"linkedin": "https://www.linkedin.com/in/rishi-jha-3604191a3",
-		"fb": ""
-	},
+    "id": 33,
+    "name": "Rishi Jha",
+    "designation": "Coding Track Head",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730054693/nits-hacks-7.0/WhatsApp_Image_2024-10-28_at_12.12.33_AM_snesjr.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/rishi-jha-3604191a3",
+    "fb": ""
+  },
+
+  {
+    "id": 34,
+    "name": "Aayan Borah Kalita",
+    "designation": "Problem Setter",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/ayan_yawymg.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/aayanborahkalita/",
+    "fb": "",
+    "cf": "https://codeforces.com/profile/GetRekt"
+  },
+  {
+    "id": 35,
+    "name": "Sohail Kazi",
+    "designation": "Problem Setter",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/sohail_ouhcak.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/sohail-kazi-951677249/",
+    "fb": "",
+    "cf": "https://codeforces.com/profile/sohailkazi"
+  },
+  {
+    "id": 36,
+    "name": "Mani Kiran Batchu",
+    "designation": "Problem Setter",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/manikiran_kv1bap.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/mani-kiran-batchu-4885b1249/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "fb": "",
+    "cf": "https://codeforces.com/profile/manikiran949"
+  },
+  {
+    "id": 37,
+    "name": "Pallav Sharma",
+    "designation": "Editorial",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129771/nits-hacks-7.0/IMG-20240330-WA0009_-_Pallav_Sharma_ieke1y.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/pallav-sharma-68174424b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "fb": "https://www.facebook.com/profile.php?id=100088107152732&mibextid=ZbWKwL",
+    "cf": "https://codeforces.com/profile/pallavshrm27"
+  },
+  {
+    "id": 38,
+    "name": "Nawadeep Atreya",
+    "designation": "Management",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/WhatsApp_Image_2024-10-27_at_18.51.46_4309b3c7_-_Nawadeep_Atreya_fv3y4l.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/nawadeepatreya/",
+    "fb": "https://www.facebook.com/nawadeep.atreya.5",
+    "cf": "https://codeforces.com/profile/Atreya45"
+  },
+  {
+    "id": 39,
+    "name": "Janisa Kashyap",
+    "designation": "Management",
+    "role": "Organisers",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/janisa_whhohr.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/janisa-kashyap-463674269/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "fb": "",
+    "cf": ""
+  },
   {
     "id": 8,
     "name": "Arunaditya Dasgupta",
@@ -378,25 +445,25 @@
     "fb": "https://www.facebook.com/profile.php?id=100084536361943"
   },
   {
-		"id": 30,
-		"name": "Rishav Bora",
-    "role":"Organisers",
-		"linkedin": "https://www.linkedin.com/in/rishav-bora-377157258/",
-		"git": "https://github.com/rishav3110",
-		"fb": "https://www.facebook.com/rishav.bora.31586",
-		"designation": "Marketing",
-		"img": "https://res.cloudinary.com/dl19r276g/image/upload/v1705494482/newimgrishav2_gfjrgb.webp"
-	},
+    "id": 30,
+    "name": "Rishav Bora",
+    "role": "Organisers",
+    "linkedin": "https://www.linkedin.com/in/rishav-bora-377157258/",
+    "git": "https://github.com/rishav3110",
+    "fb": "https://www.facebook.com/rishav.bora.31586",
+    "designation": "Marketing",
+    "img": "https://res.cloudinary.com/dl19r276g/image/upload/v1705494482/newimgrishav2_gfjrgb.webp"
+  },
   {
-		"id": 31,
-		"name": "Siddharth Ghosh",
-    "role":"Organisers",
-    "designation":"Design",
-		"img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827576/GDSC%20images/WhatsApp_Image_2023-09-01_at_20.15.25_-_Siddharth_Ghosh_ofceqg.webp",
-		"git": "https://github.com/Z-Maniac-Sidd",
-		"linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
-		"fb": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/"
-	},
+    "id": 31,
+    "name": "Siddharth Ghosh",
+    "role": "Organisers",
+    "designation": "Design",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1693827576/GDSC%20images/WhatsApp_Image_2023-09-01_at_20.15.25_-_Siddharth_Ghosh_ofceqg.webp",
+    "git": "https://github.com/Z-Maniac-Sidd",
+    "linkedin": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/",
+    "fb": "https://www.linkedin.com/in/siddharth-ghosh-18ba29251/"
+  },
   {
     "role": "volunteer",
     "name": "Abhishekh Kumar Mishra ",
