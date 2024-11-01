@@ -6,13 +6,28 @@ import { Navbar } from "../../Components";
 import styles from "./CfStandings.module.scss";
 const queryClient = new QueryClient();
 
+async function pullData(message, time) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-512", msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+  const res = await fetch(
+    `https://codeforces.com/api/contest.standings?contestId=496831&apiKey=${key}&time=${time}&apiSig=123456<${hashHex}>`
+  );
+  if (!res.ok) throw new Error("Network response was not ok");
+  return res.json();
+}
+
+const key = import.meta.env.VITE_CF_API_KEY;
+const secret = import.meta.env.VITE_CF_API_SECRET;
+
 const CfStandings = () => {
-  const [comingsoon] = useState(false);
+  const [comingsoon] = useState(true);
   return (
     <QueryClientProvider client={queryClient}>
       <div className={styles.mainCont}>
         <Navbar />
-        {comingsoon ? (
+        {!comingsoon ? (
           <Wrapper />
         ) : (
           <div className={styles.comingsoon}>
@@ -26,12 +41,11 @@ const CfStandings = () => {
 };
 
 const Wrapper = () => {
+  const nowTime = Math.floor(Date.now() / 1000);
+  const code = `123456/contest.standings?apiKey=${key}&contestId=496831&time=${nowTime}#${secret}`;
   const { isLoading, error, data } = useQuery({
     queryKey: ["repoData"],
-    queryFn: () =>
-      fetch(
-        `${import.meta.env.VITE_CF_API_URL}/contest.standings?contestId=566&showUnofficial=true`
-      ).then((res) => res.json()),
+    queryFn: () => pullData(code, nowTime),
   });
 
   if (isLoading) return "Loading...";

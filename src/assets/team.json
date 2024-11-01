@@ -147,6 +147,15 @@
     "fb": "https://www.facebook.com/share/1AkZ7rMT9e/"
   },
   {
+    "id": 9,
+    "name": "Priyabrat Duarah",
+    "designation": "Core Member",
+    "role": "Coreteam",
+    "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730468461/priya_zodmwo.jpg",
+    "fb": "https://www.facebook.com/profile.php?id=100076231446828",
+    "linkedin" : "https://www.linkedin.com/in/priyabratduarah/"
+  },
+  {
     "id": 10,
     "name": "Barnil Sarma",
     "linkedin": "https://www.linkedin.com/in/barnil-sarma-34383a255",
@@ -686,13 +695,23 @@
   },
   {
     "role": "volunteer",
+    "name": "Uddhav Saikia",
+    "designation": "Marketing",
+    "img": "https://res.cloudinary.com/gdsc-photo/image/upload/v1726288762/d28bkehnmxavpdkbfyv0.webp",
+    "linkedin": "https://www.linkedin.com/in/uddhavsaikia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "git": "https://github.com/Uddhav-Saikia",
+    "fb": "https://www.facebook.com/people/Uddhav-Saikia/pfbid028zieYrLiS3zpXo1fd9hv8BECUuukN1QhSEe7Hkch3gxrUwnhRU7Gq1zh5wSYLhC2l/?mibextid=ZbWKwL",
+    "id": 62
+  },
+  {
+    "role": "volunteer",
     "name": "Upamanyu Jit Phukan",
     "designation": "Marketing",
     "img": "https://res.cloudinary.com/gdsc-photo/image/upload/v1729606560/pjiby9wodgtqoimln4n6.webp",
     "linkedin": "https://www.linkedin.com/in/upamanyu-jit-phukan-a98359291/?originalSubdomain=in",
     "cf": "https://codeforces.com/profile/Upamanyu_Phukan",
     "fb": "https://www.facebook.com/upamanyu.jitphukan/",
-    "id": 62
+    "id": 63
   },
   {
     "role": "volunteer",
@@ -702,6 +721,6 @@
     "linkedin": "https://www.linkedin.com/in/vikrant-agarwala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "cf": "https://codeforces.com/profile/vikrantag17",
     "fb": "https://www.facebook.com/vikrant017?mibextid=ZbWKwL",
-    "id": 63
+    "id": 64
   }
 ]
