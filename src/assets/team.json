@@ -167,6 +167,27 @@
     "linkedin" : "https://www.linkedin.com/in/priyabratduarah/"
   },
   {
+    "id": 136,
+    "name": "Hirakjyoti Choudhury",
+    "designation": "Problem Setter, Coding Track",
+    "role":"Coordinator",
+    "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/1000046541-01_-_042_hirak__choudhury_iwfdea.jpg",
+    "linkedin": "https://www.linkedin.com/in/hirakjyoti-choudhury-544010255/",
+    "fb": "https://www.facebook.com/profile.php?id=100076227257298",
+    "cf": "https://codeforces.com/profile/he_rock18"
+  }, 
+  {
+    "id": 361,
+    "name": "Ayush Malviya",
+    "designation": "Problem Setter, Coding Track",
+    "role": "Coordinator",
+    "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/IMG20230709180025_-_051_Ayush_Malviya_ofkx4l.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/ayuanchor",
+    "fb": "https://facebook.com/profile.php?id=100076313942761",
+    "cf": "https://codeforces.com/profile/AyuAnchor"
+  },
+  {
     "id": 10,
     "name": "Barnil Sarma",
     "linkedin": "https://www.linkedin.com/in/barnil-sarma-34383a255",
@@ -240,27 +261,6 @@
     "linkedin": "https://www.linkedin.com/in/mani-kiran-batchu-4885b1249/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     "fb": "",
     "cf": "https://codeforces.com/profile/manikiran949"
-  },
-  {
-    "id": 136,
-    "name": "Hirakjyoti Choudhury",
-    "designation": "Problem Setter, Coding Track",
-    "role": "Prob",
-    "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/1000046541-01_-_042_hirak__choudhury_iwfdea.jpg",
-    "linkedin": "https://www.linkedin.com/in/hirakjyoti-choudhury-544010255/",
-    "fb": "https://www.facebook.com/profile.php?id=100076227257298",
-    "cf": "https://codeforces.com/profile/he_rock18"
-  },
-  {
-    "id": 361,
-    "name": "Ayush Malviya",
-    "designation": "Problem Setter, Coding Track",
-    "role": "Prob",
-    "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/IMG20230709180025_-_051_Ayush_Malviya_ofkx4l.jpg",
-    "git": "",
-    "linkedin": "https://www.linkedin.com/in/ayuanchor",
-    "fb": "https://facebook.com/profile.php?id=100076313942761",
-    "cf": "https://codeforces.com/profile/AyuAnchor"
   },
   {
     "id": 13,
