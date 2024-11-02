@@ -15,6 +15,7 @@ const Teams = () => {
   const organisers = teamData.filter((member) => member.role === "Organisers");
   const volunteers = teamData.filter((member) => member.role === "volunteer");
   const faculty = teamData.filter((member) => member.role === "Faculty");
+  const setter = teamData.filter((member) => member.role === "Prob");
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -50,6 +51,7 @@ const Teams = () => {
               tech={tech}
               organisers={organisers}
               volunteers={volunteers}
+              setter={setter}
             />
           ) : (
             <DeskTeam
@@ -61,6 +63,7 @@ const Teams = () => {
               tech={tech}
               organisers={organisers}
               volunteers={volunteers}
+              setter={setter}
             />
           )}
 
