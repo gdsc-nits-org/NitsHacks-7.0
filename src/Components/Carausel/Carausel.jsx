@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import styles from "./Carausel.module.scss";
 
 const MAX_VISIBILITY = 3;
-const AUTOPLAY_INTERVAL = 3000;
+//const AUTOPLAY_INTERVAL = 3000;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(0);
   const count = React.Children.count(children);
 
-  useEffect(() => {
-    const autoplay = setInterval(() => {
-      setActive((prevActive) => (prevActive + 1) % count);
-    }, AUTOPLAY_INTERVAL);
-    return () => clearInterval(autoplay);
-  }, [count]);
+  // useEffect(() => {
+  //   const autoplay = setInterval(() => {
+  //     setActive((prevActive) => (prevActive + 1) % count);
+  //   }, AUTOPLAY_INTERVAL);
+  //   return () => clearInterval(autoplay);
+  // }, [count]);
 
   return (
     <div className={styles.carouselCont}>
