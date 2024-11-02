@@ -1,6 +1,6 @@
 [
   {
-    "id":420,
+    "id": 420,
     "name": "Prof. Rahul Dev Misra",
     "designation": "Mentor",
     "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730522543/rdmishra-chairman-research-promotion-cell-nit-silchar_ynrsas.jpg",
@@ -164,18 +164,18 @@
     "role": "Coreteam",
     "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730468461/priya_zodmwo.jpg",
     "fb": "https://www.facebook.com/profile.php?id=100076231446828",
-    "linkedin" : "https://www.linkedin.com/in/priyabratduarah/"
+    "linkedin": "https://www.linkedin.com/in/priyabratduarah/"
   },
   {
     "id": 136,
     "name": "Hirakjyoti Choudhury",
     "designation": "Problem Setter, Coding Track",
-    "role":"Coordinator",
+    "role": "Coordinator",
     "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/1000046541-01_-_042_hirak__choudhury_iwfdea.jpg",
     "linkedin": "https://www.linkedin.com/in/hirakjyoti-choudhury-544010255/",
     "fb": "https://www.facebook.com/profile.php?id=100076227257298",
     "cf": "https://codeforces.com/profile/he_rock18"
-  }, 
+  },
   {
     "id": 361,
     "name": "Ayush Malviya",
@@ -291,7 +291,8 @@
     "role": "Tech",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1729015228/team_img/gtiacnuktxzgnbaersxc.webp",
     "fb": "https://m.facebook.com/jubaraj.talukdar.37/"
-  },{
+  },
+  {
     "id": 16,
     "name": "Manash Pratim Goswami",
     "linkedin": "https://www.linkedin.com/in/manash-pratim-goswami-477352289",

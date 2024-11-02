@@ -1,57 +1,56 @@
 [
   {
     "id": 1,
-    "name":"Swaglok",
+    "name": "Swaglok",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541271/rgih5oohiuvgfe2mzt1a.png",
     "uri": "https://www.instagram.com/shop_swaglok/?hl=en"
   },
   {
     "id": 2,
-    "name":"Cipher Schools",
+    "name": "Cipher Schools",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541435/nsz2zdttjfxqd6kleypl.png",
     "uri": "https://www.cipherschools.com/"
   },
   {
     "id": 3,
-    "name":"Unstop",
+    "name": "Unstop",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541435/vt8zpqmhv5alfoxd3edk.png",
     "uri": "https://unstop.com/"
   },
   {
     "id": 4,
-    "name":"NordVPN",
+    "name": "NordVPN",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541636/kszkbvtylmynriqatipq.png",
     "uri": "https://nordvpn.com/hackathons"
   },
   {
     "id": 5,
-    "name":"NordPass",
+    "name": "NordPass",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541635/ebzdpt9gvncxdzygk59z.png",
     "uri": "https://nordpass.com/"
   },
   {
     "id": 6,
-    "name":"Incogni",
+    "name": "Incogni",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541861/xbqr3sl7hvb9kqdxotpl.png",
     "uri": "https://incogni.com/"
   },
   {
     "id": 7,
-    "name":"Saily",
+    "name": "Saily",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541862/g9rpdil5vczblh3twqce.png",
     "uri": "https://saily.com/"
   },
   {
     "id": 8,
-    "name":"Campus Karma",
+    "name": "Campus Karma",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541872/ouf2onrs9hwbi6cxeu71.png",
     "uri": "https://www.campuskarma.in/"
   },
   {
     "id": 9,
-    "name":"Flatlogic",
+    "name": "Flatlogic",
     "img": "https://res.cloudinary.com/dg361q5uv/image/upload/v1730541874/z1ax5amhtioauubdpdkv.png",
     "uri": "https://flatlogic.com/"
   }
 ]
-
