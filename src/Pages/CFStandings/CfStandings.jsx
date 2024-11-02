@@ -3,17 +3,23 @@ import "react-toastify/dist/ReactToastify.css";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { Navbar } from "../../Components";
-const crypto = require('crypto');
+import styles from "./CfStandings.module.scss";
+const queryClient = new QueryClient();
 
-const nowTime = Math.floor(Date.now() / 1000);
+async function pullData(message, time) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-512", msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+  const res = await fetch(
+    `https://codeforces.com/api/contest.standings?contestId=496831&apiKey=${key}&time=${time}&apiSig=123456<${hashHex}>`
+  );
+  if (!res.ok) throw new Error("Network response was not ok");
+  return res.json();
+}
 
-const hash = crypto.createHash('sha512');
-const code = `123456/contest.standings?apiKey=aa3c8e778b5419005e77427a61de408186595396&contestId=499481&time=${nowTime}#fe85672451f7e8fc3992ef6165c5bb624dc2b09c`
-hash.update(code);
-const hexHash = hash.digest('hex');
-
-console.log(code);
-
+const key = import.meta.env.VITE_CF_API_KEY;
+const secret = import.meta.env.VITE_CF_API_SECRET;
 
 const CfStandings = () => {
   const [comingsoon] = useState(false);
@@ -36,14 +42,10 @@ const CfStandings = () => {
 
 const Wrapper = () => {
   const nowTime = Math.floor(Date.now() / 1000);
-
-  
+  const code = `123456/contest.standings?apiKey=${key}&contestId=496831&time=${nowTime}#${secret}`;
   const { isLoading, error, data } = useQuery({
     queryKey: ["repoData"],
-    queryFn: () =>
-      fetch(
-        `${import.meta.env.VITE_CF_API_URL}/contest.standings?contestId=496831&apiKey=aa3c8e778b5419005e77427a61de408186595396&time=${nowTime}&apiSig=123456<${hexHash}>`
-      ).then((res) => res.json()),
+    queryFn: () => pullData(code, nowTime),
   });
 
   if (isLoading) return "Loading...";
@@ -75,7 +77,7 @@ const Wrapper = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerCont}>
-        <h1 className={styles.header}>current standings</h1>
+        <h1 className={styles.header}>nits hacks 6.0 prelims</h1>
       </div>
       <div className={styles.inputCont}>
         <input
