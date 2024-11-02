@@ -22,7 +22,7 @@ const key = import.meta.env.VITE_CF_API_KEY;
 const secret = import.meta.env.VITE_CF_API_SECRET;
 
 const CfStandings = () => {
-  const [comingsoon] = useState(true);
+  const [comingsoon] = useState(false);
   return (
     <QueryClientProvider client={queryClient}>
       <div className={styles.mainCont}>
@@ -73,11 +73,11 @@ const Wrapper = () => {
       });
     }
   };
-
+  console.log(data);
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerCont}>
-        <h1 className={styles.header}>current standings</h1>
+        <h1 className={styles.header}>nits hacks 6.0 prelims</h1>
       </div>
       <div className={styles.inputCont}>
         <input
