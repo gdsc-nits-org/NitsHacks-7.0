@@ -14,6 +14,7 @@ const DeskTeam = ({
   tech,
   organisers,
   volunteers,
+  setter,
 }) => {
   return (
     <div className={styles.page}>
@@ -36,6 +37,7 @@ const DeskTeam = ({
         <div className={styles.teamname_body}>
           <section className={styles.sec}> {techLead.map(MemberDetails)}</section>
           <section className={styles.sec}> {tech.map(MemberDetails)}</section>
+          <section className={styles.sec}> {setter.map(MemberDetails)}</section>
         </div>
       </div>
 
@@ -65,6 +67,7 @@ const MobTeam = ({
   tech,
   organisers,
   volunteers,
+  setter,
 }) => {
   return (
     <div className={styles.page2}>
@@ -94,6 +97,14 @@ const MobTeam = ({
         </div>
         <div className={styles.Events}>
           <Carousel>{tech.map(MemberDetails)}</Carousel>
+        </div>
+      </div>
+      <div className={styles.content}>
+        <div className={styles.heading}>
+          <p>PROBLEM SETTERS</p>
+        </div>
+        <div className={styles.Events}>
+          <Carousel>{setter.map(MemberDetails)}</Carousel>
         </div>
       </div>
       <div className={styles.content}>
