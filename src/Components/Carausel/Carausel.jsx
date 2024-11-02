@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState
+  // , useEffect 
+  } 
+  from "react";
 import styles from "./Carausel.module.scss";
 
 const MAX_VISIBILITY = 3;
-const AUTOPLAY_INTERVAL = 3000;
+// const AUTOPLAY_INTERVAL = 3000;
 
 const Carousel = ({ children }) => {
   const [active, setActive] = useState(0);
