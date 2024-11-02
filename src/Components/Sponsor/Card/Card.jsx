@@ -6,7 +6,7 @@ const Card = ({ photo, link }) => {
       <div className={styles.wrapper}>
         <div className={styles.box}>
           <a href={link} target="_blank" rel="noreferrer">
-            <img src={photo} className={styles.im} alt="logo"/>
+            <img src={photo} className={styles.im} alt="logo" />
           </a>
         </div>
       </div>

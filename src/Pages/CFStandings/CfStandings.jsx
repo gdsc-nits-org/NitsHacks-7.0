@@ -73,7 +73,6 @@ const Wrapper = () => {
       });
     }
   };
-  console.log(data);
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerCont}>
