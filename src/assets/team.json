@@ -200,7 +200,7 @@
   {
     "id": 34,
     "name": "Aayan Borah Kalita",
-    "designation": "Problem Setter",
+    "designation": "Problem Setter, Coding Track",
     "role": "Prob",
     "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/ayan_yawymg.jpg",
     "git": "",
@@ -211,7 +211,7 @@
   {
     "id": 35,
     "name": "Sohail Kazi",
-    "designation": "Problem Setter",
+    "designation": "Problem Setter, Coding Track",
     "role": "Prob",
     "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/sohail_ouhcak.jpg",
     "git": "",
@@ -220,9 +220,20 @@
     "cf": "https://codeforces.com/profile/sohailkazi"
   },
   {
+    "id": 45,
+    "name": "Likith Reddy",
+    "designation": "Problem Setter, Coding Track",
+    "role": "Prob",
+    "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730543093/nits-hacks-7.0/likith_ou6tku.jpg",
+    "git": "",
+    "linkedin": "https://www.linkedin.com/in/likith-reddy-6948b9239/",
+    "fb": "",
+    "cf": ""
+  },
+  {
     "id": 36,
     "name": "Mani Kiran Batchu",
-    "designation": "Problem Setter",
+    "designation": "Problem Setter, Coding Track",
     "role": "Prob",
     "img": "https://res.cloudinary.com/dhry5xscm/image/upload/v1730129772/nits-hacks-7.0/manikiran_kv1bap.jpg",
     "git": "",
@@ -233,7 +244,7 @@
   {
     "id": 136,
     "name": "Hirakjyoti Choudhury",
-    "designation": "Problem Setter",
+    "designation": "Problem Setter, Coding Track",
     "role": "Prob",
     "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/1000046541-01_-_042_hirak__choudhury_iwfdea.jpg",
     "linkedin": "https://www.linkedin.com/in/hirakjyoti-choudhury-544010255/",
@@ -243,7 +254,7 @@
   {
     "id": 361,
     "name": "Ayush Malviya",
-    "designation": "Problem Setter",
+    "designation": "Problem Setter, Coding Track",
     "role": "Prob",
     "img": "https://res.cloudinary.com/dmezugavw/image/upload/v1730539180/IMG20230709180025_-_051_Ayush_Malviya_ofkx4l.jpg",
     "git": "",
