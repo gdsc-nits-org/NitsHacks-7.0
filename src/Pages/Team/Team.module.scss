@@ -2,7 +2,7 @@ $fontcolor: #ffffff;
 
 @font-face {
   font-family: "StarJedi";
-  src: url("/public/fonts/Starjedi.ttf") format("truetype");
+  src: url("/fonts/Starjedi.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -114,6 +114,7 @@ $fontcolor: #ffffff;
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
+  text-align: center;
 
   .Events {
     margin: 0 3rem;
@@ -127,6 +128,10 @@ $fontcolor: #ffffff;
   }
   .content {
     font-family: "Courier New", Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .heading {
       margin-bottom: 8rem;
       color: #f2c300;

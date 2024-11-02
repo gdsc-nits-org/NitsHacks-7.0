@@ -13,7 +13,7 @@ const Navbar = () => {
     if (location.hash) {
       const id = location.hash.split("#")[1];
       const element = document.getElementById(id);
-      const headerOffset = 100;
+      const headerOffset = 200;
       const bodyRect = document.body.getBoundingClientRect().top;
       if (element) {
         const elementRect = element.getBoundingClientRect().top;
@@ -82,7 +82,6 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
-                  audio.play();
                   if (location.pathname !== "/") {
                     navigate("/");
                   } else {
@@ -92,6 +91,11 @@ const Navbar = () => {
                     });
                   }
                 }}
+                onMouseOver={() => {
+                  audio.play();
+                }}
+                onFocus={() => audio.play()}
+                onBlur={() => audio.pause()}
               >
                 <p>Home</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
@@ -101,9 +105,13 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
-                  audio.play();
                   navigate("/#events");
                 }}
+                onMouseOver={() => {
+                  audio.play();
+                }}
+                onFocus={() => audio.play()}
+                onBlur={() => audio.pause()}
               >
                 <p>events</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
@@ -113,9 +121,13 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
-                  audio.play();
                   navigate("/faq");
                 }}
+                onMouseOver={() => {
+                  audio.play();
+                }}
+                onFocus={() => audio.play()}
+                onBlur={() => audio.pause()}
               >
                 <p>Faq</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
@@ -125,9 +137,13 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
-                  audio.play();
                   navigate("/#sponsors");
                 }}
+                onMouseOver={() => {
+                  audio.play();
+                }}
+                onFocus={() => audio.play()}
+                onBlur={() => audio.pause()}
               >
                 <p>SponsorS</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />
@@ -137,9 +153,13 @@ const Navbar = () => {
               <button
                 className={styles.deskNav}
                 onClick={() => {
-                  audio.play();
                   navigate("/team");
                 }}
+                onMouseOver={() => {
+                  audio.play();
+                }}
+                onFocus={() => audio.play()}
+                onBlur={() => audio.pause()}
               >
                 <p>team</p>
                 <img alt="glow" src="/images/underscore.svg" className="underscore" />

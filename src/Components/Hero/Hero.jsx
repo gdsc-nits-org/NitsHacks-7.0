@@ -92,7 +92,7 @@ const ControlStation = (props) => {
         </div>
       </div>
       <Link to="about" className={styles.lowerRow}>
-        <button className={styles.proceed} onMouseEnter={playm}>
+        <button className={styles.proceed} onClick={playm}>
           proceed
         </button>
       </Link>

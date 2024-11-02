@@ -8,6 +8,8 @@ import Hero from "./Hero/Hero";
 import Event from "./Event/Event";
 import Testimonial from "./Testimonial/Testimonial";
 import Carousel from "./Carausel/Carausel";
+import JudgeCard from "./JudgeCard/JudgeCard";
+import Speaker from "./Speaker/Speaker";
 
 export {
   Navbar,
@@ -21,4 +23,6 @@ export {
   Event,
   Testimonial,
   Carousel,
+  JudgeCard,
+  Speaker,
 };
