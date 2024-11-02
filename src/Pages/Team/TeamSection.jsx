@@ -98,11 +98,6 @@ const MobTeam = ({
         <div className={styles.Events}>
           <Carousel>{tech.map(MemberDetails)}</Carousel>
         </div>
-      </div>
-      <div className={styles.content}>
-        <div className={styles.heading}>
-          <p>PROBLEM SETTERS</p>
-        </div>
         <div className={styles.Events}>
           <Carousel>{setter.map(MemberDetails)}</Carousel>
         </div>
