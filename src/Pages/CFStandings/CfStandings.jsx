@@ -12,7 +12,7 @@ async function pullData(message, time) {
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   const hashHex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
   const res = await fetch(
-    `https://codeforces.com/api/contest.standings?contestId=496831&apiKey=${key}&time=${time}&apiSig=123456<${hashHex}>`
+    `https://codeforces.com/api/contest.standings?contestId=499481&apiKey=${key}&time=${time}&apiSig=123456<${hashHex}>`
   );
   if (!res.ok) throw new Error("Network response was not ok");
   return res.json();
@@ -42,7 +42,7 @@ const CfStandings = () => {
 
 const Wrapper = () => {
   const nowTime = Math.floor(Date.now() / 1000);
-  const code = `123456/contest.standings?apiKey=${key}&contestId=496831&time=${nowTime}#${secret}`;
+  const code = `123456/contest.standings?apiKey=${key}&contestId=499481&time=${nowTime}#${secret}`;
   const { isLoading, error, data } = useQuery({
     queryKey: ["repoData"],
     queryFn: () => pullData(code, nowTime),
@@ -76,7 +76,7 @@ const Wrapper = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.headerCont}>
-        <h1 className={styles.header}>nits hacks 6.0 prelims</h1>
+        <h1 className={styles.header}>nits hacks 6.0 finals</h1>
       </div>
       <div className={styles.inputCont}>
         <input
@@ -94,7 +94,6 @@ const Wrapper = () => {
             <th>Teams/Individuals</th>
             <th>Points</th>
             <th>Penalty</th>
-            <th>Successfull Hacks</th>
           </tr>
         </thead>
         <tbody className={styles.tableBody}>
@@ -122,7 +121,6 @@ const Wrapper = () => {
               </td>
               <td>{item.points}</td>
               <td>{item.penalty}</td>
-              <td>{item.successfulHackCount}</td>
             </tr>
           ))}
         </tbody>
