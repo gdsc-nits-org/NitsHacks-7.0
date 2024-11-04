@@ -9,7 +9,7 @@ import {
   Sponsor,
   Hero,
   Testimonial,
-  // JudgeCard,
+  JudgeCard,
   // Speaker,
 } from "../../Components/index";
 
@@ -29,8 +29,8 @@ const Home = () => {
           <Tecno />
         </div>
         <Event />
-        {/* <JudgeCard />
-        <Speaker /> */}
+        <JudgeCard />
+        {/* <Speaker /> */}
         <Sponsor />
         <Testimonial />
       </div>
