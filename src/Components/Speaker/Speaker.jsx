@@ -36,7 +36,7 @@ const Speaker = () => {
   ];
   return (
     <section className={styles.section} id="speakers">
-      <h1 className={styles.heading}>our speakers</h1>
+      <h1 className={styles.heading}>our speaker</h1>
       <div className={styles.SWjudge}>
         <div className={styles.gridContainer}>
           {speakers.map((speaker) => {
