@@ -1,7 +1,8 @@
 import styles from "./Card.module.scss";
 
-const Card = ({ photo, link }) => {
+const Card = ({ photo, link, SponsorType }) => {
   return (
+  <div>
     <div className={styles.card}>
       <div className={styles.wrapper}>
         <div className={styles.box}>
@@ -10,6 +11,8 @@ const Card = ({ photo, link }) => {
           </a>
         </div>
       </div>
+    </div>
+    <div className={styles.sponsorHeading}>{SponsorType}</div>
     </div>
   );
 };
