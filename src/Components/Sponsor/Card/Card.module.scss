@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   gap: 0rem;
+  flex-direction: column;
 
   .wrapper {
     height: 100%;
@@ -38,6 +39,11 @@
       }
     }
   }
+}
+.sponsorHeading{
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
 }
 // @media screen and (max-width: 768px) {
 //   .card {
