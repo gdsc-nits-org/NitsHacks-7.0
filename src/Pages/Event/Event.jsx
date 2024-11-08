@@ -43,7 +43,21 @@ const Event = () => {
           </div>
           <div className={styles.bottom}>
             <Button name="register now" ohref={info.gform} />
-            <Button name="view standings" ohref="/event/3/standings" />
+            {info.name === "Software track" && (
+              <Button
+                name="problem statements"
+                ohref="https://drive.google.com/file/d/1TwPFhLznj6cIigkSSrO-_zrqJQHIL7bN/view?usp=sharing"
+              />
+            )}
+            {info.name === "ui/ux track" && (
+              <Button
+                name="problem statements"
+                ohref="https://drive.google.com/file/d/1UIvl4jMdgOGdgXCiHiR93nFE6RD3a6lr/view?usp=sharing"
+              />
+            )}
+            {info.name === "Coding track" && (
+              <Button name="view standings" ohref="/event/3/standings" />
+            )}
           </div>
         </div>
         <div className={styles.right}>
