@@ -43,7 +43,7 @@ const Event = () => {
           </div>
           <div className={styles.bottom}>
             <Button name="register now" ohref={info.gform} />
-            <Button name="back to home" ohref="/" />
+            <Button name="view standings" ohref="/event/3/standings" />
           </div>
         </div>
         <div className={styles.right}>
