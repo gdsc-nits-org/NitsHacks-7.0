@@ -13,6 +13,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@tanstack/react-query": "4",
     "@vitejs/plugin-react": "^4.2.1",
     "cloudinary-react": "^1.8.1",
