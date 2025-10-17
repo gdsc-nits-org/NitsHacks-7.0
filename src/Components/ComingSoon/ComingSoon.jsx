@@ -35,14 +35,14 @@ const ComingSoon = () => {
         ></div>
 
         <div className="comingContainer">
-          <img src="/images/clouds1.png" className="clouds1" alt="clouds" />
+          <img src="/images/clouds1.png" className="clouds1" id="cloud1" alt="clouds" />
           <h1
             className="coming-soon-text"
             style={{ fontFamily: "PokemonFont, Arial, sans-serif" }}
           >
             COMING SOON
           </h1>
-          <img src="/images/clouds1.png" className="clouds1" alt="clouds" />
+          <img src="/images/clouds1.png" className="clouds1" id="cloud2" alt="clouds" />
         </div>
 
         <div className="center-content">
@@ -70,10 +70,10 @@ const ComingSoon = () => {
         <div className="grad-5"></div>
       </div>
 
-      <div style={{ height: "1rem", width: "100vw", backgroundColor: "#2E7915" }}></div>
-      <div style={{ height: "1rem", width: "100vw", backgroundColor: "#339900" }}></div>
-      <div style={{ height: "1rem", width: "100vw", backgroundColor: "#BBDC00" }}></div>
-      <div style={{ height: "1rem", width: "100vw", backgroundColor: "#F0E800" }}></div>
+      <div className="lines" style={{ backgroundColor: "#2E7915" }}></div>
+      <div className="lines" style={{ backgroundColor: "#339900" }}></div>
+      <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div>
+      <div className="lines" style={{ backgroundColor: "#F0E800" }}></div>
 
       <div className="footer">
         <section className="sponsor-section">
