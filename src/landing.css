@@ -22,6 +22,7 @@
   height: 25vh;
   width: 100vw;
   background-color: #ebebe5;
+  position:relative;
 }
 /* .grad-1{
     height: 1vh;
