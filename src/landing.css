@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'PokemonFont';
+  src: url('./assets/fonts/PokemonSolid.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blueBg {
+  height: 100vh;
+  width: 100vw;
+  background-color: #7ad4fb;
+}
+
+.footer {
+  height: 25vh;
+  width: 100vw;
+  background-color: #ebebe5;
+}
+/* .grad-1{
+    height: 1vh;
+    width: 100vw;
+    background-color:#357A0F;
+}
+.grad-2{
+    height: 1vh;
+    width: 100vw;
+    background-color: #3E9A00;
+}
+.grad-3{
+    height: 1vh;
+    width: 100vw;
+    background-color: #BBDE00;
+}
+.grad-4{
+    height: 1vh;
+    width: 100vw;
+    background-color: #EDEA00;
+}
+.grad-5{
+    height: 1px;
+    width: 100vw;
+    background-color: #000000;
+} */
+
+.sponsor-section { 
+  
+  background-image: url('./assets/images/sponsor-bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain; 
+  text-align: center;
+  padding: 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 180px; }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end; 
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  align-items: center;
+  gap: 80px;
+}
+
+.carousel-track a {
+  flex-shrink: 0;
+}
+
+.carousel-track img {
+  width: auto;
+  max-height: 80px; 
+  height: auto;
+  gap:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s; padding: 0 0 20px;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.15);
+}
+.FooterContent {
+  position: absolute;
+  bottom: -15px;
+  left:45%;
+  text-align: center;
+  
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  background:#7ad4fb;
+  padding: 5px 0;
+  border:border-box;
+  border:solid 2px #000000;
+
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.character-bike {
+  position: relative;
+  z-index: 11;
+}
+
+.character-pikachu {
+  position: relative;
+  z-index: 12; 
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #5c94fc;
+}
+.background-layer {
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+}
+.clouds-bg {
+  z-index: 1;
+  height: 55vh;
+  margin-bottom: 10vh;
+}
+.ground {
+  z-index: 2;
+  bottom: 0;
+  height: 25%;
+}
+
+.floating-cloud {
+  position: absolute;
+  z-index: 1;
+  left: -220px;
+  opacity: 0.8;
+  width: 200px;
+}
+.main-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+  text-align: center;
+}
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
+@media (max-width: 1024px) {
+  .coming-soon-img { width: 400px; }
+  .logo { width: 200px; }
+  .character-layer { bottom: 28%; }
+  .trainer { width: 90px; }
+  .pikachu { width: 60px; }
+}
+@media (max-width: 767px) {
+  .ground { height: 35%; }
+  .coming-soon-img { width: 300px; }
+  .logo { width: 160px; }
+  .character-layer { bottom: 30%; }
+  .trainer { width: 80px; margin-right: 10px; }
+  .pikachu { width: 50px; }
+  .floating-cloud { width: 120px; }
+}
+.center-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;  /* Align to bottom of container */
+  height: 60vh;
+  gap: 20px;
+  padding: 0 20px;
+  text-align: center;
+}
+.character-container {
+  position: relative;  /* add this */
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.background-layer.clouds-static {
+  z-index: 0; /* behind all cloud layers */
+  position: absolute;
+  bottom: 40%; /* adjust vertical position to be in the sky */
+  left: 0;
+  width: 100%;
+  height: 30%; /* adjust height as needed */
+  background-repeat: no-repeat;
+  background-size: cover; /* or contain */
+  background-position: center bottom;
+  pointer-events: none;
+}
+
+
+
+.character-bike,
+.character-pikachu {
+  position: relative;
+  z-index: 11;
+  max-height: 125px; 
+  object-fit: contain;
+}
+.character-bike{
+  max-height: 250px;
+}
+.clouds1{
+  z-index: 5;
+}
+
+.comingContainer {
+  display: flex;
+  justify-content: center;
+}
+.coming-soon-text{
+  font-size: 6em;
+  z-index: 4;
+  color: #F9CD00;
+  -webkit-text-stroke: 0.5rem #193087;
+  text-shadow: 0.5rem 0.5rem 0 #204988;
+  letter-spacing: 0.2em;
+  padding-top: 5vw;
+}
+.logo{
+  padding-bottom: 5vw;
+}
+.character-container{
+  margin-right: 25vw;
+  .character-pikachu{
+    padding-right: 3vw;
+    margin-top: 5vh;
+  }
+}
+.staticGrass {
+  position: absolute; /* or fixed depending on your layout */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* match ground width */
+  z-index: 1; /* less than 2 (ground) */
+  pointer-events: none; /* optional, to ignore mouse events */
+}
