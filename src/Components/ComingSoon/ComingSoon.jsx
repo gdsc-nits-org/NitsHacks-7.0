@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { gsap, SteppedEase } from "gsap";
-import Sponsor from "./Sponsor/Sponsor.jsx";
+import Sponsor from "./Sponsor/Sponsor";
 import "./ComingSoonStyle.css";
 
 gsap.registerPlugin(SteppedEase);
@@ -64,11 +64,11 @@ const ComingSoon = () => {
         <img src="/images/grass.png" className="staticGrass" alt="grass" />
       </div>
 
-      <div className="lines" style={{ backgroundColor: "#2E7915" }}></div>
-      <div className="lines" style={{ backgroundColor: "#339900" }}></div>
-      <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div>
-      <div className="lines" style={{ backgroundColor: "#F0E800" }}></div>
-      {/* <Sponsor /> */}
+      {/* <div className="lines" style={{ backgroundColor: "#2E7915" }}></div> */}
+      {/* <div className="lines" style={{ backgroundColor: "#339900" }}></div> */}
+      {/* <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div> */}
+      {/* <div className="lines" style={{ backgroundColor: "#F0E800" }}></div> */}
+      <Sponsor />
     </section>
   );
 };

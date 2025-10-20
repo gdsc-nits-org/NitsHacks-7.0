@@ -5,11 +5,11 @@
 }
 
 .blueBg {
-  height: auto;
+  min-height: 100vh;
   width: 100vw;
   max-height: 100vh;
   background-color: #7ad4fb;
-  overflow-y: hidden;
+  overflow: hidden;
   z-index: -1;
 }
 .comingContainer {
@@ -117,13 +117,6 @@
   width: 100%;
   z-index: 1;
   pointer-events: none;
-}
-
-.lines {
-  z-index: 1;
-  height: 0.5rem;
-  width: 100vw;
-  background-color: #000000;
 }
 
 @keyframes scroll {

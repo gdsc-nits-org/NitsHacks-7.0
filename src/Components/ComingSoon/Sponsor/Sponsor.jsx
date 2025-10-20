@@ -4,6 +4,10 @@ import sponsors from "../../../assets/sponsors.json";
 const Sponsor = () => {
   return (
     <section className="sponsor-section">
+      <div className="lines" style={{ backgroundColor: "#2E7915" }}></div>
+      <div className="lines" style={{ backgroundColor: "#339900" }}></div>
+      <div className="lines" style={{ backgroundColor: "#F0E800" }}></div>
+      <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div>
       <h2
         className="sponsor-title"
         style={{ fontFamily: "PokemonFont, Arial, sans-serif" }}
