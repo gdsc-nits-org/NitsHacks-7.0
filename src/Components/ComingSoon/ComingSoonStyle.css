@@ -339,6 +339,9 @@
   #coming-soon {
     padding: 2px 0;
   }
+  .blueBg {
+    padding-bottom: 0%;
+  }
   .ground {
     height: 35%;
   }
