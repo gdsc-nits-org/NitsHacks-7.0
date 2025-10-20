@@ -62,12 +62,6 @@ const ComingSoon = () => {
         </div>
 
         <img src="/images/grass.png" className="staticGrass" alt="grass" />
-
-        <div className="grad-1"></div>
-        <div className="grad-2"></div>
-        <div className="grad-3"></div>
-        <div className="grad-4"></div>
-        <div className="grad-5"></div>
       </div>
 
       <div className="lines" style={{ backgroundColor: "#2E7915" }}></div>
@@ -75,7 +69,7 @@ const ComingSoon = () => {
       <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div>
       <div className="lines" style={{ backgroundColor: "#F0E800" }}></div>
 
-      <div className="footer">
+      <div id="footer">
         <section className="sponsor-section">
           <h2
             className="sponsor-title"
