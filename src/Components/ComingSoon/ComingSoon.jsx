@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap, SteppedEase } from "gsap";
+import Sponsor from "./Sponsor/Sponsor.jsx";
 import "./ComingSoonStyle.css";
-import sponsors from "../../assets/sponsors.json";
 
 gsap.registerPlugin(SteppedEase);
 
@@ -68,33 +68,7 @@ const ComingSoon = () => {
       <div className="lines" style={{ backgroundColor: "#339900" }}></div>
       <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div>
       <div className="lines" style={{ backgroundColor: "#F0E800" }}></div>
-
-      <div id="footer">
-        <section className="sponsor-section">
-          <h2
-            className="sponsor-title"
-            style={{ fontFamily: "PokemonFont, Arial, sans-serif" }}
-          >
-            PREVIOUS SPONSORS
-          </h2>
-          <div className="carousel">
-            <div className="carousel-track">
-              {" "}
-              {[...sponsors, ...sponsors].map((sponsor) => (
-                <a
-                  key={sponsor.id}
-                  href={sponsor.uri}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  <img src={sponsor.img} alt={sponsor.name} />{" "}
-                </a>
-              ))}{" "}
-            </div>
-          </div>
-        </section>
-      </div>
+      {/* <Sponsor /> */}
     </section>
   );
 };
