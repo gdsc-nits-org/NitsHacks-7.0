@@ -5,7 +5,7 @@
 }
 
 .blueBg {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   max-height: 100vh;
   background-color: #7ad4fb;
