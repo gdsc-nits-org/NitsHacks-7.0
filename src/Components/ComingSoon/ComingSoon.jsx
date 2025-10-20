@@ -60,14 +60,8 @@ const ComingSoon = () => {
             />
           </div>
         </div>
-
-        <img src="/images/grass.png" className="staticGrass" alt="grass" />
       </div>
 
-      {/* <div className="lines" style={{ backgroundColor: "#2E7915" }}></div> */}
-      {/* <div className="lines" style={{ backgroundColor: "#339900" }}></div> */}
-      {/* <div className="lines" style={{ backgroundColor: "#BBDC00" }}></div> */}
-      {/* <div className="lines" style={{ backgroundColor: "#F0E800" }}></div> */}
       <Sponsor />
     </section>
   );

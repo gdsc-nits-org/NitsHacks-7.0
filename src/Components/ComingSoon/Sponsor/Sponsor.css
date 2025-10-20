@@ -16,17 +16,17 @@
     4px 4px 0 #4a6aa9;
   text-align: center;
   text-transform: none;
-  position: absolute;
+  position: relative;
+  transform: translateY(-50%);
   z-index: 10000;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translateX(-50%);
   font-size: 1rem;
   text-wrap: nowrap;
   letter-spacing: 0.2rem;
   padding: 0.2rem 2rem;
   -webkit-text-stroke: 0.5px hsl(217, 97%, 30%);
   border-radius: 0.5rem;
-  bottom: 0rem;
 }
 
 .carousel {
