@@ -125,14 +125,6 @@
   background-color: #000000;
 }
 
-#footer {
-  background: #ffffff;
-  box-shadow:
-    inset 0 -4px 0 #d3d3d3,
-    /* bottom inner shadow */ 0 0 0 2px #bfbfbf,
-    /* light gray inner outline */ 0 0 0 4px #777,
-    /* darker gray frame */ 0 0 0 6px #333;
-}
 #footer::before {
   content: "";
   position: absolute;
@@ -159,22 +151,29 @@
   image-rendering: pixelated;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 1rem;
   text-wrap: nowrap;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   padding: 0.2rem 2rem;
   -webkit-text-stroke: 0.5px hsl(217, 97%, 30%);
-  bottom: -12%;
-  border-radius: 1rem;
+  bottom: -7%;
+  border-radius: 0.5rem;
 }
 
 .carousel {
   position: relative;
-  background-color: white;
   width: 100%;
   overflow: hidden;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding: 1rem 0;
+  /* padding-top: 6rem; */
+  /* padding-bottom: 4rem; */
+  min-height: 4rem;
+  background: #ffffff;
+  box-shadow:
+    inset 0 -4px 0 #d3d3d3,
+    -2px -2px -2px -2px #bfbfbf,
+    -4px -4px -4px -4px #777,
+    -6px -6px -6px -6px #333;
 }
 
 .carousel-track {
@@ -190,7 +189,8 @@
 }
 
 .carousel-track img {
-  width: 160px;
+  /* width: 160px; */
+  max-width: 80px;
   height: auto;
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
   transition: transform 0.3s;
@@ -249,9 +249,9 @@
     width: 60px;
   }
   .sponsor-title {
-    bottom: -6%;
+    bottom: -4%;
     padding: 2px 16px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-wrap: nowrap;
     letter-spacing: 0.1rem;
     -webkit-text-stroke: 0.5px hsl(217, 97%, 30%);
@@ -425,9 +425,9 @@
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
     -webkit-text-stroke: 0.5px hsl(217, 97%, 30%);
-    padding: 4px 8px;
+    padding: 2px 8px;
   }
   .carousel-track img {
-    width: 80px;
+    width: 60px;
   }
 }
