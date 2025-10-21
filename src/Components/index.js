@@ -10,7 +10,7 @@ import Testimonial from "./Testimonial/Testimonial";
 import Carousel from "./Carausel/Carausel";
 import JudgeCard from "./JudgeCard/JudgeCard";
 import Speaker from "./Speaker/Speaker";
-
+import ComingSoon from "./ComingSoon/ComingSoon";
 export {
   Navbar,
   Footer,
@@ -25,4 +25,5 @@ export {
   Carousel,
   JudgeCard,
   Speaker,
+  ComingSoon,
 };
